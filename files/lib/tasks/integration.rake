@@ -31,7 +31,6 @@ INTEGRATION_TASKS = %w(
   integration:heroku:add_remote
   integration:heroku:check
   integration:heroku:lock
-  campfire:vuvuzela
   integration:start
   integration:bundle_install
   db:migrate
@@ -39,6 +38,5 @@ INTEGRATION_TASKS = %w(
   integration:coverage_verify
   integration:finish
   heroku:deploy
-  campfire:greatjob
   integration:heroku:unlock
 )
