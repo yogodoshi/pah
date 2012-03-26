@@ -19,6 +19,8 @@ end
   copy_static_file "lib/tasks/#{component}"
 end
 
+get "https://raw.github.com/svenfuchs/rails-i18n/master/rails/locale/pt-BR.yml", "config/locales/pt-BR.yml"
+
 gsub_file 'lib/tasks/deploy.rake', /PROJECT/, @app_name
 gsub_file 'lib/tasks/integration.rake', /PROJECT/, @app_name
 
