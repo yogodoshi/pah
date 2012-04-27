@@ -2,7 +2,7 @@
 # startupdev-rails-template
 #
 # Usage:
-#   rails new appname m /path/to/template.rb
+#   rails new appname -m /path/to/template.rb
 #
 # Also see http://textmate.rubyforge.org/thor/Thor/Actions.html
 #
@@ -47,8 +47,9 @@ copy_static_file 'Gemfile'
 apply_n :cleanup
 apply_n :rvm
 apply_n :rspec # TODO: rspec nao rolou no projeto POL, add simplecov.
-# apply_n :postgresql # TODO: install pg gem, create default database, run db:migrate and add schema.rb
+apply_n :postgresql # TODO: install pg gem, create default database, run db:migrate and add schema.rb
 # apply_n :omniauth # TODO: add spec support files
+                    # TODO: take care of facebook when user is not logged in on facebook (when app)
 apply_n :default # TODO: add p80, add coverage no ignore, add permalink spec, colocar default do fakeweb sem conexao
 # TODO: extrair phone validator to gem
 # TODO: colocar .DS_store no gitignore.
@@ -56,3 +57,10 @@ apply_n :default # TODO: add p80, add coverage no ignore, add permalink spec, co
 puts "\n========================================================="
 puts " INSTALLATION COMPLETE!".yellow.bold
 puts "=========================================================\n\n\n"
+
+# FIX deprecation
+# NOTE: Gem.available? is deprecated, use Specification::find_by_name. It will be removed on or after 2011-11-01.
+# Gem.available? called from /Users/mergulhao/code/startupdev/templates/template.rb:11.
+
+# NOTE: Gem.activate is deprecated, use Specification#activate. It will be removed on or after 2011-10-01.
+# Gem.activate called from /Users/mergulhao/code/startupdev/templates/template.rb:14.
