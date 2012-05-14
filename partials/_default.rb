@@ -7,11 +7,11 @@ copy_static_file 'Procfile'
   copy_static_file "config/initializers/#{component}"
 end
 
-%w{permalink.rb debug_helper.rb}.each do |component|
+%w{debug_helper.rb}.each do |component|
   copy_static_file "lib/#{component}"
 end
 
-%w{permalink_spec.rb debug_helper_spec.rb}.each do |component|
+%w{debug_helper_spec.rb}.each do |component|
   copy_static_file "spec/lib/#{component}"
 end
 

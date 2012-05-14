@@ -50,7 +50,7 @@ apply_n :rspec # TODO: rspec nao rolou no projeto POL, add simplecov.
 apply_n :postgresql # TODO: install pg gem, create default database, run db:migrate and add schema.rb
 # apply_n :omniauth # TODO: add spec support files
                     # TODO: take care of facebook when user is not logged in on facebook (when app)
-apply_n :default # TODO: add p80, add coverage no ignore, add permalink spec, colocar default do fakeweb sem conexao
+apply_n :default # TODO: add p80, add coverage no ignore, colocar default do fakeweb sem conexao
 # TODO: extrair phone validator to gem
 # TODO: colocar .DS_store no gitignore.
 
