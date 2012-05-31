@@ -1,9 +1,9 @@
 puts "Add database(#{options[:database]}) gem support ...".magenta
 
-if options[:database] == "mysql"
-  database_gem = "gem 'mysql2',         '0.3.11'"
-else
-  database_gem = "gem 'pg',             '0.13.2'"
+database_gem = case options[:database]
+  when "mysql"      then "gem 'mysql2',         '0.3.11'"
+  when "postgresql" then "gem 'pg',             '0.13.2'"
+  else  "gem 'sqlite3'"
 end
 
 gsub_file 'Gemfile', /DATABASE_GEM/, database_gem
