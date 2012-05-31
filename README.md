@@ -15,13 +15,10 @@ rails new app_name -m ~/rails-template/template.rb
 ```
 
 3. You can pass the database option(i.e: -d mysql or -d postgresql) that it get the correct gem.
-
-### mysql
 ```
 rails new app_name -d mysql -m ~/rails-template/template.rb
 ```
-
-### postgresql
+or
 ```
 rails new app_name -d postgresql -m ~/rails-template/template.rb
 ```
