@@ -40,10 +40,9 @@ puts "\n========================================================="
 puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
 puts "=========================================================\n"
 
-# TODO: i18n pt-BR, timezone, Add rspec extensions
+# TODO: timezone, Add rspec extensions
 
-copy_static_file 'Gemfile'
-#apply_n :git
+apply_n :git
 apply_n :cleanup
 apply_n :database   # TODO: create default database, run db:migrate and add schema.rb
 apply_n :rvm
