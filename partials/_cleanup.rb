@@ -8,7 +8,6 @@ puts "Removing unnecessary files ... ".magenta
 remove_file "README"
 remove_file "app/views/layouts/application.html.erb"
 remove_file "app/assets/images/rails.png"
-remove_file "config/database.yml"
 
 inside "public" do
 	remove_file "index.html"
