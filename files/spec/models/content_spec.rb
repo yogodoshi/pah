@@ -6,19 +6,33 @@ describe Content do
     it { should validate_presence_of(attribute) }
   end
   describe ".markdown" do
-    before do
-      Factory.create(:content)
+    context "content exists" do
+      before do
+        Factory.create(:content)
+      end
+      it "should return markdown of text of content with slug" do
+        Content.markdown(:tagline).should == "<p>Texto <strong>legal</strong> e <em>bacana</em></p>\n"
+      end      
     end
-    it "should return markdown of text of content with slug" do
-      Content.markdown(:tagline).should == "<p>Texto <strong>legal</strong> e <em>bacana</em></p>\n"
+    context "content does not exists" do
+      it "should return nil" do
+        Content.markdown(:tagline).should be_nil
+      end
     end
   end
   describe ".raw" do
-    before do
-      Factory.create(:content)
+    context "content exists" do
+      before do
+        Factory.create(:content)
+      end
+      it "should return raw text of content with slug" do
+        Content.raw(:tagline).should == "Texto **legal** e <em>bacana</em>"
+      end
     end
-    it "should return raw text of content with slug" do
-      Content.raw(:tagline).should == "Texto **legal** e <em>bacana</em>"
+    context "content does not exists" do
+      it "should return nil" do
+        Content.raw(:tagline).should be_nil
+      end
     end
   end
   describe ".ensure" do
