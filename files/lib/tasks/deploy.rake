@@ -7,7 +7,7 @@ namespace :heroku do
   end
 
   def confirm(message)
-    print "\n#{message}\nAre you sure? [Yn] "
+    print "\n#{message}\nAre you sure? [yN] "
     raise 'Aborted' unless STDIN.gets.chomp.downcase == 'y'
   end
 
@@ -18,6 +18,9 @@ namespace :heroku do
 
     puts "-----> Migrating..."
     run "heroku run rake db:migrate --app #{APP}"
+
+    puts "-----> Seeding..."
+    run "heroku run rake db:seed --app #{APP}"
 
     puts "-----> Restarting..."
     run "heroku restart --app #{APP}"
