@@ -1,5 +1,5 @@
 # -*- encoding : utf-8 -*-
-module ApplicationHelper
+module TypusHelper
   def display_text(item, attribute)
     if attribute == 'log'
       content_tag :pre, item.send(attribute)

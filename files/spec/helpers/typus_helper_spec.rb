@@ -11,10 +11,10 @@ class AdminUser < ActiveRecord::Base
                       access_key_id: ENV['AMAZON_ACCESS_KEY_ID'],
                       secret_access_key: ENV['AMAZON_SECRET_ACCESS_KEY']
                     }
-  
+
 end
 
-describe ApplicationHelper do
+describe TypusHelper do
   let(:admin_user) { AdminUser.new(first_name: 'More or less', banner_file_name: 'banner.png', banner_file_size: 320) }
   describe "display_text" do
     context :log do
