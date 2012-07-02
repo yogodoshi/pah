@@ -8,10 +8,10 @@
 #
 
 %w{colored}.each do |component|
-  unless Gem.available?(component) # TODO: fix warning
+  if Gem::Specification.find_all_by_name(component).empty?
     run "gem install #{component}"
     Gem.refresh
-    Gem.activate(component)
+    Gem::Specification.find_by_name(component).activate
   end
 end
 
@@ -58,10 +58,3 @@ apply_n :generators
 puts "\n========================================================="
 puts " INSTALLATION COMPLETE!".yellow.bold
 puts "=========================================================\n\n\n"
-
-# FIX deprecation
-# NOTE: Gem.available? is deprecated, use Specification::find_by_name. It will be removed on or after 2011-11-01.
-# Gem.available? called from /Users/mergulhao/code/startupdev/templates/template.rb:11.
-
-# NOTE: Gem.activate is deprecated, use Specification#activate. It will be removed on or after 2011-10-01.
-# Gem.activate called from /Users/mergulhao/code/startupdev/templates/template.rb:14.
