@@ -12,4 +12,4 @@ in_root do
   inject_into_file 'config/application.rb', generators, {after: "Rails::Application", verbose: false}
 end
 git :add => 'config/application.rb'
-git :commit => "-m 'Adding generators.'"
+git :commit => "-qm 'Adding generators.'"
