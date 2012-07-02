@@ -46,7 +46,7 @@ apply_n :git
 apply_n :cleanup
 apply_n :database   # TODO: create default database, run db:migrate and add schema.rb
 apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
-apply_n :default    # TODO: add p80, add coverage no ignore, colocar default do fakeweb sem conexao
+apply_n :default    # TODO: add p80, colocar default do fakeweb sem conexao
 apply_n :generators
 apply_n :gems
 apply_n :rvm

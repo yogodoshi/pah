@@ -24,6 +24,8 @@ copy_static_file 'config/locales/pt-BR.yml'
 gsub_file 'lib/tasks/deploy.rake', /PROJECT/, @app_name
 gsub_file 'lib/tasks/integration.rake', /PROJECT/, @app_name
 
+copy_static_file '.gitignore'
+
 git :add => '.'
 git :commit => "-aqm 'Add default stuff.'"
 puts "\n"
