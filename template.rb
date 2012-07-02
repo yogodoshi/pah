@@ -45,10 +45,11 @@ puts "=========================================================\n"
 apply_n :git
 apply_n :cleanup
 apply_n :database   # TODO: create default database, run db:migrate and add schema.rb
-apply_n :rvm
 apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
 apply_n :default    # TODO: add p80, add coverage no ignore, colocar default do fakeweb sem conexao
 apply_n :generators
+apply_n :gems
+apply_n :rvm
 
 # apply_n :omniauth # TODO: add spec support files
                     # TODO: take care of facebook when user is not logged in on facebook (when app)

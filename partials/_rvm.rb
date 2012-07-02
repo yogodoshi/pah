@@ -30,4 +30,9 @@ copy_static_file '.rvmrc'
 gsub_file '.rvmrc', /PROJECT/, @app_name
 gsub_file '.rvmrc', /RUBYVERSION/, desired_ruby
 
+git :add => '.rvmrc'
+git :commit => "-qm 'Adding .rvmrc.'"
+git :add => 'Gemfile.lock'
+git :commit => "-qm 'Adding Gemfile.lock.'"
+
 puts "\n"
