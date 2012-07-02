@@ -21,23 +21,13 @@ puts "Creating gemset #{@app_name} in #{desired_ruby}"
 puts "Now using gemset #{@app_name}"
 @env.gemset_use!(app_name)
 
-# Create the gemset
-# run "rvm #{desired_ruby} gemset create #{gemset_name}"
-
-# Let us run shell commands inside our new gemset. Use this in other template partials.
-
-# Create .rvmrc
-# file '.rvmrc', @rvm
-
-# Make the .rvmrc trusted
-# run "rvm rvmrc trust #{@app_path}"
-# puts "Installing rails gem."
-# puts "Successfully installed rails"
-
 # Since the gemset is likely empty, manually install bundler so it can install the rest
 run "gem install bundler --no-ri --no-rdoc"
 
 # Install all other gems needed from Gemfile
 run "bundle install"
+copy_static_file '.rvmrc'
+gsub_file '.rvmrc', /PROJECT/, @app_name
+gsub_file '.rvmrc', /RUBYVERSION/, desired_ruby
 
 puts "\n"
