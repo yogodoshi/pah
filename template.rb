@@ -60,3 +60,4 @@ apply_n :finish
 puts "\n========================================================="
 puts " INSTALLATION COMPLETE!".yellow.bold
 puts "=========================================================\n\n\n"
+def run_bundle; end
