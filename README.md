@@ -14,14 +14,12 @@ git clone git://github.com/Helabs/rails-template.git
 rails new app_name -m ~/rails-template/template.rb
 ```
 
-3. You can pass the database option(i.e: -d mysql or -d postgresql) that it get the correct gem.
+3. Be sure to set your canonical domain on Heroku:
 ```
-rails new app_name -d mysql -m ~/rails-template/template.rb
+heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 ```
-or
-```
-rails new app_name -d postgresql -m ~/rails-template/template.rb
-```
+
+4. That's it! Everything should be in place.
 
 ## Contributing
 
