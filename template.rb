@@ -55,7 +55,6 @@ apply_n :finish
 # apply_n :omniauth # TODO: add spec support files
                     # TODO: take care of facebook when user is not logged in on facebook (when app)
 # TODO: extrair phone validator to gem
-# TODO: colocar .DS_store no gitignore.
 
 puts "\n========================================================="
 puts " INSTALLATION COMPLETE!".yellow.bold
