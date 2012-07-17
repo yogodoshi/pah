@@ -39,8 +39,7 @@ end
 
 
 unless config['domain'].blank?
-  run "heroku addons:add custom_domains"
-  run "heroku domains:add #{custom_domain}"
+  run "heroku domains:add #{config['domain']}"
 end
 
 colaborators = ask "Add collaborators? Type the email's separated by comma.".red
