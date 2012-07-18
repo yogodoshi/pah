@@ -54,5 +54,12 @@ run "heroku addons:add pgbackups:plus"
 say "Adding heroku addon [Loggly]...".magenta
 run "heroku addons:add loggly:mole"
 
+sendgrid = ask "Add sendgrid:starter addon?".red
+
+if sendgrid
+  say "Adding heroku addon [Sendgrid]...".magenta
+  run "heroku addons:add sendgrid:starter"
+end
+
 say "Pushing application to heroku...".magenta
 git :push => "heroku master" if config['deploy'] if config['deploy']
