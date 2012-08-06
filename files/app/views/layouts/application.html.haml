@@ -32,7 +32,7 @@
 
       </script>
 
-  %body{ :id => controller.controller_name, :class => content_for?(:sidebar) ? "has_sidebar" : nil }
+  %body{:id => controller.controller_name}
     #wrap
       %header
         #masthead
@@ -47,10 +47,6 @@
         #logo<
           = link_to "Logo", root_url
 
-        #slogan
-          %h1
-            = yield(:title)
-
         - if notice
           %p.notice
             = notice
@@ -60,14 +56,13 @@
 
       %hr
       #container
-        %section{:role => "main", :class => content_for?(:sidebar) ? action_name : nil}
+        %section{:role => "main"}
           = yield
 
         - if content_for?(:sidebar)
           %aside
             = yield(:sidebar)
-    %hr
-    %footer
-      #footer-inner
+      %hr
+      %footer
         %p
           = "Copyright &copy; 2012 App".html_safe
