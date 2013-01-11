@@ -1,24 +1,10 @@
 say "Configuring Heroku application...".magenta
 
-def would_you_like?(question)
-  answer = ask("#{question}".red)
-  case answer.downcase
-    when "yes", "y"
-      true
-    when "no", "n"
-      false
-    else
-      would_you_like?(question)
-  end
-end
-
 heroku_name = @app_name.gsub('_','')
 
 config = {}
 
-config['create'] = would_you_like? "Create Heroku apps? [y,n]".red
-
-if config['create']
+if would_you_like? "Create Heroku apps? [y,n]".red
   config['staging'] = would_you_like? "Create staging app? (#{heroku_name}-staging.heroku.com) [y,n]".red
   config['deploy']  = would_you_like? "Deploy immediately? [y,n]".red
   config['domain']  = ask "Add custom domain(customdomain.com) or leave blank".red

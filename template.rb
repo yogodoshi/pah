@@ -36,6 +36,18 @@ def apply_n(partial)
   apply "#{@partials}/_#{partial}.rb"
 end
 
+def would_you_like?(question)
+  answer = ask("#{question}".red)
+  case answer.downcase
+    when "yes", "y"
+      true
+    when "no", "n"
+      false
+    else
+      would_you_like?(question)
+  end
+end
+
 puts "\n========================================================="
 puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
 puts "=========================================================\n"
