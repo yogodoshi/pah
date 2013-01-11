@@ -5,6 +5,8 @@ development:
   pool: 5
   username: postgres
   password:
+  host: localhost
+  encoding: utf8
 
 test:
   adapter: postgresql
@@ -14,11 +16,5 @@ test:
   username: postgres
   password:
   min_messages: WARNING
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: PROJECT_production
-  pool: 5
-  username: postgres
-  password:
+  host: localhost
+  encoding: utf8
