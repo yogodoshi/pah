@@ -21,18 +21,10 @@ puts "Creating gemset #{@app_name} in #{desired_ruby}"
 puts "Now using gemset #{@app_name}"
 @env.gemset_use!(app_name)
 
-# Since the gemset is likely empty, manually install bundler so it can install the rest
-run "gem install bundler --no-ri --no-rdoc"
-
-# Install all other gems needed from Gemfile
-run "bundle install"
 copy_static_file '.rvmrc'
 gsub_file '.rvmrc', /PROJECT/, @app_name
 gsub_file '.rvmrc', /RUBYVERSION/, desired_ruby
 
 git :add => '.rvmrc'
 git :commit => "-qm 'Adding .rvmrc.'"
-git :add => 'Gemfile.lock'
-git :commit => "-qm 'Adding Gemfile.lock.'"
-
 puts "\n"

@@ -1,5 +1,11 @@
+puts "Installing gems... ".magenta
+
 copy_static_file 'Gemfile'
+run "gem install bundler --no-ri --no-rdoc"
+run "bundle install"
+
 git :add => 'Gemfile'
+git :add => 'Gemfile.lock'
 git :commit => "-qm 'Adding Gemfile.'"
 rack_canonical = <<CANONICAL
 
