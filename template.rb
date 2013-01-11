@@ -52,6 +52,7 @@ apply_n :gems
 apply_n :rvm
 apply_n :finish
 apply_n :heroku
+apply_n :capybara
 
 # apply_n :omniauth # TODO: add spec support files
                     # TODO: take care of facebook when user is not logged in on facebook (when app)
