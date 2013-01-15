@@ -21,6 +21,7 @@ end
 end
 
 copy_static_file 'config/locales/pt-BR.yml'
+copy_static_file 'public/index.html' if ENV['RAILS_TEMPLATE_TEST'] == 'true'
 
 gsub_file 'lib/tasks/deploy.rake', /PROJECT/, @app_name
 gsub_file 'lib/tasks/integration.rake', /PROJECT/, @app_name

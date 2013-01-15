@@ -29,6 +29,17 @@ heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
 
+## Development cycle
+
+1. Make modifications
+2. Run build
+```
+./build
+```
+4. It should open your browser on heroku app with message "Profit!"
+5. Profit!
+
+## Shameless advertising
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+rvm gemset use rails-template --create
+bundle
+rm -Rf ../rails_template_test123
+cd ..
+rvm gemset use rails-template
+RAILS_TEMPLATE_TEST=true rails new rails_template_test123 -m rails-template/template.rb
+read -p "Check the build. Do you want to delete temporary files and Heroku app? [Yn]" -n 1 -r
+if [[ ! $REPLY =~ ^[Nn]$ ]]
+then
+  heroku destroy railstemplatetest123 --confirm railstemplatetest123
+  heroku destroy railstemplatetest123-staging --confirm railstemplatetest123-staging
+  rm -Rf ../rails_template_test123
+  # Do not delete gemset to speed up compilation
+  # run << "rvm gemset delete test_app --force"
+fi

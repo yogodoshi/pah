@@ -1,39 +1,35 @@
 say "Configuring Heroku application...".magenta
 
-heroku_name = @app_name.gsub('_','')
-
-config = {}
-
-if would_you_like? "Create Heroku apps? [y,n]".red
+if would_you_like? "Create Heroku apps?".red
+  config = {}
+  heroku_name = ask_unless_test "What do you want to call your app? (#{heroku_name})".red
+  heroku_name = @app_name.gsub('_','')
   config['staging'] = would_you_like? "Create staging app? (#{heroku_name}-staging.heroku.com) [y,n]".red
-  config['deploy']  = would_you_like? "Deploy immediately? [y,n]".red
-  config['domain']  = ask "Add custom domain(customdomain.com) or leave blank".red
+  config['deploy']  = would_you_like? "Deploy immediately?".red
+  config['domain']  = ask_unless_test "Add custom domain(customdomain.com) or leave blank".red
 
-  run "heroku login"
-
-  say "Creating Heroku app '#{heroku_name}.heroku.com'".magenta
-  while !system("heroku create #{heroku_name}")
-    heroku_name = ask "What do you want to call your app? ".red
-  end
+  say "Creating Heroku app '#{heroku_name}.herokuapp.com'".magenta
+  system("heroku create #{heroku_name}")
 
   if config['staging']
+    staging_name = ask_unless_test "What do you want to call your staging app?".red
     staging_name = "#{heroku_name}-staging"
-    say "Creating staging Heroku app '#{staging_name}.heroku.com'".magenta
-    while !system("heroku create #{staging_name}")
-      staging_name = ask "What do you want to call your staging app?".red
-    end
-    git :remote => "add heroku git@heroku.com:#{heroku_name}.git"
+    say "Creating staging Heroku app '#{staging_name}.herokuapp.com'".magenta
+    system("heroku create #{staging_name}")
     say "Add git remote heroku for Heroku deploy.".magenta
+    git :remote => "add heroku git@heroku.com:#{heroku_name}.git"
   end
 
   unless config['domain'].blank?
     run "heroku domains:add #{config['domain']}"
   end
 
-  colaborators = ask "Add collaborators? Type the email's separated by comma.".red
+  colaborators = ask_unless_test "Add collaborators? Type the email's separated by comma.".red
 
-  colaborators.split(",").map(&:strip).each do |email|
-    run "heroku sharing:add #{email}"
+  if colaborators
+    colaborators.split(",").map(&:strip).each do |email|
+      run "heroku sharing:add #{email}"
+    end
   end
 
   say "Adding heroku addon [PG Backups]...".magenta
@@ -42,7 +38,7 @@ if would_you_like? "Create Heroku apps? [y,n]".red
   say "Adding heroku addon [Loggly]...".magenta
   run "heroku addons:add loggly:mole"
 
-  sendgrid = ask "Add sendgrid:starter addon?".red
+  sendgrid = ask_unless_test "Add sendgrid:starter addon?".red
 
   if sendgrid
     say "Adding heroku addon [Sendgrid]...".magenta
@@ -50,5 +46,6 @@ if would_you_like? "Create Heroku apps? [y,n]".red
   end
 
   say "Pushing application to heroku...".magenta
-  git :push => "heroku master" if config['deploy'] if config['deploy']
+  git :push => "heroku master" if config['deploy']
+  run "heroku open" if config['deploy']
 end

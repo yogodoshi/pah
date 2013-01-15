@@ -37,7 +37,8 @@ def apply_n(partial)
 end
 
 def would_you_like?(question)
-  answer = ask("#{question}".red)
+  return true if ENV['RAILS_TEMPLATE_TEST'] == 'true'
+  answer = ask("#{question} [y,n]".red)
   case answer.downcase
     when "yes", "y"
       true
@@ -48,6 +49,10 @@ def would_you_like?(question)
   end
 end
 
+def ask_unless_test(*params)
+  ask(*params) unless ENV['RAILS_TEMPLATE_TEST'] == 'true'
+end
+
 puts "\n========================================================="
 puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
 puts "=========================================================\n"
@@ -55,8 +60,8 @@ puts "=========================================================\n"
 # TODO: timezone, Add rspec extensions
 
 apply_n :git
-apply_n :rvm
 apply_n :cleanup
+apply_n :gems
 apply_n :database
 apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
 apply_n :default
@@ -64,8 +69,16 @@ apply_n :fakeweb
 apply_n :omniauth
 apply_n :capybara
 apply_n :generators
-apply_n :gems
+apply_n :canonical_host
+apply_n :rvm
 apply_n :finish
+
+if ENV['RAILS_TEMPLATE_TEST'] == 'true'
+  in_root do
+    run "rake"
+  end
+end
+
 apply_n :heroku
 
 # apply_n :omniauth # TODO: add spec support files
