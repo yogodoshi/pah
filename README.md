@@ -5,7 +5,6 @@ A rails application template which born from [Startup DEV][startupdev] and now i
 ## Usage
 
 1. Install heroku toolbelt.
-
 ```
 https://toolbelt.heroku.com/
 ```
@@ -44,8 +43,6 @@ heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 ```
 4. It should open your browser on heroku app with message "Profit!"
 5. Profit!
-
-## Shameless advertising
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
