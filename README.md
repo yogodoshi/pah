@@ -4,22 +4,28 @@ A rails application template which born from [Startup DEV][startupdev] and now i
 
 ## Usage
 
-1. Clone rails-template to your home directory.
+1. Install heroku toolbelt.
+
+```
+https://toolbelt.heroku.com/
+```
+
+2. Clone rails-template to your home directory.
 ```
 git clone git://github.com/Helabs/rails-template.git
 ```
 
-2. Run rails new app command using this template.
+3. Run rails new app command using this template.
 ```
 rails new app_name -m ~/rails-template/template.rb
 ```
 
-3. Be sure to set your canonical domain on Heroku:
+4. Be sure to set your canonical domain on Heroku:
 ```
 heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 ```
 
-4. That's it! Everything should be in place.
+5. That's it! Everything should be in place.
 
 ## Contributing
 
