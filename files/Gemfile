@@ -34,8 +34,8 @@ group :test do
   gem 'timecop',            '0.3.5'
   gem 'simplecov', '0.6.1', :require => false
   # gem 'guard-rspec', '2.1.0'
-  gem 'capybara', '1.1.2'
-  gem 'capybara-webkit', '0.13.0'
+  gem 'capybara', '2.0.2'
+  gem 'poltergeist',        '1.1.0'
 end
 
 group :development, :test do

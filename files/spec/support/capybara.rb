@@ -1,7 +1,8 @@
 # -*- encoding : utf-8 -*-
 require 'capybara/rspec'
 require 'capybara/rails'
-Capybara.javascript_driver = :webkit
+require 'capybara/poltergeist'
+Capybara.javascript_driver = :poltergeist
 RSpec.configure do |config|
   config.include Capybara::DSL, :example_group => { :file_path => /\bspec\/acceptance\// }
 end
