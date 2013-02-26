@@ -1,2 +1,1 @@
-# add here requires that your app needs
-require 'debug_helper'
+# add here requires that your app needs to load
