@@ -65,6 +65,7 @@ apply_n :gems
 apply_n :database
 apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
 apply_n :default
+apply_n :secure_headers
 apply_n :fakeweb
 apply_n :omniauth
 apply_n :capybara
