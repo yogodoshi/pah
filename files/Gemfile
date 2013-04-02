@@ -32,7 +32,6 @@ group :test do
   gem 'shoulda-matchers',   '1.5.6'
   gem 'timecop',            '0.6.1'
   gem 'simplecov',          '0.7.1', require: false
-  # gem 'guard-rspec',        '2.5.2'
   gem 'capybara',           '2.0.3'
   gem 'poltergeist',        '1.1.0'
 end
@@ -41,4 +40,5 @@ group :development, :test do
   gem 'rspec-rails',        '2.13.0'
   gem 'factory_girl_rails', '4.2.1'
   gem 'pry-rails',          '0.2.2'
+  # gem 'guard-rspec',        '2.5.2'
 end
