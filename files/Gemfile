@@ -24,14 +24,14 @@ end
 
 group :development do
   gem 'foreman',            '0.61.0'
-  gem 'integration', :git => 'git://github.com/mergulhao/integration.git'
+  gem 'integration', git: 'git://github.com/mergulhao/integration.git'
 end
 
 group :test do
   gem 'webmock',            '1.9.3'
   gem 'shoulda-matchers',   '1.4.2'
   gem 'timecop',            '0.5.9.2'
-  gem 'simplecov',          '0.7.1', :require => false
+  gem 'simplecov',          '0.7.1', require: false
   # gem 'guard-rspec',        '2.4.1'
   gem 'capybara',           '2.0.2'
   gem 'poltergeist',        '1.1.0'
