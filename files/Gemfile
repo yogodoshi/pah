@@ -27,6 +27,8 @@ group :development do
   gem 'foreman',            '0.62.0'
   gem 'integration', git: 'git://github.com/mergulhao/integration.git'
   gem 'heroku-deploy',      '~> 0.0.4'
+  gem 'better_errors',      '0.9.0'
+  gem 'binding_of_caller',  '0.7.2'
 end
 
 group :test do
