@@ -34,13 +34,6 @@ copy_static_file '.rvmrc'
 gsub_file '.rvmrc', /PROJECT/, gemset_name
 gsub_file '.rvmrc', /RUBYVERSION/, desired_ruby
 
-append_file '.rvmrc' do
-<<-EOF
-export PRODUCTION_APP=#{@app_name}
-export STAGING_APP=#{@app_name}-staging
-EOF
-end
-
 git :add => '.rvmrc'
 git :commit => "-qm 'Adding .rvmrc.'"
 

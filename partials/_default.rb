@@ -14,6 +14,13 @@ gsub_file 'lib/tasks/integration.rake', /PROJECT/, @app_name
 
 copy_static_file '.gitignore'
 
+create_file ".env" do
+<<-EOF
+export PRODUCTION_APP=#{@app_name}
+export STAGING_APP=#{@app_name}-staging
+EOF
+end
+
 git :add => '.'
 git :commit => "-aqm 'Add default stuff.'"
 puts "\n"
