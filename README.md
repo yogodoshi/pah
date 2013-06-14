@@ -5,28 +5,27 @@ A rails application template which born from [Startup DEV][startupdev] and now i
 ## Usage
 
 1. Install heroku toolbelt.
-```
+```shell
 https://toolbelt.heroku.com/
 ```
 
 2. Install phantomjs.
-
-```
+```shell
 brew install phantomjs
 ```
 
 3. Clone rails-template to your home directory.
-```
+```shell
 git clone git://github.com/Helabs/rails-template.git
 ```
 
 4. Run rails new app command using this template.
-```
+```shell
 rails new app_name -m ~/rails-template/template.rb
 ```
 
 5. Be sure to set your canonical domain on Heroku:
-```
+```shell
 heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 ```
 
