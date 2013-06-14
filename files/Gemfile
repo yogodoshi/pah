@@ -43,5 +43,6 @@ group :development, :test do
   gem 'factory_girl_rails', '4.2.1'
   gem 'pry-rails',          '0.2.2'
   gem 'dotenv-rails',       '0.8.0'
+  gem 'awesome_print',      '1.1.0'
   # gem 'guard-rspec',        '2.5.2'
 end
