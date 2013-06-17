@@ -1,12 +1,3 @@
-#
-# startupdev-rails-template
-#
-# Usage:
-#   rails new appname -m /path/to/template.rb
-#
-# Also see http://textmate.rubyforge.org/thor/Thor/Actions.html
-#
-
 %w{colored}.each do |component|
   if Gem::Specification.find_all_by_name(component).empty?
     run "gem install #{component}"
