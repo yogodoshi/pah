@@ -63,7 +63,7 @@ apply_n :git
 apply_n :cleanup
 apply_n :gems
 apply_n :database
-apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
+apply_n :rspec
 apply_n :default
 apply_n :secure_headers
 apply_n :omniauth
