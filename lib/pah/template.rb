@@ -54,7 +54,7 @@ def ask_unless_test(*params)
 end
 
 puts "\n========================================================="
-puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
+puts " Pah".yellow.bold
 puts "=========================================================\n"
 
 # TODO: timezone, Add rspec extensions
