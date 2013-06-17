@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
 
-puts "[WARNING] Ta serto"
+template_rb = File.expand_path(File.join('..', 'lib', 'pah', 'template.rb'), File.dirname(__FILE__))
+exec "rails new #{ARGV[0]} -m #{template_rb}"
