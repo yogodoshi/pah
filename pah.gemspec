@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["maurogot@gmail.com"]
   spec.description   = %q{A rails application template which born from Startup DEV and now is used to start most projects at HE:labs.}
   spec.summary       = %q{A rails application template which born from Startup DEV and now is used to start most projects at HE:labs.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/Helabs/pah"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
