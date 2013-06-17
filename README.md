@@ -4,11 +4,13 @@ A rails application template which born from [Startup DEV][startupdev] and now i
 
 ## Instalation
 
-First install the pah gem:
+Only install the Pah gem:
 
     gem install pah
 
-Then run:
+## Usage
+
+Run:
 
     pah projectname
 
@@ -32,6 +34,10 @@ On OSX install with:
 ```shell
 brew install phantomjs
 ```
+
+## Versioning
+
+Pah follow the [Semantic Versioning](http://semver.org/).
 
 ## Issues
 
