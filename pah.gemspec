@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Pah::VERSION
   spec.authors       = ["Mauro George"]
   spec.email         = ["maurogot@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{A rails application template which born from Startup DEV and now is used to start most projects at HE:labs.}
+  spec.summary       = %q{A rails application template which born from Startup DEV and now is used to start most projects at HE:labs.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
