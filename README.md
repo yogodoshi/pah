@@ -1,29 +1,17 @@
-# Pah
+# Pah WIP
 
-TODO: Write a gem description
+Até o momento uma gem grande marreta.
+Pego todo o código do `rails-template` e adicionado em `lib/pah`
+E criado o binário para charmar o rails-template antigo.
 
-## Installation
+## Como contribuir
 
-Add this line to your application's Gemfile:
+1. No diretório do projeto rode
 
-    gem 'pah'
+    $ rake install
 
-And then execute:
+2. saia do diretório atual
 
-    $ bundle
+3. utilize o binario com:
 
-Or install it yourself as:
-
-    $ gem install pah
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    $ pah app\_name
