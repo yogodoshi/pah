@@ -41,15 +41,16 @@ Pah follow the [Semantic Versioning](http://semver.org/).
 
 ## Issues
 
-If you have problems, please create a [Github Issue](https://github.com/Helabs/rails-template/issues).
+If you have problems, please create a [Github Issue](https://github.com/Helabs/pah/issues).
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUTING.md) for details.
+
+## Credits
+
+Pah is maintained and funded by [HE:labs](http://helabs.com.br/opensource/).
+Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contributors).
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
