@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.3 (unreleased)
+
+### features
+
+### improvements
+
+- Added badges
+
+### bug fixes
+
 ## 0.0.2 (June 20, 2013)
 
 ### features

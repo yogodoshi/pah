@@ -1,4 +1,7 @@
 # Pah
+[![RubyGems][gem_version_badge]][ruby_gems]
+[![Code Climate][code_climate_badge]][code_climate]
+[![Gemnasium][gemnasium_badge]][gemnasium]
 
 A rails application template which born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
 
@@ -54,3 +57,10 @@ Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contrib
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
+[gem_version_badge]: https://badge.fury.io/rb/pah.png
+[ruby_gems]: http://rubygems.org/gems/pah
+[code_climate]: https://codeclimate.com/github/Helabs/pah
+[code_climate_badge]: https://codeclimate.com/github/Helabs/pah.png
+[gemnasium]: https://gemnasium.com/Helabs/pah
+[gemnasium_badge]: https://gemnasium.com/Helabs/pah.png
+
