@@ -7,6 +7,7 @@
 ### improvements
 
 - Added badges
+- Updated rvm
 
 ### bug fixes
 
