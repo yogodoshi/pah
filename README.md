@@ -17,7 +17,7 @@ Run:
 
     pah projectname
 
-This will create a Rails 3.2 app in `projectname` with ruby 1.9.3. This script creates a new git repository. It is not meant to be used against an existing repo.
+This will create a Rails 4.0 app in `projectname` with ruby 2.0.0. This script creates a new git repository. It is not meant to be used against an existing repo.
 
 Be sure to set your canonical domain on Heroku:
 ```shell

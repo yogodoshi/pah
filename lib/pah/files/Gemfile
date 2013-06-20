@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby "1.9.3"
+ruby "2.0.0"
 
-gem 'rails',                '3.2.13'
+gem 'rails',                '4.0.0.rc2'
 gem 'unicorn',              '4.6.2'
 gem 'unicorn-worker-killer', '0.4.1'
 gem 'secure_headers',       '1.0.0'
@@ -19,8 +19,8 @@ gem 'bourbon',              '3.1.8'
 # gem 'acts_as_hashed',       '1.0.0'
 
 group :assets do
-  gem 'sass-rails',         '3.2.6'
-  gem 'coffee-rails',       '3.2.2'
+  gem 'sass-rails',         '4.0.0.rc2'
+  gem 'coffee-rails',       '4.0.0'
   gem 'uglifier',           '2.1.1'
 end
 
