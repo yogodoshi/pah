@@ -1,53 +1,66 @@
-# Rails Template
+# Pah
+[![RubyGems][gem_version_badge]][ruby_gems]
+[![Code Climate][code_climate_badge]][code_climate]
+[![Gemnasium][gemnasium_badge]][gemnasium]
 
 A rails application template which born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
 
+## Instalation
+
+Only install the Pah gem:
+
+    gem install pah
+
 ## Usage
 
-1. Install heroku toolbelt.
-```shell
-https://toolbelt.heroku.com/
-```
+Run:
 
-2. Install phantomjs.
-```shell
-brew install phantomjs
-```
+    pah projectname
 
-3. Clone rails-template to your home directory.
-```shell
-git clone git://github.com/Helabs/rails-template.git
-```
+This will create a Rails 3.2 app in `projectname`. This script creates a new git repository. It is not meant to be used against an existing repo.
 
-4. Run rails new app command using this template.
-```shell
-rails new app_name -m ~/rails-template/template.rb
-```
-
-5. Be sure to set your canonical domain on Heroku:
+Be sure to set your canonical domain on Heroku:
 ```shell
 heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 ```
 
-6. That's it! Everything should be in place.
+## Dependencies
+
+### heroku toolbelt
+
+So Install this from https://toolbelt.heroku.com/
+
+### phantomjs
+
+On OSX install with:
+
+```shell
+brew install phantomjs
+```
+
+## Versioning
+
+Pah follow the [Semantic Versioning](http://semver.org/).
+
+## Issues
+
+If you have problems, please create a [Github Issue](https://github.com/Helabs/pah/issues).
 
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUTING.md) for details.
 
-## Development cycle
+## Credits
 
-1. Make modifications
-2. Run build
-```
-./build
-```
-4. It should open your browser on heroku app with message "Profit!"
-5. Profit!
+Pah is maintained and funded by [HE:labs](http://helabs.com.br/opensource/).
+Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contributors).
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
+[gem_version_badge]: https://badge.fury.io/rb/pah.png
+[ruby_gems]: http://rubygems.org/gems/pah
+[code_climate]: https://codeclimate.com/github/Helabs/pah
+[code_climate_badge]: https://codeclimate.com/github/Helabs/pah.png
+[gemnasium]: https://gemnasium.com/Helabs/pah
+[gemnasium_badge]: https://gemnasium.com/Helabs/pah.png
+

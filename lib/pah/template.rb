@@ -1,12 +1,3 @@
-#
-# startupdev-rails-template
-#
-# Usage:
-#   rails new appname -m /path/to/template.rb
-#
-# Also see http://textmate.rubyforge.org/thor/Thor/Actions.html
-#
-
 %w{colored}.each do |component|
   if Gem::Specification.find_all_by_name(component).empty?
     run "gem install #{component}"
@@ -54,7 +45,7 @@ def ask_unless_test(*params)
 end
 
 puts "\n========================================================="
-puts " STARTUPDEV RAILS 3 TEMPLATE".yellow.bold
+puts " Pah".yellow.bold
 puts "=========================================================\n"
 
 # TODO: timezone, Add rspec extensions
@@ -63,12 +54,13 @@ apply_n :git
 apply_n :cleanup
 apply_n :gems
 apply_n :database
-apply_n :rspec      # TODO: rspec nao rolou no projeto POL, add simplecov.
+apply_n :rspec
 apply_n :default
 apply_n :secure_headers
 apply_n :omniauth
 apply_n :capybara
 apply_n :generators
+apply_n :letter_opener
 apply_n :canonical_host
 apply_n :rvm
 apply_n :unicorn
