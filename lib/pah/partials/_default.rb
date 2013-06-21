@@ -4,7 +4,6 @@ copy_static_file 'app/assets/stylesheets/reset.css'
 copy_static_file 'app/views/layouts/application.html.haml'
 copy_static_file 'config/unicorn.rb'
 copy_static_file 'Procfile'
-copy_static_file "config/initializers/requires.rb"
 copy_static_file "lib/tasks/integration.rake"
 
 copy_static_file 'config/locales/pt-BR.yml'

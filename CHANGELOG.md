@@ -9,6 +9,7 @@
 - Added badges
 - Updated rvm
 - Added bourbon
+- Removed the include of requires.rb
 
 ### bug fixes
 
