@@ -10,6 +10,7 @@
 - Updated rvm
 - Added bourbon
 - Removed the include of requires.rb
+- Removed unused gems (like Timecop) from the default Gemfile
 
 ### bug fixes
 
