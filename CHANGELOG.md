@@ -8,6 +8,7 @@
 
 - Added badges
 - Updated rvm
+- Added bourbon
 
 ### bug fixes
 
