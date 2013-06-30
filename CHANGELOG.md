@@ -11,6 +11,7 @@
 - Added bourbon
 - Removed the include of requires.rb
 - Removed unused gems (like Timecop) from the default Gemfile
+- Added Unicorn awesome configuration
 
 ### bug fixes
 
