@@ -1,6 +1,6 @@
 # -*- encoding : utf-8 -*-
 namespace :integration do
-  APP = 'PROJECT'
+  APP = ENV['APP']
 
   namespace :heroku do
     task :add_remote do

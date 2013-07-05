@@ -1,5 +1,5 @@
 namespace :heroku do
-  APP = 'PROJECT'
+  APP = ENV['APP']
 
   def run(*cmd)
     system(*cmd)
