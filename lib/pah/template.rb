@@ -65,6 +65,7 @@ apply_n :letter_opener
 apply_n :canonical_host
 apply_n :rvm
 apply_n :unicorn
+apply_n :integration
 apply_n :finish
 
 if ENV['RAILS_TEMPLATE_TEST'] == 'true'
