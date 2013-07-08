@@ -7,7 +7,7 @@ A rails application template which was born from [Startup DEV][startupdev] and n
 
 ## Instalation
 
-Add it to your Gemfile:
+Install Pah at the command prompt:
 
     gem install pah
 
