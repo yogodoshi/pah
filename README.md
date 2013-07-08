@@ -3,11 +3,11 @@
 [![Code Climate][code_climate_badge]][code_climate]
 [![Gemnasium][gemnasium_badge]][gemnasium]
 
-A rails application template which born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
+A rails application template which was born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
 
 ## Instalation
 
-Only install the Pah gem:
+Add it to your Gemfile:
 
     gem install pah
 
@@ -28,15 +28,11 @@ heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
 
 ### heroku toolbelt
 
-So Install this from https://toolbelt.heroku.com/
+Install from: https://toolbelt.heroku.com/
 
 ### phantomjs
 
-On OSX install with:
-
-```shell
-brew install phantomjs
-```
+Install from: http://phantomjs.org/download.html
 
 ## Versioning
 
