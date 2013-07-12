@@ -10,7 +10,11 @@ if would_you_like? "Create Heroku apps?".red
   config['domain']  = ask_unless_test "Add custom domain(customdomain.com) or leave blank".red
 
   say "Creating Heroku app '#{heroku_name}.herokuapp.com'".magenta
-  system("heroku create #{heroku_name}")
+  created = system("heroku create #{heroku_name}")
+  unless created
+    puts "Heroku app already exists, halting"
+    exit
+  end
 
   if config['staging']
     staging_name = ask_unless_test "What do you want to call your staging app?".red
