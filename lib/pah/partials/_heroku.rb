@@ -39,7 +39,7 @@ if would_you_like? "Create Heroku apps?".red
   say "Adding heroku addon [Loggly]...".magenta
   run "heroku addons:add loggly:mole"
 
-  sendgrid = ask_unless_test "Add sendgrid:starter addon?".red
+  sendgrid = yes? "Add sendgrid:starter addon? [yN]".red
 
   if sendgrid
     say "Adding heroku addon [Sendgrid]...".magenta

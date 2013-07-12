@@ -6,6 +6,7 @@
 
 ### improvements
 
+- Do not install Sendgrid unless user explicitely says so
 - Using user input for Heroku app name
 
 ## 0.0.3 (July 05, 2013)
