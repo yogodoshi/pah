@@ -3,7 +3,8 @@ say "Configuring Heroku application...".magenta
 if would_you_like? "Create Heroku apps?".red
   config = {}
   heroku_name = @app_name.gsub('_','')
-  heroku_name = ask_unless_test "What do you want to call your app? (#{heroku_name})".red
+  new_heroku_name = ask "What do you want to call your app? (#{heroku_name})", :red
+  heroku_name = new_heroku_name.present? ? new_heroku_name : heroku_name
   config['staging'] = would_you_like? "Create staging app? (#{heroku_name}-staging.heroku.com) [y,n]".red
   config['deploy']  = would_you_like? "Deploy immediately?".red
   config['domain']  = ask_unless_test "Add custom domain(customdomain.com) or leave blank".red
