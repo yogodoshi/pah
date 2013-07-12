@@ -6,6 +6,7 @@
 
 ### improvements
 
+- Do not say "Pushing application to Heroku" if there is no deploy
 - Do not install Sendgrid unless user explicitely says so
 - Using user input for Heroku app name
 

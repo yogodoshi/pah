@@ -46,7 +46,9 @@ if would_you_like? "Create Heroku apps?".red
     run "heroku addons:add sendgrid:starter"
   end
 
-  say "Pushing application to heroku...".magenta
-  git :push => "heroku master" if config['deploy']
+  if config['deploy']
+    say "Pushing application to heroku...".magenta
+    git :push => "heroku master" if config['deploy']
+  end
   run "heroku open" if config['deploy']
 end
