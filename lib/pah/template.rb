@@ -28,7 +28,6 @@ def apply_n(partial)
 end
 
 def would_you_like?(question)
-  return true if ENV['RAILS_TEMPLATE_TEST'] == 'true'
   answer = ask("#{question} [y,n]".red)
   case answer.downcase
     when "yes", "y"
@@ -41,7 +40,7 @@ def would_you_like?(question)
 end
 
 def ask_unless_test(*params)
-  ask(*params) unless ENV['RAILS_TEMPLATE_TEST'] == 'true'
+  ask(*params)
 end
 
 puts "\n========================================================="
@@ -67,18 +66,10 @@ apply_n :rvm
 apply_n :unicorn
 apply_n :integration
 apply_n :finish
-
-if ENV['RAILS_TEMPLATE_TEST'] == 'true'
-  in_root do
-    run "rake"
-  end
-end
-
 apply_n :heroku
 
 # apply_n :omniauth # TODO: add spec support files
                     # TODO: take care of facebook when user is not logged in on facebook (when app)
-# TODO: extrair phone validator to gem
 
 puts "\n========================================================="
 puts " CONGRATS! INSTALLATION COMPLETE!".yellow.bold
