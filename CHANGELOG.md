@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.4 (not released yet)
+
+### features
+
+### improvements
+
+- Using user input for Heroku app name
+
 ## 0.0.3 (July 05, 2013)
 
 ### features
