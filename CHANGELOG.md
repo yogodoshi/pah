@@ -7,11 +7,12 @@
 
 ### improvements
 
+- Use the new rspec expect syntax
 - Halt if Heroku app already exists.
 - Do not say "Pushing application to Heroku" if there is no deploy
 - Do not install Sendgrid unless user explicitely says so
 - Using user input for Heroku app name
-- Changed readme 
+- Changed readme
 - Heroku tasks now run out of Bundler environment
 - Cleaning old stuffs
 - Show suggestion of heroku app
