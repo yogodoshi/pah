@@ -13,6 +13,8 @@
 - Using user input for Heroku app name
 - Changed readme 
 - Heroku tasks now run out of Bundler environment
+- Cleaning old stuffs
+- Show suggestion of heroku app
 
 ## 0.0.3 (July 05, 2013)
 
