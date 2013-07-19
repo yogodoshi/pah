@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.4 (unreleased)
+## 0.0.4 (July 19, 2013)
 
 ### features
 
@@ -17,6 +17,8 @@
 - Show suggestion of heroku app
 - Export APP on .rvmrc
 - Updated to Rails 4.0 and Ruby 2.0 
+
+### bug fixes
 
 ## 0.0.3 (July 05, 2013)
 
