@@ -15,7 +15,7 @@
 - Cleaning old stuffs
 - Show suggestion of heroku app
 - Export APP on .rvmrc
-- Updated Rails to 4.0 and Ruby to 2.0
+- Updated to Rails 4.0 and Ruby 2.0 
 
 ## 0.0.3 (July 05, 2013)
 
