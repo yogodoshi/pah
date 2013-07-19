@@ -15,6 +15,7 @@
 - Heroku tasks now run out of Bundler environment
 - Cleaning old stuffs
 - Show suggestion of heroku app
+- Export APP on .rvmrc
 
 ## 0.0.3 (July 05, 2013)
 
