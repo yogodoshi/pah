@@ -9,7 +9,7 @@ namespace :integration do
     end
 
     task :check do
-      var = `heroku config -s --app #{APP}|grep INTEGRATING_BY`
+      var = Bundler.with_clean_env { `heroku config -s --app #{APP}|grep INTEGRATING_BY` }
       integrating_by = var.split('=')[1] # Eu sei que é tosco, mas foda-se
       user = `whoami`
       if !integrating_by.blank? and integrating_by != user
@@ -19,10 +19,10 @@ namespace :integration do
     end
     task :lock do
       user = `whoami`
-      sh "heroku config:add INTEGRATING_BY=#{user}"
+      Bundler.with_clean_env { sh "heroku config:add INTEGRATING_BY=#{user}" }
     end
     task :unlock do
-      `heroku config:remove INTEGRATING_BY`
+      Bundler.with_clean_env { sh "heroku config:remove INTEGRATING_BY" }
     end
   end
 end
