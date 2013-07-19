@@ -17,12 +17,12 @@ namespace :heroku do
     run "git push git@heroku.com:#{APP}.git HEAD:master -f"
 
     puts "-----> Migrating..."
-    run "heroku run rake db:migrate --app #{APP}"
+    Bundler.with_clean_env { run "heroku run rake db:migrate --app #{APP}" }
 
     puts "-----> Seeding..."
-    run "heroku run rake db:seed --app #{APP}"
+    Bundler.with_clean_env { run "heroku run rake db:seed --app #{APP}" }
 
     puts "-----> Restarting..."
-    run "heroku restart --app #{APP}"
+    Bundler.with_clean_env { run "heroku restart --app #{APP}" }
   end
 end
