@@ -1,6 +1,7 @@
 # Changelog
 
-## 0.0.4 (not released yet)
+
+## 0.0.4 (unreleased)
 
 ### features
 
@@ -10,6 +11,7 @@
 - Do not say "Pushing application to Heroku" if there is no deploy
 - Do not install Sendgrid unless user explicitely says so
 - Using user input for Heroku app name
+- Changed readme 
 
 ## 0.0.3 (July 05, 2013)
 
