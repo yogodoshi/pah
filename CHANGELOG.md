@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.5 (unreleased)
+
+### features
+
+### improvements
+
+- added rails_12factor gem
+
+### bug fixes
+
 ## 0.0.4 (July 19, 2013)
 
 ### features
