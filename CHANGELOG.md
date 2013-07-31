@@ -8,6 +8,7 @@
 
 - added rails_12factor gem
 - added missing turbolinks on layout
+- removed valid_attribute gem
 
 ### bug fixes
 
