@@ -7,6 +7,7 @@
 ### improvements
 
 - added rails_12factor gem
+- added missing turbolinks on layout
 
 ### bug fixes
 

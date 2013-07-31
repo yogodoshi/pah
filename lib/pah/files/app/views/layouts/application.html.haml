@@ -11,7 +11,7 @@
     = yield(:header_tags)
 
     = stylesheet_link_tag "application", :type => nil, :media => "all"
-    = javascript_include_tag "application", :type => nil
+    = javascript_include_tag "application", :type => nil, "data-turbolinks-track" => true
     = csrf_meta_tags
 
     /[if lt IE 9]
