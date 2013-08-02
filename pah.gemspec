@@ -6,8 +6,8 @@ require 'pah/version'
 Gem::Specification.new do |spec|
   spec.name          = "pah"
   spec.version       = Pah::VERSION
-  spec.authors       = ["Mauro George"]
-  spec.email         = ["maurogot@gmail.com"]
+  spec.authors       = ["HE:labs"]
+  spec.email         = ["contato@helabs.com.br"]
   spec.description   = %q{A rails application template which born from Startup DEV and now is used to start most projects at HE:labs.}
   spec.summary       = %q{A rails application template which born from Startup DEV and now is used to start most projects at HE:labs.}
   spec.homepage      = "https://github.com/Helabs/pah"
