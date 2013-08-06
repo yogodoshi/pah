@@ -27,7 +27,7 @@ gem "rails_12factor",       "0.0.2", group: :production
 group :development do
   gem "letter_opener",      '1.1.1'
   gem 'foreman',            '0.63.0'
-  gem 'he_integration',     '0.0.2'  
+  gem 'jumpup',             '0.0.1'
   gem 'better_errors',      '0.9.0'
   gem 'binding_of_caller',  '0.7.2'
   gem "letter_opener",      '1.1.1'
