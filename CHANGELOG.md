@@ -9,6 +9,7 @@
 - added rails_12factor gem
 - added missing turbolinks on layout
 - removed valid_attribute gem
+- created partials from error messages and flash messages
 
 ### bug fixes
 

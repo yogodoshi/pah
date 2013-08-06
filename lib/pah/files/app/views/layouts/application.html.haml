@@ -46,14 +46,7 @@
 
         #logo<
           = link_to "Logo", root_url
-
-        - if notice
-          %p.notice
-            = notice
-        - if alert
-          %p.alert
-            = alert
-
+        = render 'flash_messages'
       %hr
       #container
         %section{:role => "main"}
