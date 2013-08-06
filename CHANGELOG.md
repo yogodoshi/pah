@@ -10,6 +10,7 @@
 - added missing turbolinks on layout
 - removed valid_attribute gem
 - created partials from error messages and flash messages
+- added he_integration over integration from github
 
 ### bug fixes
 
