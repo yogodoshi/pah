@@ -19,6 +19,7 @@
 
 - added --app param to heroku lock and unlock tasks
 - resolved bug with rvm current when the bin is not properly set
+- fix already initialized constant APP on `tasks.rake` and `integration.rake`
 
 ## 0.0.4 (July 19, 2013)
 
