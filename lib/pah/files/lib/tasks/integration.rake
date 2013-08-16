@@ -20,10 +20,10 @@ namespace :integration do
     end
     task :lock do
       user = `whoami`
-      Bundler.with_clean_env { sh "heroku config:add INTEGRATING_BY=#{user} --app #{APP}" }
+      Bundler.with_clean_env { sh "heroku config:set INTEGRATING_BY=#{user} --app #{APP}" }
     end
     task :unlock do
-      Bundler.with_clean_env { sh "heroku config:remove INTEGRATING_BY --app #{APP}" }
+      Bundler.with_clean_env { sh "heroku config:unset INTEGRATING_BY --app #{APP}" }
     end
   end
 end
