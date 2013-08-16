@@ -92,6 +92,13 @@ end
 
 say "Configuring Heroku application...".magenta
 if would_you_like? "Create Heroku apps?".red
+
+  say "Refreshing Heroku user credentials".magenta
+  unless system "heroku auth:login"
+    puts "Could not login to Heroku, halting"
+    exit
+  end
+
   config = {}
   config['staging'] = would_you_like? "Create staging app?".red
   config['deploy']  = would_you_like? "Deploy immediately?".red
