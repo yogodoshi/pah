@@ -19,7 +19,7 @@ namespace :integration do
       end
     end
     task :lock do
-      user = `whoami`
+      user = `whoami`.strip
       Bundler.with_clean_env { sh "heroku config:set INTEGRATING_BY=#{user} --app #{APP}" }
     end
     task :unlock do
