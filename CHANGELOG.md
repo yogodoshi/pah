@@ -18,6 +18,7 @@
 ### bug fixes
 
 - added --app param to heroku lock and unlock tasks
+- resolved bug with rvm current when the bin is not properly set
 
 ## 0.0.4 (July 19, 2013)
 
