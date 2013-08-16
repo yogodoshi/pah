@@ -11,8 +11,11 @@
 - removed valid_attribute gem
 - created partials from error messages and flash messages
 - added jumpup over integration from github
+- use `heroku config:set` and `heroku config:unset`
 
 ### bug fixes
+
+- added --app param to heroku lock and unlock tasks
 
 ## 0.0.4 (July 19, 2013)
 
@@ -30,7 +33,7 @@
 - Cleaning old stuffs
 - Show suggestion of heroku app
 - Export APP on .rvmrc
-- Updated to Rails 4.0 and Ruby 2.0 
+- Updated to Rails 4.0 and Ruby 2.0
 
 ### bug fixes
 
