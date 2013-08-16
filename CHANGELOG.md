@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.0.7 (unreleased)
+
+### features
+
+### improvements
+
+### bug fixes
+
+## 0.0.6 (August 16, 2013)
+
+### features
+
+### improvements
+
+### bug fixes
+
+- Fix integration bug
+
 ## 0.0.5 (August 16, 2013)
 
 ### features
