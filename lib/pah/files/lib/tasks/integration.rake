@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 namespace :integration do
-  APP = ENV['APP']
+  APP = ENV['APP'] unless defined?(APP)
 
   namespace :heroku do
     task :add_remote do
