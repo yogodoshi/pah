@@ -15,6 +15,7 @@
 - added SecureHeaders initializers
 - added locale configs as Brazil
 - no more ask for ruby version or gemset name
+- add required ruby 2.0.0 or greater
 
 ### bug fixes
 
