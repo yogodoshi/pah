@@ -12,6 +12,7 @@
 - created partials from error messages and flash messages
 - added jumpup over integration from github
 - use `heroku config:set` and `heroku config:unset`
+- added SecureHeaders initializers
 
 ### bug fixes
 
