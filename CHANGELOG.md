@@ -13,6 +13,7 @@
 - added jumpup over integration from github
 - use `heroku config:set` and `heroku config:unset`
 - added SecureHeaders initializers
+- added locale configs as Brazil
 
 ### bug fixes
 

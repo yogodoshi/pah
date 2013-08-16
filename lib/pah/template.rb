@@ -61,6 +61,7 @@ apply_n :omniauth
 apply_n :capybara
 apply_n :generators
 apply_n :letter_opener
+apply_n :locale
 apply_n :canonical_host
 apply_n :rvm
 apply_n :unicorn
