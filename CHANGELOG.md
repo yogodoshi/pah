@@ -14,6 +14,7 @@
 - use `heroku config:set` and `heroku config:unset`
 - added SecureHeaders initializers
 - added locale configs as Brazil
+- no more ask for ruby version or gemset name
 
 ### bug fixes
 

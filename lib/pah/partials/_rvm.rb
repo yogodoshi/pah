@@ -6,13 +6,11 @@ puts "Setting up RVM gemset and installing bundled gems (may take a while) ... "
 rvm_list = `rvm list`.gsub(Regexp.new("\e\\[.?.?.?m"), '')
 
 current_ruby = rvm_list.match(/=.? ([^ ]+)/)[1]
-desired_ruby = ask_unless_test("Which RVM Ruby would you like to use? [#{current_ruby}]".red)
-desired_ruby = current_ruby if desired_ruby.blank?
+desired_ruby = current_ruby.gsub(/\-p\d+/, "")
 
 @env = RVM::Environment.new(desired_ruby)
 
-gemset_name = ask_unless_test("What name should the custom gemset have? [#{@app_name}]".red)
-gemset_name = @app_name if gemset_name.blank?
+gemset_name = @app_name
 
 puts "Creating gemset #{gemset_name} in #{desired_ruby}"
 @env.gemset_create(gemset_name)
