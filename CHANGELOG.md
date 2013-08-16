@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.5 (unreleased)
+## 0.0.5 (August 16, 2013)
 
 ### features
 
