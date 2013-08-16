@@ -19,8 +19,11 @@ puts "Creating gemset #{gemset_name} in #{desired_ruby}"
 puts "Now using gemset #{gemset_name}"
 @env.gemset_use!(gemset_name)
 
-if `rvm current`.strip.split('@')[1] != gemset_name
-  puts "Error using gemset #{gemset_name}".red
+rvm_current = `rvm current`.match(/[\w\d.-]+@[\w\d\.-]+/)[0].strip.split('@').last
+
+if rvm_current != gemset_name
+  puts "Error using gemset #{gemset_name}:".red
+  puts "#{rvm_current} does not match the gemset #{gemset_name}".yellow
   exit
 end
 
