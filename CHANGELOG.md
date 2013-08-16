@@ -6,6 +6,8 @@
 
 ### improvements
 
+- use environment variable to define secret_token and secret_key_base
+
 ### bug fixes
 
 ## 0.0.6 (August 16, 2013)

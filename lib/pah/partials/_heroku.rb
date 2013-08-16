@@ -16,11 +16,18 @@ if would_you_like? "Create Heroku apps?".red
     exit
   end
 
+  say "Creating SECRET_TOKEN for Heroku app '#{heroku_name}.herokuapp.com'".magenta
+  system("heroku config:set SECRET_TOKEN=#{SecureRandom::hex(60)} --app #{heroku_name}")
+
   if config['staging']
     staging_name = ask_unless_test "What do you want to call your staging app?".red
     staging_name = "#{heroku_name}-staging"
     say "Creating staging Heroku app '#{staging_name}.herokuapp.com'".magenta
     system("heroku create #{staging_name}")
+
+    say "Creating SECRET_TOKEN for Heroku app '#{staging_name}.herokuapp.com'".magenta
+    system("heroku config:set SECRET_TOKEN=#{SecureRandom::hex(60)} --app #{staging_name}")
+
     say "Add git remote heroku for Heroku deploy.".magenta
     git :remote => "add heroku git@heroku.com:#{heroku_name}.git"
   end
