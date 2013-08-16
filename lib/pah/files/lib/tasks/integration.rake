@@ -1,4 +1,5 @@
-# -*- encoding : utf-8 -*-
+# encoding: utf-8
+
 namespace :integration do
   APP = ENV['APP']
 
@@ -19,10 +20,10 @@ namespace :integration do
     end
     task :lock do
       user = `whoami`
-      Bundler.with_clean_env { sh "heroku config:add INTEGRATING_BY=#{user}" }
+      Bundler.with_clean_env { sh "heroku config:add INTEGRATING_BY=#{user} --app #{APP}" }
     end
     task :unlock do
-      Bundler.with_clean_env { sh "heroku config:remove INTEGRATING_BY" }
+      Bundler.with_clean_env { sh "heroku config:remove INTEGRATING_BY --app #{APP}" }
     end
   end
 end
