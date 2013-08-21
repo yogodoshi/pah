@@ -11,7 +11,7 @@ namespace :integration do
 
     task :check do
       var = Bundler.with_clean_env { `heroku config -s --app #{APP}|grep INTEGRATING_BY` }
-      integrating_by = var.split('=')[1] # Eu sei que é tosco, mas foda-se
+      integrating_by = var.split('=')[1]
       user = `whoami`
       if !integrating_by.blank? and integrating_by != user
         p80 "Project is already being integrated by #{integrating_by}"
