@@ -7,8 +7,11 @@
 ### improvements
 
 - use environment variable to define secret_token and secret_key_base
+- complete refactor of Heroku app creation and configuration
 
 ### bug fixes
+
+- don't break if you choose an already taken name for your Heroku app
 
 ## 0.0.6 (August 16, 2013)
 
