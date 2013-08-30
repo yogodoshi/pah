@@ -67,7 +67,7 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def add_timezone_config
     say "Adding timezone config on Heroku".magenta
-    system "heroku config:add TZ=America/Sao_Paulo"
+    system "heroku config:add TZ=America/Sao_Paulo --app #{name}"
   end
 
   def open
