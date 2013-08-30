@@ -72,10 +72,6 @@ class HerokuApp < Rails::Generators::AppGenerator
   end
 
   private
-    def thor
-      thor ||= Thor::Shell::Basic.new
-    end
-
     def check_canonical_domain
       domain = ask "Add custom domain (customdomain.com) or leave blank:".red
       add_canonical_domain(domain) unless domain.blank?
