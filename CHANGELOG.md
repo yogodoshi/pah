@@ -9,6 +9,7 @@
 - use environment variable to define secret_token and secret_key_base
 - complete refactor of Heroku app creation and configuration
 - ask for user credentials before creating the Heroku app
+- set the correct timezone config on heroku after creating the app
 
 ### bug fixes
 

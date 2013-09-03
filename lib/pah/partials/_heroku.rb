@@ -9,6 +9,7 @@ class HerokuApp < Rails::Generators::AppGenerator
 
     create
     add_secret_token
+    add_timezone_config
     add_addons
 
     unless staging
@@ -62,6 +63,11 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def add_collaborator(email)
     system "heroku sharing:add #{email} --app #{name}"
+  end
+
+  def add_timezone_config
+    say "Adding timezone config on Heroku".magenta
+    system "heroku config:set TZ=America/Sao_Paulo --app #{name}"
   end
 
   def open
