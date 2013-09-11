@@ -15,6 +15,7 @@
 
 - don't break if you choose an already taken name for your Heroku app
 - remove the `root_url` from application.html.haml since there's no default `root_url`
+- remove duplicated gems (foreman and letter_opener) from the default Gemfile
 
 ## 0.0.6 (August 16, 2013)
 
