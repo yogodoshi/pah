@@ -10,6 +10,7 @@
 - complete refactor of Heroku app creation and configuration
 - ask for user credentials before creating the Heroku app
 - set the correct timezone config on heroku after creating the app
+- refactor `integration.rake` and `deploy.rake` to handle projects with staging and production apps
 
 ### bug fixes
 
