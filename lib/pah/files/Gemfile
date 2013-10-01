@@ -35,7 +35,7 @@ end
 
 group :test do
   # See https://github.com/thoughtbot/shoulda-matchers/issues/270
-  gem "shoulda-matchers",   github: "thoughtbot/shoulda-matchers" , branch: 'dp-rails-four'
+  gem "shoulda-matchers",   '2.4.0'
   gem 'simplecov',          '0.7.1', require: false
   gem 'email_spec',         '1.4.0'
   gem 'capybara',           '2.1.0'
