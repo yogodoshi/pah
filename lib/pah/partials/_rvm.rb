@@ -31,12 +31,15 @@ run "gem install bundler --no-ri --no-rdoc"
 # Install all other gems needed from Gemfile
 run "bundle install"
 
-copy_static_file '.rvmrc'
-gsub_file '.rvmrc', /PROJECT/, gemset_name
-gsub_file '.rvmrc', /RUBYVERSION/, desired_ruby
+copy_static_file '.ruby-version'
+gsub_file '.ruby-version', /RUBY_VERSION/, desired_ruby
 
-git :add => '.rvmrc'
-git :commit => "-qm 'Adding .rvmrc.'"
+copy_static_file '.ruby-gemset'
+gsub_file '.ruby-gemset', /GEMSET/, gemset_name
+
+git :add => '.ruby-version'
+git :add => '.ruby-gemset'
+git :commit => "-qm 'Adding RVM config files.'"
 
 git :add => 'Gemfile.lock'
 git :commit => "-qm 'Adding Gemfile.lock.'"
