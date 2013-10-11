@@ -1,29 +1,48 @@
-# encoding: utf-8
+require 'colored' if Rails.env.development?
+
+def run_with_clean_env(command, capture_output=false)
+  Bundler.with_clean_env { capture_output ? `#{command}` : sh(command) }
+end
 
 namespace :integration do
-  APP = ENV['APP'] unless defined?(APP)
+  APP = ENV['STAGING_APP'] || ENV['APP']
+  USER = run_with_clean_env("git config --get user.name", true).strip
 
   namespace :heroku do
+
+    desc "Add Heroku git remotes"
     task :add_remote do
-      remote = `git remote |grep heroku`
-      sh "git remote add heroku git@heroku.com:#{APP}.git" if remote.strip.blank?
+      puts "--> Adding Heroku git remotes for app #{APP}".magenta
+
+      remote = run_with_clean_env("git remote | grep heroku", true).strip
+      run_with_clean_env("git remote add heroku git@heroku.com:#{APP}.git") if remote.blank?
     end
 
+    desc "Check if there's someone else integrating the project"
     task :check do
-      var = Bundler.with_clean_env { `heroku config -s --app #{APP}|grep INTEGRATING_BY` }
+      puts "--> Checking if there's already someone integrating to #{APP}".magenta
+
+      var = run_with_clean_env("heroku config -s --app #{APP} | grep INTEGRATING_BY", true).strip
       integrating_by = var.split('=')[1]
-      user = `whoami`
-      if !integrating_by.blank? and integrating_by != user
-        p80 "Project is already being integrated by #{integrating_by}"
+
+      integrating_by.strip! unless integrating_by.blank?
+
+      if integrating_by != USER and not integrating_by.blank?
+        puts "--> Project is already being integrated by '#{integrating_by}', halting"
         exit
       end
     end
+
+    desc "Lock the Heroku integration"
     task :lock do
-      user = `whoami`.strip
-      Bundler.with_clean_env { sh "heroku config:set INTEGRATING_BY=#{user} --app #{APP}" }
+      puts "--> Locking Heroku integration for you (#{USER})".magenta
+      run_with_clean_env("heroku config:set INTEGRATING_BY='#{USER}' --app #{APP}")
     end
+
+    desc "Unlock the Heroku integration"
     task :unlock do
-      Bundler.with_clean_env { sh "heroku config:unset INTEGRATING_BY --app #{APP}" }
+      puts "--> Unlocking Heroku integration".magenta
+      run_with_clean_env("heroku config:unset INTEGRATING_BY --app #{APP}")
     end
   end
 end
@@ -38,6 +57,6 @@ INTEGRATION_TASKS = %w(
   spec
   integration:coverage_verify
   integration:finish
-  heroku:deploy
+  heroku:deploy:staging
   integration:heroku:unlock
 )
