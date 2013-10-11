@@ -108,7 +108,7 @@ if would_you_like? "Create Heroku apps?".red
   production_app = HerokuApp.new(@app_name.gsub('_',''), "app")
   staging_app = HerokuApp.new("#{production_app.name}-staging", "staging app", true) if config['staging']
 
-  if staging_app.name.present?
+  if config['staging'] && staging_app.name.present?
     append_to_file '.env', "STAGING_APP: #{staging_app.name}\n"
     append_to_file '.env', "PRODUCTION_APP: #{production_app.name}\n"
 

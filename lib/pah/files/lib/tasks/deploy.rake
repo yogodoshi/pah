@@ -14,7 +14,7 @@ namespace :heroku do
   STAGING_APP = ENV['STAGING_APP'] || ENV['APP']
 
   def has_database?(app)
-    database_url = run_with_clean_env("heroku config -s --app #{APP} | grep DATABASE_URL", true).strip
+    database_url = run_with_clean_env("heroku config -s --app #{app} | grep DATABASE_URL", true).strip
     not database_url.blank?
   end
 
