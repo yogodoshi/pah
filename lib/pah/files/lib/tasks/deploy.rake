@@ -62,7 +62,7 @@ namespace :heroku do
       # This constant is defined to avoid problemd of copying and pasting from one environment to another
       APP = PRODUCTION_APP
 
-      confirm("Going deploy to production...".red)
+      confirm("Going deploy to production [#{APP}]...".red)
 
       if ENV['SKIP_TESTS'] != "true"
         puts "--> Running all specs".magenta

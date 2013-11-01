@@ -10,6 +10,7 @@
 
 - Check app has database before migrate
 - Remove `--force` on deploy to heroku 
+- Add app name on check for deploy into production
 
 ## 0.0.7 (October 11, 2013)
 
