@@ -93,7 +93,7 @@ namespace :heroku do
 
       puts "--> Pushing".magenta
       run_with_clean_env("git push origin #{tag_name}")
-      run_with_clean_env("git push git@heroku.com:#{APP}.git #{tag_name}:master")
+      run_with_clean_env("git push git@heroku.com:#{APP}.git HEAD:master")
 
       migrate(APP)
       seed(APP)

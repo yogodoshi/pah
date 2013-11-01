@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.9 (November 01, 2013)
+
+### features
+
+### improvements
+
+### bug fixes
+
+- Fix deploy to production
+
 ## 0.0.8 (November 01, 2013)
 
 ### features
