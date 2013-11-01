@@ -25,6 +25,7 @@ namespace :heroku do
   end
 
   def migrate(app)
+    return unless has_database?(app)
     puts "--> Migrating".magenta
     run_with_clean_env("heroku run rake db:migrate --app #{app}")
   end

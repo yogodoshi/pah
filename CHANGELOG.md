@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.8 (November 01, 2013)
+
+### features
+
+### improvements
+
+### bug fixes
+
+- Check app has database before migrate
+
 ## 0.0.7 (October 11, 2013)
 
 ### features
