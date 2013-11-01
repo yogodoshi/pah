@@ -50,7 +50,7 @@ namespace :heroku do
       backup(APP) if ENV['SKIP_BACKUP'] != "true"
 
       puts "--> Pushing".magenta
-      run_with_clean_env("git push git@heroku.com:#{APP}.git HEAD:master --force")
+      run_with_clean_env("git push git@heroku.com:#{APP}.git HEAD:master")
 
       migrate(APP)
       seed(APP)
@@ -93,7 +93,7 @@ namespace :heroku do
 
       puts "--> Pushing".magenta
       run_with_clean_env("git push origin #{tag_name}")
-      run_with_clean_env("git push git@heroku.com:#{APP}.git #{tag_name}:master --force")
+      run_with_clean_env("git push git@heroku.com:#{APP}.git #{tag_name}:master")
 
       migrate(APP)
       seed(APP)

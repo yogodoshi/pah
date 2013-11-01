@@ -9,6 +9,7 @@
 ### bug fixes
 
 - Check app has database before migrate
+- Remove `--force` on deploy to heroku 
 
 ## 0.0.7 (October 11, 2013)
 
