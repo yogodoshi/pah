@@ -11,6 +11,8 @@ Install Pah at the command prompt:
 
     gem install pah
 
+If using [RVM see this tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
+
 ## Usage
 
 Run:
@@ -21,11 +23,13 @@ This will create a Rails 4.0 app in `projectname` with ruby 2.0.0. This script c
 
 ### RVM
 
-If using the rvm is recomended before using pah, create and use a gemset.
+If using the rvm is recomended before using pah, create and use a gemset, with the projectname.
 
 ```bash
 $ rvm use 2.0.0@projectname --create
 ```
+
+Pah automatically create the .ruby-version and .ruby-gemset files.
 
 ### Canonical host
 
