@@ -50,7 +50,7 @@ puts "=========================================================\n"
 # TODO: timezone, Add rspec extensions
 
 apply_n :git
-apply_n :rvm
+apply_n :ruby_env
 apply_n :cleanup
 apply_n :gems
 apply_n :database
