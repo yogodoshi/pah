@@ -8,9 +8,7 @@ copy_static_file 'config/unicorn.rb'
 copy_static_file 'Procfile'
 copy_static_file 'config/locales/pt-BR.yml'
 copy_static_file '.gitignore'
-
-create_file ".env"
-append_to_file '.env', "APP: #{@app_name}\n"
+copy_static_file '.env'
 
 git :add => '.'
 git :commit => "-aqm 'Add default stuff.'"
