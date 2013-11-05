@@ -65,7 +65,6 @@ apply_n :letter_opener
 apply_n :locale
 apply_n :canonical_host
 apply_n :unicorn
-apply_n :gemfile_lock
 apply_n :integration
 apply_n :heroku
 
