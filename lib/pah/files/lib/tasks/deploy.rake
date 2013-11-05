@@ -43,20 +43,6 @@ namespace :heroku do
 
   namespace :deploy do
 
-    desc "Deploy to staging"
-    task :staging do
-      APP = STAGING_APP
-
-      backup(APP) if ENV['SKIP_BACKUP'] != "true"
-
-      puts "--> Pushing".magenta
-      run_with_clean_env("git push git@heroku.com:#{APP}.git HEAD:master")
-
-      migrate(APP)
-      seed(APP)
-      restart(APP)
-    end
-
     desc "Deploy to production"
     task :production do
       # This constant is defined to avoid problemd of copying and pasting from one environment to another

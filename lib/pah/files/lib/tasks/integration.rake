@@ -57,6 +57,6 @@ INTEGRATION_TASKS = %w(
   spec
   integration:coverage_verify
   integration:finish
-  heroku:deploy:staging
+  heroku:deploy:production
   integration:heroku:unlock
 )

@@ -3,7 +3,7 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   attr_reader :name, :description
 
-  def initialize(name, description, staging=false)
+  def initialize(name, description)
     @name = name
     @description = description
 
@@ -11,12 +11,6 @@ class HerokuApp < Rails::Generators::AppGenerator
     add_secret_token
     add_timezone_config
     add_addons
-
-    unless staging
-      add_heroku_git_remote
-      check_canonical_domain
-      check_collaborators
-    end
   end
 
   def create
@@ -102,25 +96,9 @@ if would_you_like? "Create Heroku apps?".red
   end
 
   config = {}
-  config['staging'] = would_you_like? "Create staging app?".red
   config['deploy']  = would_you_like? "Deploy immediately?".red
 
   production_app = HerokuApp.new(@app_name.gsub('_',''), "app")
-  staging_app = HerokuApp.new("#{production_app.name}-staging", "staging app", true) if config['staging']
-
-  if config['staging'] && staging_app.name.present?
-    append_to_file '.env', "STAGING_APP: #{staging_app.name}\n"
-    append_to_file '.env', "PRODUCTION_APP: #{production_app.name}\n"
-
-    git add: '.env'
-    git commit: "-qm 'Adding STAGING_APP and PRODUCTION_APP configs.'"
-  else
-    # The STAGING_APP is the default integration destination
-    append_to_file '.env', "STAGING_APP: #{production_app.name}\n"
-
-    git add: '.env'
-    git commit: "-qm 'Adding STAGING_APP config.'"
-  end
 
   production_app.open if config['deploy']
 end
