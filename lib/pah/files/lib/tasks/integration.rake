@@ -37,6 +37,11 @@ def restart(app)
   run_with_clean_env("heroku restart --app #{app}")
 end
 
+def deploy(app) 
+  puts "--> Pushing".magenta
+  run_with_clean_env("git push git@heroku.com:#{APP}.git HEAD:master")
+end
+
 namespace :integration do
   APP = 'PROJECT'
   USER = run_with_clean_env("git config --get user.name", true).strip
@@ -80,47 +85,10 @@ namespace :integration do
 
     desc "Deploy to heroku"
     task :deploy do
-      confirm("Going deploy [#{APP}]...".red)
-
-      if ENV['SKIP_TESTS'] != "true"
-        puts "--> Running all specs".magenta
-        Rake::Task['spec'].invoke
-      end
-
-      print "\nPut #{APP} in maintenance mode? [Yn] ".red
-      maintenance = (ENV['MAINTENANCE'] == "true" or (STDIN.gets.chomp.downcase == 'y'))
-
-      if maintenance
-        puts "--> Setting Maintenance on".magenta
-        run_with_clean_env("heroku maintenance:on --app #{APP}")
-
-        puts "--> Restarting".magenta
-        run_with_clean_env("heroku restart --app #{APP}")
-
-        puts "--> Waiting 20 seconds to app come back (in maintenance mode)".magenta
-        sleep(20)
-      end
-
-      backup(APP) if ENV['SKIP_BACKUP'] != "true"
-
-      iso_date = Time.now.strftime('%Y-%m-%dT%H%M%S')
-      tag_name = "production-#{iso_date}"
-
-      puts "--> Tagging as #{tag_name}".magenta
-      run_with_clean_env("git tag #{tag_name} master")
-
-      puts "--> Pushing".magenta
-      run_with_clean_env("git push origin #{tag_name}")
-      run_with_clean_env("git push git@heroku.com:#{APP}.git HEAD:master")
-
+      backup(APP)
+      deploy(APP)      
       migrate(APP)
       seed(APP)
-
-      if maintenance
-        puts "Setting Maintenance off".magenta
-        run_with_clean_env("heroku maintenance:off --app #{APP}")
-      end
-
       restart(APP)
     end
   end
