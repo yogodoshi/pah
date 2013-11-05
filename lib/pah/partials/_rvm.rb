@@ -1,6 +1,6 @@
 # Set up rvm private gemset
 require 'rvm'
-puts "Setting up RVM gemset and installing bundled gems (may take a while) ... ".magenta
+puts "Setting up RVM gemset ... ".magenta
 
 # Need to strip colors in case rvm_pretty_print_flag is enabled in user's .rvmrc
 rvm_list = `rvm list`.gsub(Regexp.new("\e\\[.?.?.?m"), '')
@@ -25,12 +25,6 @@ if rvm_current != gemset_name
   exit
 end
 
-# Since the gemset is likely empty, manually install bundler so it can install the rest
-run "gem install bundler --no-ri --no-rdoc"
-
-# Install all other gems needed from Gemfile
-run "bundle install"
-
 copy_static_file '.ruby-version'
 gsub_file '.ruby-version', /RUBY_VERSION/, desired_ruby
 
@@ -40,8 +34,5 @@ gsub_file '.ruby-gemset', /GEMSET/, gemset_name
 git :add => '.ruby-version'
 git :add => '.ruby-gemset'
 git :commit => "-qm 'Adding RVM config files.'"
-
-git :add => 'Gemfile.lock'
-git :commit => "-qm 'Adding Gemfile.lock.'"
 
 puts "\n"

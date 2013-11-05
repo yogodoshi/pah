@@ -65,6 +65,7 @@ apply_n :letter_opener
 apply_n :locale
 apply_n :canonical_host
 apply_n :rvm
+apply_n :bundler
 apply_n :unicorn
 apply_n :integration
 apply_n :finish
