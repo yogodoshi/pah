@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.0.10 (unreleased)
+
+### features
+
+### improvements
+
+- Remove rvm dependency
+- Remove staging app
+- Remove ominiauth integration
+- Refactoring bundle files 
+- Refactoring integration files
+
+### bug fixes
+
+- Integration now use app name hardcoded
+
 ## 0.0.9 (November 01, 2013)
 
 ### features
