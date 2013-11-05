@@ -11,6 +11,7 @@
 - Remove ominiauth integration
 - Refactoring bundle files 
 - Refactoring integration files
+- Remove password from db config
 
 ### bug fixes
 

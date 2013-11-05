@@ -4,7 +4,6 @@ development:
   database: PROJECT_development
   pool: 5
   username: postgres
-  password:
   host: localhost
   template: template0
 
@@ -14,7 +13,6 @@ test:
   database: PROJECT_test
   pool: 5
   username: postgres
-  password:
   min_messages: WARNING
   host: localhost
   template: template0
