@@ -10,8 +10,7 @@ def confirm(message)
 end
 
 namespace :heroku do
-  PRODUCTION_APP = ENV['PRODUCTION_APP'] || ENV['APP']
-  STAGING_APP = ENV['STAGING_APP'] || ENV['APP']
+  APP = 'PROJECT'
 
   def has_database?(app)
     database_url = run_with_clean_env("heroku config -s --app #{app} | grep DATABASE_URL", true).strip
@@ -45,8 +44,6 @@ namespace :heroku do
 
     desc "Deploy to production"
     task :production do
-      # This constant is defined to avoid problemd of copying and pasting from one environment to another
-      APP = PRODUCTION_APP
 
       confirm("Going deploy to production [#{APP}]...".red)
 

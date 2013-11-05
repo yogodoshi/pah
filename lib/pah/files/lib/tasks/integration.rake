@@ -5,7 +5,7 @@ def run_with_clean_env(command, capture_output=false)
 end
 
 namespace :integration do
-  APP = ENV['STAGING_APP'] || ENV['APP']
+  APP = 'PROJECT'
   USER = run_with_clean_env("git config --get user.name", true).strip
 
   namespace :heroku do
