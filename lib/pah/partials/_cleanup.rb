@@ -1,8 +1,3 @@
-puts "Commiting new rails app ... ".magenta
-
-git :add => '.'
-git :commit => "-aqm 'Commit new rails app.'"
-
 puts "Removing unnecessary files ... ".magenta
 
 remove_file "README.rdoc"
