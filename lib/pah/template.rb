@@ -50,6 +50,7 @@ puts "=========================================================\n"
 # TODO: timezone, Add rspec extensions
 
 apply_n :git
+apply_n :ruby_env
 apply_n :cleanup
 apply_n :gems
 apply_n :database
@@ -58,16 +59,13 @@ apply_n :default
 apply_n :stylesheets
 apply_n :secure_headers
 apply_n :secret_token
-apply_n :omniauth
 apply_n :capybara
 apply_n :generators
 apply_n :letter_opener
 apply_n :locale
 apply_n :canonical_host
-apply_n :rvm
 apply_n :unicorn
 apply_n :integration
-apply_n :finish
 apply_n :heroku
 
 # apply_n :omniauth # TODO: add spec support files

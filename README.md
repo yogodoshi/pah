@@ -11,6 +11,8 @@ Install Pah at the command prompt:
 
     gem install pah
 
+If using [RVM see this tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
+
 ## Usage
 
 Run:
@@ -18,6 +20,18 @@ Run:
     pah projectname
 
 This will create a Rails 4.0 app in `projectname` with ruby 2.0.0. This script creates a new git repository. It is not meant to be used against an existing repo.
+
+### RVM
+
+If using the rvm is recomended before using pah, create and use a gemset, with the project name.
+
+```bash
+$ rvm use 2.0.0@projectname --create
+```
+
+Pah automatically create the .ruby-version and .ruby-gemset files.
+
+### Canonical host
 
 Be sure to set your canonical domain on Heroku:
 ```shell
