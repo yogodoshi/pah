@@ -59,7 +59,6 @@ apply_n :default
 apply_n :stylesheets
 apply_n :secure_headers
 apply_n :secret_token
-apply_n :omniauth
 apply_n :capybara
 apply_n :generators
 apply_n :letter_opener
