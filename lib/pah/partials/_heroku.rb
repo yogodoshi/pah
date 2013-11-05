@@ -11,6 +11,9 @@ class HerokuApp < Rails::Generators::AppGenerator
     add_secret_token
     add_timezone_config
     add_addons
+    add_heroku_git_remote
+    check_canonical_domain
+    check_collaborators
   end
 
   def create
