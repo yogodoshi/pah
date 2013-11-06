@@ -31,13 +31,6 @@ $ rvm use 2.0.0@projectname --create
 
 Pah automatically create the .ruby-version and .ruby-gemset files.
 
-### Canonical host
-
-Be sure to set your canonical domain on Heroku:
-```shell
-heroku config:add CANONICAL_HOST=yourdomain.com #or www.yourdomain.com
-```
-
 ## Dependencies
 
 ### heroku toolbelt
