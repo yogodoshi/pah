@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.0.11 (unreleased)
+
+### features
+
+### improvements
+
+- Better vcr default on support
+
+### bug fixes
+
 ## 0.0.10 (November 5, 2013)
 
 ### features
@@ -9,7 +19,7 @@
 - Remove rvm dependency
 - Remove staging app
 - Remove ominiauth integration
-- Refactoring bundle files 
+- Refactoring bundle files
 - Refactoring integration files
 - Remove password from db config
 
@@ -36,7 +46,7 @@
 ### bug fixes
 
 - Check app has database before migrate
-- Remove `--force` on deploy to heroku 
+- Remove `--force` on deploy to heroku
 - Add app name on check for deploy into production
 
 ## 0.0.7 (October 11, 2013)
