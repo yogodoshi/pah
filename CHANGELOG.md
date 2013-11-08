@@ -6,6 +6,7 @@
 
 ### improvements
 
+- Update to rails 4.0.1
 - Better vcr default on support
 
 ### bug fixes
