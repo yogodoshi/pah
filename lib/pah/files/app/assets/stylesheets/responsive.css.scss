@@ -1,0 +1,21 @@
+/* Viewport */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+
+/* Media Queries */
+
