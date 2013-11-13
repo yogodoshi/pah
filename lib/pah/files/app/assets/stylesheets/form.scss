@@ -1,0 +1,196 @@
+@charset "utf-8";
+@import "variables";
+
+
+/* Forms 01 */
+
+#form-01 {
+  width: 400px;
+
+  .string,
+  .text,
+  .datetime { label { display: block; } }
+  
+  .form-inputs {
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 95%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    textarea {
+      min-width: 95%;
+      max-width: 95%;
+    }
+  
+  }
+
+}
+
+
+/* Forms 02 */
+
+#form-02 {
+  width: 600px;
+
+  .string,
+  .text,
+  .datetime {
+    label {
+      width: 100px;
+      margin: 8px 15px 0 0;
+      text-align: right;
+      float: left;
+    }
+  }
+  
+  .form-inputs {
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 180px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    textarea {
+      min-width: 180px;
+      max-width: 180px;
+    }
+  
+  }
+
+}
+
+
+/* Labels */
+
+.string,
+.text,
+.datetime { label { font-weight: bold; } }
+
+input[type="checkbox"],
+input[type="radio"] { margin-right: 7px; }
+
+.radio_buttons {
+  .control-label { font-weight: bold; }
+  .radio { margin-left: 20px; }
+}
+
+
+/* Fields */
+
+.form-inputs {
+  font-size: $font-medium;
+  margin-top: 20px;
+  
+  .input {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  abbr {
+    border-bottom: none;
+    color: red;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    border-radius: 4px;
+    border: 1px solid $grey2;
+    font: $font-medium $sans_serif;
+    height: 40px;
+    line-height: 40px;
+    color: $grey4;
+    outline: none;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  select,
+  textarea { margin-top: 8px; }
+  
+  textarea {
+    border-radius: 4px;
+    border: 1px solid $grey2;
+    height: 80px;
+    max-height: 160px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font: $font-medium $sans_serif;
+    outline: none;
+  }
+
+}
+
+
+/* Forms Actions */
+  
+.form-actions {
+  width: 96%;
+  text-align: left;
+  border-radius: 4px;
+  background: $grey1;
+  padding: 2%;
+  float: left;
+
+  button,
+  input[type="submit"],
+  input[type="button"] {
+    border-radius: 4px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    border: 1px solid $grey3;
+    padding: 0 10px 0 10px;
+    font: $font-medium $sans_serif;
+    outline: none;
+    color: $grey4;
+    &:hover { opacity: .7; }
+  }
+
+}
+
+
+/* Hint */
+
+.hint {
+  border-radius: 4px;
+  width: 95%;
+  padding: 2%;
+  background: $grey5;
+  border: 1px solid $grey5;
+  font-size: $font-small;
+  color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  z-index: 300;
+  opacity: .9;
+}
+
+.string .hint { bottom: -37px; }
+.text .hint { bottom: -34px; }
+
+.hint:before,
+.hint:after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -9px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid $grey5;
+}
+
+
+/* Othes Classes */
+
+.disabled { display: none; }

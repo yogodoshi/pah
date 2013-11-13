@@ -47,15 +47,15 @@
         #logo<
           = link_to "Logo", "/"
         = render 'flash_messages'
-      %hr
-      #container
+
+      .holder
         %section{:role => "main"}
           = yield
 
         - if content_for?(:sidebar)
           %aside
             = yield(:sidebar)
-      %hr
+
       %footer
         %p
           = "Copyright &copy; #{Time.zone.now.year} App".html_safe

@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import "variables";
+
+
+/* Viewport Config */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+@-ms-viewport {
+  width: extend-to-zoom;
+  zoom: 1.0;
+}
+
+
+/*
+Max Width, 960px
+Media Queries for Tablets and Kindle.
+*/
+
+@media (max-width:960px) {
+
+  .holder {
+    width: 700px;
+  }
+  
+}
+
+
+/*
+Max Width, 686px
+Media Queries for Smartphones.
+*/
+
+@media only screen and (max-width: 686px) {
+
+  .holder {
+    width: 90%;
+    padding: 0 5% 0 5%;
+  }
+
+}
