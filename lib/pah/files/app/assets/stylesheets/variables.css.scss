@@ -1,3 +1,12 @@
+/* Font Variables */
+
+$sans_serif: Arial, "Helvetica", sans-serif;
+
+$font-small: 14px;
+$font-medium: 19px;
+$font-large: 28px;
+
+
 /* Color Variables */
 
 $grey1: #333;
@@ -5,19 +14,7 @@ $grey2: #666;
 $grey3: #999;
 
 
-/* Font Variables */
-
-$sans_serif: Arial, "Helvetica", sans-serif;
-
-
-/* Font Sizes */
-
-$font-small: 14px;
-$font-medium: 19px;
-$font-large: 28px;
-
-
-/* Transition */
+/* Mixins */
 
 @mixin transition($property) {
 	-webkit-transition: $property 0.15s ease-in-out;
@@ -26,16 +23,10 @@ $font-large: 28px;
 	transition: $property 0.15s ease-in-out;
 }
 
-
-/* Opacity */
-
 @mixin opacity($value, $ie-value) {
 	opacity:$value;
 	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=$ie-value)
 }
-
-
-/* Clear */
 
 @mixin clearfix {
   &:after {
