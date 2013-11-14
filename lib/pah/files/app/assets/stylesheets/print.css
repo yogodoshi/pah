@@ -4,7 +4,8 @@
 /* Print Version Styles */
 
 #menu,
-header
+header,
+aside,
 footer { display: none !important; }
 
 header { border-bottom: 1pt solid black; }
