@@ -4,11 +4,6 @@
 
 /* Forms */
 
-#form-01,
-#form-02 {
-  margin: auto;
-}
-
 #form-01 {
   width: 600px;
 }
@@ -31,7 +26,7 @@
 }
 
 input[type="checkbox"],
-input[type="radio"] { margin-right: 7px;}
+input[type="radio"] { margin-right: 7px; }
 
 .radio_buttons {
   .control-label {
