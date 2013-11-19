@@ -93,4 +93,34 @@ input[type="radio"] { margin-right: 7px;}
 }
 
 
+/* Forms Actions */
+  
+.form-actions {
+  width: 96%;
+  text-align: left;
+  border-radius: 4px;
+  background: $grey1;
+  padding: 2%;
+  float: left;
 
+  button,
+  input[type="submit"],
+  input[type="button"] {
+    border-radius: 4px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    border: 1px solid $grey3;
+    padding: 0 10px 0 10px;
+    font: 14px $sans_serif;
+    outline: none;
+    color: $grey4;
+    &:hover { opacity: .7; }
+  }
+
+}
+
+
+/* Othes Classes */
+
+.disabled { display: none; }
