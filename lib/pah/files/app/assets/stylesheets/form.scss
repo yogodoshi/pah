@@ -21,7 +21,6 @@
   label {
     display: block;
     font-weight: bold;
-    font-size: 15px;
   }
 }
 
@@ -31,7 +30,6 @@ input[type="radio"] { margin-right: 7px; }
 .radio_buttons {
   .control-label {
     font-weight: bold;
-    font-size: 15px;
   }
   .radio { margin-left: 20px; }
 }
@@ -40,7 +38,7 @@ input[type="radio"] { margin-right: 7px; }
 /* Fields */
 
 .form-inputs {
-  font-size: 14px;
+  font-size: $font-medium;
   margin-top: 20px;
   
   .input {
@@ -107,7 +105,7 @@ input[type="radio"] { margin-right: 7px; }
     background: white;
     border: 1px solid $grey3;
     padding: 0 10px 0 10px;
-    font: 14px $sans_serif;
+    font: $font-medium $sans_serif;
     outline: none;
     color: $grey4;
     &:hover { opacity: .7; }
