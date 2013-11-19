@@ -2,14 +2,68 @@
 @import "variables";
 
 
-/* Forms */
+/* Forms 01 */
 
 #form-01 {
-  width: 600px;
+  width: 400px;
+
+  .string,
+  .text,
+  .datetime { label { display: block; } }
+  
+  .form-inputs {
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 95%;
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    textarea {
+      min-width: 95%;
+      max-width: 95%;
+    }
+  
+  }
+
 }
 
+
+/* Forms 02 */
+
 #form-02 {
-  width: 300px;
+  width: 600px;
+
+  .string,
+  .text,
+  .datetime {
+    label {
+      width: 100px;
+      margin: 8px 15px 0 0;
+      text-align: right;
+      float: left;
+    }
+  }
+  
+  .form-inputs {
+
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 180px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    textarea {
+      min-width: 180px;
+      max-width: 180px;
+    }
+  
+  }
+
 }
 
 
@@ -17,20 +71,13 @@
 
 .string,
 .text,
-.datetime {
-  label {
-    display: block;
-    font-weight: bold;
-  }
-}
+.datetime { label { font-weight: bold; } }
 
 input[type="checkbox"],
 input[type="radio"] { margin-right: 7px; }
 
 .radio_buttons {
-  .control-label {
-    font-weight: bold;
-  }
+  .control-label { font-weight: bold; }
   .radio { margin-left: 20px; }
 }
 
@@ -41,9 +88,7 @@ input[type="radio"] { margin-right: 7px; }
   font-size: $font-medium;
   margin-top: 20px;
   
-  .input {
-    margin-bottom: 20px;
-  }
+  .input { margin-bottom: 20px; }
 
   abbr {
     border-bottom: none;
@@ -51,36 +96,29 @@ input[type="radio"] { margin-right: 7px; }
   }
 
   input[type="text"],
-  input[type="password"],
-  textarea {
-    border-radius: 4px;
-    width: 95%;
-    border: 1px solid $grey2;
-    font: 14px $sans_serif;
-    padding-left: 2%;
-    padding-right: 2%;
-    color: $grey4;
-    outline: none;
-  }
-
-  input[type="text"],
   input[type="password"] {
+    border-radius: 4px;
+    border: 1px solid $grey2;
+    font: $font-medium $sans_serif;
     height: 40px;
     line-height: 40px;
+    color: $grey4;
+    outline: none;
   }
   
   input[type="text"],
   input[type="password"],
   select,
   textarea { margin-top: 8px; }
-
+  
   textarea {
-    min-width: 95%;
-    max-width: 95%;
+    border-radius: 4px;
+    border: 1px solid $grey2;
     height: 80px;
     max-height: 160px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font: $font-medium $sans_serif;
   }
 
 }
