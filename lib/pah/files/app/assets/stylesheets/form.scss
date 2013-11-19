@@ -4,5 +4,42 @@
 
 /* Forms */
 
+#form-01,
+#form-02 {
+  margin: auto;
+}
+
+#form-01 {
+  width: 600px;
+}
+
+#form-02 {
+  width: 300px;
+}
+
+
+/* Labels */
+
+.string,
+.text,
+.datetime {
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] { margin-right: 7px;}
+
+.radio_buttons {
+  .control-label {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .radio { margin-left: 20px; }
+}
+
 
 
