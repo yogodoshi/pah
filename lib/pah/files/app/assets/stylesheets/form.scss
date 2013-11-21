@@ -217,6 +217,24 @@ input[type="radio"] { margin-right: 7px; }
 }
 
 
+/* Validation */
+
+.validation-error {
+  border-top: 1px solid #dc8382;
+  border-bottom: 1px solid #dc8382;
+  background: #f6d2ce;
+  padding: 10px;
+  margin: 0;
+  display: none;
+  li {
+    margin-left: 20px;
+    line-height: 19px;
+    font-size: $font-small;
+    color: #9e0000;
+  }
+}
+
+
 /* Othes Classes */
 
 .disabled { display: none; }
