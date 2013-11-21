@@ -28,13 +28,22 @@
   
   }
 
+  .hint {
+    width: 95%;
+    padding: 2%;
+    left: 0;
+  }
+
+  .string .hint { bottom: -37px; }
+  .text .hint { bottom: -34px; }
+
 }
 
 
 /* Forms 02 */
 
 #form-02 {
-  width: 600px;
+  width: 500px;
 
   .string,
   .text,
@@ -63,6 +72,15 @@
     }
   
   }
+  
+  .hint {
+    width: 280px;
+    padding: 10px;
+    left: 115px;
+  }
+  
+  .string .hint { bottom: -41px; }
+  .text .hint { bottom: -38px; }
 
 }
 
@@ -185,32 +203,6 @@ input[type="radio"] { margin-right: 7px; }
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-bottom: 10px solid $grey5;
-}
-
-#form-01 {
-
-  .hint {
-    width: 95%;
-    padding: 2%;
-    left: 0;
-  }
-  
-  .string .hint { bottom: -37px; }
-  .text .hint { bottom: -34px; }
-
-}
-
-#form-02 {
-  
-  .hint {
-    width: 280px;
-    padding: 10px;
-    left: 115px;
-  }
-  
-  .string .hint { bottom: -41px; }
-  .text .hint { bottom: -38px; }
-  
 }
 
 
