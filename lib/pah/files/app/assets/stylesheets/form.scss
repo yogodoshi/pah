@@ -165,7 +165,6 @@ input[type="radio"] { margin-right: 7px; }
   background: $grey5;
   border: 1px solid $grey5;
   font-size: $font-small;
-  padding: 2%;
   color: white;
   display: block;
   position: absolute;
@@ -192,6 +191,7 @@ input[type="radio"] { margin-right: 7px; }
 
   .hint {
     width: 95%;
+    padding: 2%;
     left: 0;
   }
   
