@@ -32,18 +32,15 @@
     text-align: left;
     border-radius: 4px;
     background: $grey1;
-    padding: 2%;
+    padding: 10px 2% 10px 2%;
     float: left;
   }
 
   .hint {
     width: 95%;
-    padding: 2%;
+    padding: 10px 2% 10px 2%;
     left: 0;
   }
-
-  .string .hint { bottom: -37px; }
-  .text .hint { bottom: -34px; }
 
 }
 
@@ -96,9 +93,6 @@
     left: 135px;
   }
   
-  .string .hint { bottom: -41px; }
-  .text .hint { bottom: -38px; }
-
 }
 
 
@@ -215,6 +209,9 @@ input[type="radio"] { margin-right: 7px; }
   border-right: 10px solid transparent;
   border-bottom: 10px solid $grey5;
 }
+
+.string .hint { bottom: -41px; }
+.text .hint { bottom: -38px; }
 
 
 /* Validation */
