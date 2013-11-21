@@ -29,11 +29,6 @@ $grey5: #333;
 	transition: $property 0.15s ease-in-out;
 }
 
-@mixin opacity($value, $ie-value) {
-	opacity:$value;
-	filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=$ie-value)
-}
-
 @mixin clearfix {
   &:after {
     visibility: hidden;
