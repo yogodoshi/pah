@@ -27,6 +27,15 @@
     }
   
   }
+  
+  .form-actions {
+    width: 96%;
+    text-align: left;
+    border-radius: 4px;
+    background: $grey1;
+    padding: 2%;
+    float: left;
+  }
 
   .hint {
     width: 95%;
@@ -71,6 +80,10 @@
       max-width: 280px;
     }
   
+  }
+  
+  .form-actions {
+    margin-left: 115px;
   }
   
   .hint {
@@ -151,12 +164,6 @@ input[type="radio"] { margin-right: 7px; }
 /* Forms Actions */
   
 .form-actions {
-  width: 96%;
-  text-align: left;
-  border-radius: 4px;
-  background: $grey1;
-  padding: 2%;
-  float: left;
 
   button,
   input[type="submit"],
