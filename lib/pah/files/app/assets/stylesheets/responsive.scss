@@ -47,4 +47,54 @@ Media Queries for Smartphones.
     padding: 0 5% 0 5%;
   }
 
+
+  /* Forms 02 */
+
+  #form-02 {
+
+    .string,
+    .text,
+    .datetime {
+      label {
+        width: auto;
+        display: block;
+        margin: 8px 15px 0 0;
+        text-align: left;
+        float: none;
+      }
+    }
+
+    .post_draft,
+    .form-actions {
+      margin-left: 0;
+    }
+  
+    .form-inputs {
+
+      input[type="text"],
+      input[type="password"],
+      textarea {
+        width: 95%;
+        padding-left: 2%;
+        padding-right: 2%;
+      }
+
+      textarea {
+        min-width: 95%;
+        max-width: 95%;
+      }
+  
+    }
+
+    .hint {
+      width: 95%;
+      padding: 2%;
+      left: 0;
+    }
+
+    .string .hint { bottom: -37px; }
+    .text .hint { bottom: -34px; }
+
+  }
+
 }
