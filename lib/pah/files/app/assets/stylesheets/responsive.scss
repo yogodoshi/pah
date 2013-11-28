@@ -46,33 +46,39 @@ Media Queries for Smartphones.
     width: 90%;
     padding: 0 5% 0 5%;
   }
+  
+  .simple_form {
+    label {
+      width: auto;
+      display: block;
+      margin: 8px 15px 0 0;
+      text-align: left;
+      float: none;
+    }
+  }
 
 
   /* Fixed and Responsive Form */
 
   .form-fixed {
 
-    .string,
-    .text,
-    .datetime {
-      label {
-        width: auto;
-        display: block;
-        margin: 8px 15px 0 0;
-        text-align: left;
-        float: none;
-      }
+    .checkbox {
+      margin-left: 0;
+      margin-bottom: 0;
     }
 
-    .post_draft,
-    .form-actions {
-      margin-left: 0;
+    .radio_buttons {
+      margin-bottom: 0;
+      clear: both;
+      .control-label { margin-right: 0; }
     }
-  
+
     .form-inputs {
 
       input[type="text"],
       input[type="password"],
+      input[type="email"],
+      input[type="tel"],
       textarea {
         width: 95%;
         padding-left: 2%;
@@ -84,6 +90,11 @@ Media Queries for Smartphones.
         max-width: 95%;
       }
   
+    }
+    
+    .form-actions {
+      margin-top: 20px;
+      margin-left: 0;
     }
 
     .hint {

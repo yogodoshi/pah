@@ -4,16 +4,28 @@
 
 /* Fluid Form */
 
+.simple_form {
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .radio {
+    width: auto;
+  }
+  
+}
+
 .form-fluid {
 
-  .string,
-  .text,
-  .datetime { label { display: block; } }
+  label { display: block; }
   
   .form-inputs {
-
+    
     input[type="text"],
     input[type="password"],
+    input[type="email"],
+    input[type="tel"],
     textarea {
       width: 95%;
       padding-left: 2%;
@@ -49,26 +61,32 @@
 
 .form-fixed {
 
-  .string,
-  .text,
-  .datetime {
-    label {
-      width: 120px;
-      margin: 8px 15px 0 0;
-      text-align: right;
-      float: left;
-    }
+  label {
+    width: 120px;
+    margin: 8px 15px 0 0;
+    text-align: right;
+    float: left;
   }
   
-  .post_draft {
+  .checkbox {
+    width: auto;
     margin-left: 135px;
+    margin-bottom: 15px;
     clear: both;
+  }
+  
+  .radio_buttons {
+    margin-bottom: 25px;
+    clear: both;
+    .control-label { margin-right: 0; }
   }
   
   .form-inputs {
 
     input[type="text"],
     input[type="password"],
+    input[type="email"],
+    input[type="tel"],
     textarea {
       width: 320px;
       padding-left: 10px;
@@ -98,15 +116,10 @@
 
 /* Labels */
 
-.string,
-.text,
-.datetime { label { font-weight: bold; } }
-
 input[type="checkbox"],
 input[type="radio"] { margin-right: 7px; }
 
 .radio_buttons {
-  .control-label { font-weight: bold; }
   .radio { margin-left: 20px; }
 }
 
@@ -128,7 +141,9 @@ input[type="radio"] { margin-right: 7px; }
   }
 
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="email"],
+  input[type="tel"] {
     border-radius: 4px;
     border: 1px solid $grey2;
     font: $font-medium $sans_serif;
@@ -140,6 +155,8 @@ input[type="radio"] { margin-right: 7px; }
   
   input[type="text"],
   input[type="password"],
+  input[type="email"],
+  input[type="tel"],
   select,
   textarea {
     margin-top: 8px;
@@ -165,7 +182,8 @@ input[type="radio"] { margin-right: 7px; }
 
   button,
   input[type="submit"],
-  input[type="button"] {
+  input[type="button"],
+  .btn {
     border-radius: 4px;
     height: 40px;
     line-height: 40px;
