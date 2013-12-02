@@ -26,6 +26,7 @@
     input[type="password"],
     input[type="email"],
     input[type="tel"],
+    input[type="number"],
     textarea {
       width: 95%;
       padding-left: 2%;
@@ -87,6 +88,7 @@
     input[type="password"],
     input[type="email"],
     input[type="tel"],
+    input[type="number"],
     textarea {
       width: 320px;
       padding-left: 10px;
@@ -143,7 +145,8 @@ input[type="radio"] { margin-right: 7px; }
   input[type="text"],
   input[type="password"],
   input[type="email"],
-  input[type="tel"] {
+  input[type="tel"],
+  input[type="number"] {
     border-radius: 4px;
     border: 1px solid $grey2;
     font: $font-medium $sans_serif;
@@ -157,6 +160,7 @@ input[type="radio"] { margin-right: 7px; }
   input[type="password"],
   input[type="email"],
   input[type="tel"],
+  input[type="number"],
   select,
   textarea {
     margin-top: 8px;

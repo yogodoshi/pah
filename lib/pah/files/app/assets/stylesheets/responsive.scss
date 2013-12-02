@@ -51,7 +51,6 @@ Media Queries for Smartphones.
     label {
       width: auto;
       display: block;
-      margin: 8px 15px 0 0;
       text-align: left;
       float: none;
     }
@@ -79,6 +78,7 @@ Media Queries for Smartphones.
       input[type="password"],
       input[type="email"],
       input[type="tel"],
+      input[type="number"],
       textarea {
         width: 95%;
         padding-left: 2%;
