@@ -9,6 +9,7 @@
 - Better vcr default on support
 - Update gem dependencies
 - Cleanup Gemfile
+- Update project to Rails 4.0.2
 
 ### bug fixes
 
