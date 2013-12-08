@@ -11,6 +11,8 @@
 
 ### bug fixes
 
+- Fix git commits after removing files to reflect the changes of Git 2.0
+
 ## 0.0.10 (November 5, 2013)
 
 ### features

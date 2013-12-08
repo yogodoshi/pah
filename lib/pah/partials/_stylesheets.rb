@@ -5,5 +5,5 @@ remove_file 'app/assets/stylesheets/application.css'
 copy_static_file 'app/assets/stylesheets/reset.css'
 
 git :add => '.'
-git :commit => "-aqm 'Add stylesheets files.'"
+git :commit => "--all -qm 'Add stylesheets files.'"
 puts "\n"

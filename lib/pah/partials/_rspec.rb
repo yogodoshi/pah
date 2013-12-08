@@ -9,5 +9,5 @@ copy_static_file 'spec/spec_helper.rb'
 end
 
 git :add => '.'
-git :commit => "-aqm 'Configured RSpec.'"
+git :commit => "--all -qm 'Configured RSpec.'"
 puts "\n"

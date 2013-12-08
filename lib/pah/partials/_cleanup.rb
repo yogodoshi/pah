@@ -9,5 +9,5 @@ inside "public" do
 end
 
 git :add => '.'
-git :commit => "-aqm 'Removed unnecessary files left over from initial app generation.'"
+git :commit => "--all -qm 'Removed unnecessary files left over from initial app generation.'"
 puts "\n"
