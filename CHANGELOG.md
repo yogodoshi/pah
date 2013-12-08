@@ -8,6 +8,7 @@
 
 - Better vcr default on support
 - Update gem dependencies
+- Cleanup Gemfile
 
 ### bug fixes
 
