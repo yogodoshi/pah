@@ -15,7 +15,11 @@ gem 'coffee-rails',           '4.0.1'
 gem 'uglifier',               '2.3.2'
 gem 'rack-canonical-host',    '0.0.8'
 gem 'bourbon',                '3.1.8'
-gem 'rails_12factor',         '0.0.2', group: :production
+
+
+group :production do
+  gem 'rails_12factor',       '0.0.2'
+end
 
 group :development do
   gem 'foreman',              '0.63.0'
