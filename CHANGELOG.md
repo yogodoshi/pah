@@ -10,6 +10,7 @@
 - Update gem dependencies
 - Cleanup Gemfile
 - Update project to Rails 4.0.2
+- Update project gem versions
 
 ### bug fixes
 
