@@ -4,14 +4,30 @@
 
 ### features
 
+- Created two kind of responsive forms (form-fluid and form-fixed)
+- Created a default JS file;
+- Created CSS and JS for Hint;
+- Created focus effect on fields;
+
 ### improvements
 
+- Updated CSS Reset;
+- Clean up HTML on application.html;
+- Created a new CSS file structure;
 - Update to rails 4.0.1
 - Better vcr default on support
+- Update gem dependencies
+- Cleanup Gemfile
+- Update project to Rails 4.0.2
+- Update project gem versions
+- Move rails_12factor to a group block
 
 ### bug fixes
 
+
 - Fix git commits after removing files to reflect the changes of Git 2.0
+- Fixed CSS files execution on default.rb
+
 
 ## 0.0.10 (November 5, 2013)
 
