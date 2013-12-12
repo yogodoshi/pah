@@ -24,6 +24,8 @@
 
 ### bug fixes
 
+- Fixed CSS files execution on default.rb
+
 ## 0.0.10 (November 5, 2013)
 
 ### features
