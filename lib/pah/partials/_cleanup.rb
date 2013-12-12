@@ -8,6 +8,6 @@ inside "public" do
 	remove_file "robots.txt"
 end
 
-git :add => '.'
-git :commit => "--all -qm 'Removed unnecessary files left over from initial app generation.'"
+git :add => '--all'
+git :commit => "-aqm 'Removed unnecessary files left over from initial app generation.'"
 puts "\n"

@@ -8,6 +8,6 @@ copy_static_file 'spec/spec_helper.rb'
   copy_static_file "spec/support/#{component}"
 end
 
-git :add => '.'
-git :commit => "--all -qm 'Configured RSpec.'"
+git :add => '--all'
+git :commit => "-aqm 'Configured RSpec.'"
 puts "\n"
