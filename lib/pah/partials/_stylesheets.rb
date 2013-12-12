@@ -1,8 +1,10 @@
 puts "Adding stylesheets files ...".magenta
 
+copy_static_file 'app/assets/stylesheets/_variables.scss'
 copy_static_file 'app/assets/stylesheets/application.css.scss'
-remove_file 'app/assets/stylesheets/application.css'
-copy_static_file 'app/assets/stylesheets/reset.css'
+copy_static_file 'app/assets/stylesheets/reset.scss'
+copy_static_file 'app/assets/stylesheets/form.scss'
+copy_static_file 'app/assets/stylesheets/responsive.scss'
 
 git :add => '.'
 git :commit => "-aqm 'Add stylesheets files.'"
