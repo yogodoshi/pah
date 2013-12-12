@@ -6,8 +6,12 @@
 
 ### improvements
 
-- Update to rails 4.0.1
 - Better vcr default on support
+- Update gem dependencies
+- Cleanup Gemfile
+- Update project to Rails 4.0.2
+- Update project gem versions
+- Move rails_12factor to a group block
 
 ### bug fixes
 
