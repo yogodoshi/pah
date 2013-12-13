@@ -1,4 +1,4 @@
-puts "Adding stylesheets files ...".magenta
+puts "Adding asset files ...".magenta
 
 copy_static_file 'app/assets/javascripts/application.js'
 copy_static_file 'app/assets/stylesheets/_variables.scss'
