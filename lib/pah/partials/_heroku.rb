@@ -90,6 +90,11 @@ class HerokuApp < Rails::Generators::AppGenerator
 end
 
 say "Configuring Heroku application...".magenta
+
+copy_static_file 'Procfile'
+git :add => 'Procfile'
+git :commit => "-qm 'Add Procfile'"
+
 if would_you_like? "Create Heroku apps?".red
 
   say "Refreshing Heroku user credentials".magenta
