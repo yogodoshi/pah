@@ -55,7 +55,7 @@ apply_n :cleanup
 apply_n :gems
 apply_n :database
 apply_n :rspec
-apply_n :default
+apply_n :layout
 apply_n :stylesheets
 apply_n :secure_headers
 apply_n :secret_token
