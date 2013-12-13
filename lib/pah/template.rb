@@ -35,7 +35,7 @@ def will_you_like_to?(question)
     when "no", "n"
       false
     else
-      would_you_like?(question)
+      will_you_like_to?(question)
   end
 end
 
