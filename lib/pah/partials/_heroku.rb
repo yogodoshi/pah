@@ -95,7 +95,7 @@ copy_static_file 'Procfile'
 git :add => 'Procfile'
 git :commit => "-qm 'Add Procfile'"
 
-if would_you_like? "Create Heroku apps?".red
+if @config[:heroku][:create?]
 
   say "Refreshing Heroku user credentials".magenta
   unless system "heroku auth:login"
@@ -103,10 +103,7 @@ if would_you_like? "Create Heroku apps?".red
     exit
   end
 
-  config = {}
-  config['deploy']  = would_you_like? "Deploy immediately?".red
-
   production_app = HerokuApp.new(@app_name.gsub('_',''), "app")
 
-  production_app.open if config['deploy']
+  production_app.open if @config[:heroku][:deploy?]
 end

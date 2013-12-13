@@ -27,8 +27,8 @@ def apply_n(partial)
   apply "#{@partials}/_#{partial}.rb"
 end
 
-def would_you_like?(question)
-  answer = ask("#{question} [y,n]".red)
+def will_you_like_to?(question)
+  answer = ask("Will you like to #{question} [y,n]".red)
   case answer.downcase
     when "yes", "y"
       true
@@ -49,6 +49,7 @@ puts "=========================================================\n"
 
 # TODO: timezone, Add rspec extensions
 
+apply_n :config
 apply_n :git
 apply_n :ruby_env
 apply_n :cleanup
