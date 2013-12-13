@@ -1,5 +1,9 @@
 puts "Adding locale... ".magenta
 
+copy_static_file 'config/locales/pt-BR.yml'
+git :add => 'config/locales/pt-BR.yml'
+git :commit => "-qm 'Add pt-BR locale.'"
+
 time_zone_config = <<TIME_ZONE
 
     config.time_zone = 'Brasilia'

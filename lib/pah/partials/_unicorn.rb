@@ -1,5 +1,7 @@
 puts "Configuring Unicorn... ".magenta
 
+copy_static_file 'config/unicorn.rb'
+
 unicorn_configuration = <<UNICORN_CONFIGURATION
 # Run GC each 10 requests
 require "unicorn/oob_gc"
@@ -25,6 +27,7 @@ in_root do
 end
 
 git :add => 'config.ru'
+git :add => 'config/unicorn.rb'
 git :commit => "-qm 'Configuring Unicorn.'"
 
 puts "\n"
