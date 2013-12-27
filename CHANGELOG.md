@@ -21,6 +21,7 @@
 - Update project to Rails 4.0.2
 - Update project gem versions
 - Move rails_12factor to a group block
+- Add required ruby 2.1.0
 
 ### bug fixes
 

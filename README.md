@@ -19,14 +19,14 @@ Run:
 
     pah projectname
 
-This will create a Rails 4.0 app in `projectname` with ruby 2.0.0. This script creates a new git repository. It is not meant to be used against an existing repo.
+This will create a Rails 4.0 app in `projectname` with ruby 2.1.0. This script creates a new git repository. It is not meant to be used against an existing repo.
 
 ### RVM
 
 If using the rvm is recomended before using pah, create and use a gemset, with the project name.
 
 ```bash
-$ rvm use 2.0.0@projectname --create
+$ rvm use 2.1.0@projectname --create
 ```
 
 Pah automatically create the .ruby-version and .ruby-gemset files.
