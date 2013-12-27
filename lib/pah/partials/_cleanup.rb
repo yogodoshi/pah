@@ -4,8 +4,7 @@ remove_file "README.rdoc"
 remove_file "app/views/layouts/application.html.erb"
 
 inside "public" do
-	remove_file "favicon.ico"
-	remove_file "robots.txt"
+  remove_file "robots.txt"
 end
 
 git :add => '--all'
