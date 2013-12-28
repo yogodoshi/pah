@@ -1,6 +1,20 @@
 PROJECT
 =======
 
+## Sanity check!
+
+Is your first time here? Ok, so you should check some stuff. If some of the checks fails, ask any of the contributors.
+
+Checks you have to do:
+
+1. Do ```bundle``` works and install all gems accordingly?
+2. Do ```rake db:setup``` works?
+3. Do ```rake db:seed``` works?
+4. After run ```foreman start``` if you go to ```http://localhost:3000``` you see something that shows the project is working?
+5. Is code coverage 100%?
+6. Do ```rake integrate``` works and deploys to production?
+7. Do the project have Rollbar or Airbrake configured in production environment?
+
 ## Create remote git repository
 
 1. Create git repo.
