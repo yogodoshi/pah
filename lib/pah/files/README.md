@@ -1,6 +1,16 @@
 PROJECT
 =======
 
+## How to run this project?
+
+1. ```git clone REPO_URL```
+2. ```cd PROJECT```
+3. ```bundle```
+4. ```rake db:setup```
+5. ```rake db:seed```
+6. ```foreman start```
+7. Go to http://localhost:3000
+
 ## Sanity check!
 
 Is your first time here? Ok, so you should check some stuff. If some of the checks fails, ask any of the contributors.
