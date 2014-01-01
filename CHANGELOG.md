@@ -22,6 +22,7 @@
 - Update project gem versions
 - Move rails_12factor to a group block
 - Not remove favicon.ico from generated app
+- Set ruby 2.1.0 as default
 
 ### bug fixes
 
