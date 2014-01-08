@@ -25,6 +25,7 @@
 - Set ruby 2.1.0 as default
 - Use jumpup-heroku gem on integration
 - Moved old name "integration" to "jumpup"
+- Update jumpup.rake to comply jumpup gem.
 
 ### bug fixes
 
