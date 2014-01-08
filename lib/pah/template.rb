@@ -58,6 +58,7 @@ apply_n :database
 apply_n :rspec
 apply_n :layout
 apply_n :assets
+apply_n :public
 apply_n :secure_headers
 apply_n :secret_token
 apply_n :capybara
