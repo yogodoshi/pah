@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.11 (unreleased)
+## 0.0.11 (January 8, 2014)
 
 ### features
 
@@ -28,7 +28,6 @@
 - Update jumpup.rake to comply jumpup gem.
 
 ### bug fixes
-
 
 - Fix git commits after removing files to reflect the changes of Git 2.0
 - Fixed CSS files execution on default.rb
