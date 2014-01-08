@@ -44,4 +44,4 @@ When you finish an implementation, run:
 
 ```$ rake integrate```
 
-This task will run all tasks described on 'integration.rake' file, check the file and verify the steps.
+This task will run all tasks described on 'jumpup.rake' file, check the file and verify the steps.
