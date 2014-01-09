@@ -8,6 +8,7 @@
 - Created a default JS file;
 - Created CSS and JS for Hint;
 - Created focus effect on fields;
+- Add robots.txt
 
 ### improvements
 
