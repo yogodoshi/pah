@@ -45,3 +45,7 @@ When you finish an implementation, run:
 ```$ rake integrate```
 
 This task will run all tasks described on 'jumpup.rake' file, check the file and verify the steps.
+
+## Configuring domain on Heroku
+
+Check out this [wiki](https://github.com/Helabs/pah/wiki/Configuring-domain-on-Heroku) with detailed instruction of how to use the canonical_host to redirect your naked domain to your real app.
