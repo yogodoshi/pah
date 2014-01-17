@@ -70,6 +70,7 @@ apply_n :unicorn
 apply_n :jumpup
 apply_n :readme
 apply_n :heroku
+apply_n :rollbar
 
 # apply_n :omniauth # TODO: add spec support files
                     # TODO: take care of facebook when user is not logged in on facebook (when app)

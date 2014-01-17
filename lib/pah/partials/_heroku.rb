@@ -1,5 +1,5 @@
 class HerokuApp < Rails::Generators::AppGenerator
-  DEFAULT_ADDONS = %w(pgbackups:auto-month loggly:mole sendgrid:starter)
+  DEFAULT_ADDONS = %w(pgbackups:auto-month loggly:mole sendgrid:starter rollbar)
 
   attr_reader :name, :description, :config
 
@@ -12,6 +12,7 @@ class HerokuApp < Rails::Generators::AppGenerator
     add_timezone_config
     add_addons
     add_heroku_git_remote
+    add_rollbar_initialize_file
     check_canonical_domain
     check_collaborators
   end
@@ -50,10 +51,15 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def open
     say "Pushing application to heroku...".magenta
-    
+
     system "git push heroku master"
 
     system "heroku open --app #{name}"
+  end
+
+  def add_rollbar_initialize_file
+    say "Adding rollbar to initializers".magenta
+    system "bundle exec rails generate rollbar"
   end
 
   private
