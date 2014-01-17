@@ -5,7 +5,7 @@
     %meta{:name => "keywords", :content => ""}
     %meta{:name => "description", :content => ""}
 
-    %title= yield(:title) + "Titulo aqui"
+    %title= page_title # use content_for(:site_page_title, 'My title of my page') on views files
 
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
     = yield(:header_tags)
