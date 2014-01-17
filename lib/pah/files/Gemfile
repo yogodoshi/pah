@@ -16,11 +16,11 @@ gem 'uglifier',               '2.3.2'
 gem 'rack-canonical-host',    '0.0.8'
 gem 'bourbon',                '3.1.8'
 gem 'simple_form',            '3.0.1'
-gem "flutie",                 '2.0.0'
+gem 'flutie',                 '2.0.0'
 
 group :production do
   gem 'rails_12factor',       '0.0.2'
-  gem 'rollbar',                '0.12.8'
+  gem 'rollbar',              '0.12.8'
 end
 
 group :development do
