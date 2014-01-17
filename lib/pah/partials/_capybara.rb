@@ -6,6 +6,6 @@ copy_static_file 'spec/support/capybara.rb'
 copy_static_file 'spec/support/shared_connection.rb'
 copy_static_file 'spec/acceptance/dummy_spec.rb'
 
-git :add => '.'
-git :commit => "-aqm 'Add capybara helpers.'"
+git add: '.'
+git commit: "-aqm 'Add capybara helpers.'"
 puts "\n"
