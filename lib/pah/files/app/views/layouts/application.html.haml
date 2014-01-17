@@ -5,7 +5,7 @@
     %meta{:name => "keywords", :content => ""}
     %meta{:name => "description", :content => ""}
 
-    %title= yield(:title) + "Titulo aqui"
+    %title= page_title # use content_for(:page_title, 'My title of my page') on views files like index.html.haml
 
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
     = yield(:header_tags)
@@ -32,7 +32,7 @@
 
       </script>
 
-  %body{:id => controller.controller_name}
+  %body{:class => body_class}
     #wrap
       %header
         #masthead
