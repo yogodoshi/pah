@@ -84,8 +84,7 @@ git :add => 'Procfile'
 git :commit => "-qm 'Add Procfile'"
 
 if @config[:heroku][:create?]
-
   production_app = HerokuApp.new @config
-
   production_app.open if @config[:heroku][:deploy?]
+  apply_n :rollbar
 end
