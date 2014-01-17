@@ -46,6 +46,14 @@ When you finish an implementation, run:
 
 This task will run all tasks described on 'jumpup.rake' file, check the file and verify the steps.
 
+## Page title
+
+The project use flutie gem to manage page title.
+
+Add on view files the code above to change the page title:
+
+```content_for(:page_title, 'My title of my page')```
+
 ## Configuring domain on Heroku
 
 Check out this [wiki](https://github.com/Helabs/pah/wiki/Configuring-domain-on-Heroku) with detailed instruction of how to use the canonical_host to redirect your naked domain to your real app.
