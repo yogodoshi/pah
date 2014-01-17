@@ -26,8 +26,8 @@ in_root do
   inject_into_file 'config.ru', unicorn_configuration, {before: "require ::File.expand_path('../config/environment',  __FILE__)", verbose: false}
 end
 
-git :add => 'config.ru'
-git :add => 'config/unicorn.rb'
-git :commit => "-qm 'Configuring Unicorn.'"
+git add: 'config.ru'
+git add: 'config/unicorn.rb'
+git commit: "-qm 'Configuring Unicorn.'"
 
 puts "\n"

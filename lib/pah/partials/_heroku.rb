@@ -80,8 +80,8 @@ end
 say "Configuring Heroku application...".magenta
 
 copy_static_file 'Procfile'
-git :add => 'Procfile'
-git :commit => "-qm 'Add Procfile'"
+git add: 'Procfile'
+git commit: "-qm 'Add Procfile'"
 
 if @config[:heroku][:create?]
   production_app = HerokuApp.new @config

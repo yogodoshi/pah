@@ -1,8 +1,8 @@
 puts "Adding locale... ".magenta
 
 copy_static_file 'config/locales/pt-BR.yml'
-git :add => 'config/locales/pt-BR.yml'
-git :commit => "-qm 'Add pt-BR locale.'"
+git add: 'config/locales/pt-BR.yml'
+git commit: "-qm 'Add pt-BR locale.'"
 
 time_zone_config = <<TIME_ZONE
 
@@ -24,6 +24,6 @@ in_root do
   inject_into_file 'config/application.rb', locale_config, { after: "# config.i18n.default_locale = :de", verbose: false }
 end
 
-git :add => 'config/application.rb'
-git :commit => "-qm 'Adding locale config.'"
+git add: 'config/application.rb'
+git commit: "-qm 'Adding locale config.'"
 

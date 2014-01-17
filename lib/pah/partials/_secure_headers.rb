@@ -17,7 +17,7 @@ create_file "config/initializers/secure_headers.rb" do
 end
 EOF
 end
-git :add => 'app/controllers/application_controller.rb'
-git :commit => "-qm 'Adding secure headers.'"
+git add: 'app/controllers/application_controller.rb'
+git commit: "-qm 'Adding secure headers.'"
 
 puts "\n"

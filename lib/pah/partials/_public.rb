@@ -6,6 +6,6 @@ end
 
 copy_static_file 'public/robots.txt'
 
-git :add => '--all'
-git :commit => "-aqm 'Add public files.'"
+git add: '--all'
+git commit: "-aqm 'Add public files.'"
 puts "\n"

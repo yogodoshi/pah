@@ -10,8 +10,8 @@ module OmniauthLoginTestHelper
 end
 
 RSpec.configure do |config|
-  config.include OmniauthLoginTestHelper, :type => :controller
-  config.include OmniauthLoginTestHelper, :type => :helper
+  config.include OmniauthLoginTestHelper, type: :controller
+  config.include OmniauthLoginTestHelper, type: :helper
 end
 
 shared_examples_for "authentication_required_action" do

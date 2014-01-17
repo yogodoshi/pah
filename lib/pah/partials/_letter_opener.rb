@@ -11,6 +11,6 @@ in_root do
   inject_into_file 'config/environments/development.rb', letter_opener_config, { before: /^end/, verbose: false }
 end
 
-git :add => 'config/environments/development.rb'
-git :commit => "-qm 'Adding letter_opener config.'"
+git add: 'config/environments/development.rb'
+git commit: "-qm 'Adding letter_opener config.'"
 

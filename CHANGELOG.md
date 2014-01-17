@@ -8,6 +8,7 @@
 - Add flutie page_title and body_class on application.html.haml, body_class will generate body classes based in controller and views
 - Update jumpup to version 0.0.3
 - Add version to jumpup-heroku gem on Gemfile
+- Update hash syntax to Ruby 1.9 standard
 
 
 ## 0.0.12 (January 16, 2014)
