@@ -6,6 +6,7 @@
 
 - Add rollbar as default heroku addon
 - Add flutie page_title and body_class on application.html.haml, body_class will generate body classes based in controller and views
+- Update jumpup to version 0.0.2
 
 
 ## 0.0.12 (January 16, 2014)
