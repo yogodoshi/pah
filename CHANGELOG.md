@@ -1,11 +1,17 @@
 # Changelog
 
+## 0.0.13 (unreleased)
+
+### improvements
+
+- Add rollbar as default heroku addon
+
+
 ## 0.0.12 (January 16, 2014)
 
 ### improvements
 
 - Update jumpup to version 0.0.2
-- Add rollbar as default heroku addon
 
 ## 0.0.11 (January 8, 2014)
 
