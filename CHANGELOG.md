@@ -11,6 +11,7 @@
 - Update hash syntax to Ruby 1.9 standard
 - Update gems
 - Add info about best practices on CONTRIBUTING
+- Add info about how release the gem
 
 
 ## 0.0.12 (January 16, 2014)
