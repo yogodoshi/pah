@@ -12,6 +12,7 @@
 - Update gems
 - Add info about best practices on CONTRIBUTING
 - Add info about how release the gem
+- Remove sdoc gem from new project Gemfile
 
 
 ## 0.0.12 (January 16, 2014)
