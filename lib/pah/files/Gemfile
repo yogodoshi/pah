@@ -48,6 +48,3 @@ group :development, :test do
   gem 'awesome_print',        '1.2.0'
 end
 
-group :doc do
-  gem 'sdoc',                 '0.4.0', require: false
-end
