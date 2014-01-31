@@ -1,14 +1,5 @@
 # Changelog
 
-## 0.0.14 (unreleased)
-
-### improvements
-
-- Add main color and darker and lighter color variables to css
-- Created centered 960px structure on application.html.haml
-- Changed CSS to keep the footer always at the bottom of the page
-
-
 
 ## 0.0.13 (unreleased)
 
@@ -23,6 +14,9 @@
 - Add info about best practices on CONTRIBUTING
 - Add info about how release the gem
 - Remove sdoc gem from new project Gemfile
+- Add main color and darker and lighter color variables to css
+- Created centered 960px structure on application.html.haml
+- Changed CSS to keep the footer always at the bottom of the page
 
 
 ## 0.0.12 (January 16, 2014)
