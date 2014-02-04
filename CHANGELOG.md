@@ -18,6 +18,10 @@
 - Created centered 960px structure on application.html.haml
 - Changed CSS to keep the footer always at the bottom of the page
 
+### bug fixes
+
+- Run pah against specific version of rails
+
 
 ## 0.0.12 (January 16, 2014)
 
