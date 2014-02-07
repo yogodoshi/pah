@@ -21,6 +21,7 @@
 ### bug fixes
 
 - Run pah against specific version of rails
+- Layout partial replaces page_title method call on application.html.haml.
 
 
 ## 0.0.12 (January 16, 2014)
