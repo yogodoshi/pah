@@ -67,6 +67,7 @@ apply_n :letter_opener
 apply_n :locale
 apply_n :canonical_host
 apply_n :puma
+apply_n :rack_timeout
 apply_n :jumpup
 apply_n :readme
 apply_n :heroku
