@@ -27,6 +27,7 @@
 - Replace tabs with spaces on application.js
 - Centralized rails version (must be specified with pah version at lib/version.rb)
 - Add spec file to test all factories
+- Add Rack::Timeout
 
 ### bug fixes
 
