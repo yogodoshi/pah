@@ -19,6 +19,7 @@
 - Changed CSS to keep the footer always at the bottom of the page
 - VCR enabled, by default
 - Replace Unicorn with Puma
+- Add spec file to test all factories
 
 ### bug fixes
 
