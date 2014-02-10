@@ -21,7 +21,7 @@
 - Replace Unicorn with Puma
 - Update pt-BR.yml file from rails-i18n project
 - Add frequently used gem locale files: devise and rails_admin
-- Add app.yml file for app specific locale strings
+- Add app.pt-BR.yml file for app specific locale strings
 
 ### bug fixes
 
