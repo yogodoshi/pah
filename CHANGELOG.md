@@ -27,7 +27,7 @@
 - Replace tabs with spaces on application.js
 - Centralized rails version (must be specified with pah version at lib/version.rb)
 - Update pt-BR.yml file from rails-i18n project
-- Add app.yml file for app specific locale strings
+- Add app.pt-BR.yml file for app specific locale strings
 
 ### bug fixes
 
