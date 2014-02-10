@@ -9,6 +9,9 @@ git add: 'config/locales/devise.pt-BR.yml'
 copy_static_file 'config/locales/admin.pt-BR.yml'
 git add: 'config/locales/admin.pt-BR.yml'
 
+copy_static_file 'config/locales/app.pt-BR.yml'
+git add: 'config/locales/app.pt-BR.yml'
+
 git commit: "-qm 'Add pt-BR locale files.'"
 
 time_zone_config = <<TIME_ZONE
