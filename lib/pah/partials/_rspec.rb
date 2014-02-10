@@ -24,4 +24,5 @@ append_to_file 'Rakefile', rake_factory_specs
 git add: 'spec/'
 git add: 'Rakefile'
 git_commit 'Configured RSpec.'
+
 puts "\n"
