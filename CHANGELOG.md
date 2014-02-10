@@ -20,6 +20,7 @@
 - VCR enabled, by default
 - Replace Unicorn with Puma
 - Add spec file to test all factories
+- Add Rack::Timeout
 
 ### bug fixes
 
