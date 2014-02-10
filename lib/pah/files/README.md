@@ -7,9 +7,8 @@ PROJECT
 2. ```cd PROJECT```
 3. ```bundle```
 4. ```rake db:setup```
-5. ```rake db:seed```
-6. ```foreman start```
-7. Go to http://localhost:3000
+5. ```foreman start```
+6. Go to http://localhost:3000
 
 ## Sanity check!
 
@@ -19,11 +18,10 @@ Checks you have to do:
 
 1. Do ```bundle``` works and install all gems accordingly?
 2. Do ```rake db:setup``` works?
-3. Do ```rake db:seed``` works?
-4. After run ```foreman start``` if you go to ```http://localhost:3000``` you see something that shows the project is working?
-5. Is code coverage 100%?
-6. Do ```rake integrate``` works and deploys to production?
-7. Do the project have Rollbar or Airbrake configured in production environment?
+3. After run ```foreman start``` if you go to ```http://localhost:3000``` you see something that shows the project is working?
+4. Is code coverage 100%?
+5. Do ```rake integrate``` works and deploys to production?
+6. Do the project have Rollbar or Airbrake configured in production environment?
 
 ## Create remote git repository
 
