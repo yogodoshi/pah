@@ -1,3 +1,5 @@
+require File.expand_path(File.join('..', 'pah', 'version.rb'), File.dirname(__FILE__))
+
 %w{colored}.each do |component|
   if Gem::Specification.find_all_by_name(component).empty?
     run "gem install #{component}"
