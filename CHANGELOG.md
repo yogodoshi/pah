@@ -18,6 +18,7 @@
 - Created centered 960px structure on application.html.haml
 - Changed CSS to keep the footer always at the bottom of the page
 - VCR enabled, by default
+- Replace Unicorn with Puma
 
 ### bug fixes
 
