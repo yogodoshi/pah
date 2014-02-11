@@ -24,6 +24,7 @@
 - Change foreman port to 3000
 - Replace tabs with spaces on application.js
 - Centralized rails version (must be specified with pah version at lib/version.rb)
+- Add pah version to commit messages
 
 ### bug fixes
 
