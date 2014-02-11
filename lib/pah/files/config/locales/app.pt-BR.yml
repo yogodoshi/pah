@@ -1,13 +1,12 @@
 pt-BR:
-  # Add custom model strings models and attributes. Event model is an example.
   models_and_attributes: &models_and_attributes
-    models:
-      event:
-        one: Evento
-        other: Eventos
-    attributes:
-        event:
-          name: Nome
+    # models:
+    #   event:
+    #     one: Evento
+    #     other: Eventos
+    # attributes:
+    #     event:
+    #       name: Nome
   activerecord:
     <<: *models_and_attributes
   activemodel:
