@@ -21,6 +21,7 @@
 - Replace Unicorn with Puma
 - Add spec file to test all factories
 - Add Rack::Timeout
+- Change foreman port to 3000
 
 ### bug fixes
 
