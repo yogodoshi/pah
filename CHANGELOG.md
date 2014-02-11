@@ -23,6 +23,7 @@
 - Add app.pt-BR.yml file for app specific locale strings
 - Add spec file to test all factories
 - Add Rack::Timeout
+- Change foreman port to 3000
 
 ### bug fixes
 
