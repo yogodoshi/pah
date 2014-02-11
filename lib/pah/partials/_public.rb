@@ -6,6 +6,6 @@ end
 
 copy_static_file 'public/robots.txt'
 
-git add: '--all'
+git add: 'public/robots.txt'
 git_commit 'Add public files.'
 puts "\n"
