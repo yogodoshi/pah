@@ -25,6 +25,7 @@
 - Replace tabs with spaces on application.js
 - Centralized rails version (must be specified with pah version at lib/version.rb)
 - Add pah version to commit messages
+- Don't use ```git add --all``, rather explicitly add files to git
 
 ### bug fixes
 
