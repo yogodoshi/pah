@@ -30,6 +30,7 @@
 - Add Rack::Timeout
 - Change foreman port to 3000
 - Add pah version to commit messages
+- Don't use ```git add --all``, rather explicitly add files to git
 
 ### bug fixes
 
