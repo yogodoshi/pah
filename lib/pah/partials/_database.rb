@@ -4,7 +4,7 @@ git add: 'config/database.yml'
 git_commit 'Adding config/database.yml.'
 
 in_root do
-  run "rake db:create db:migrate db:test:clone"
+  run "bundle exec rake db:create db:migrate db:test:clone"
 end
 
 git add: 'db/schema.rb'
