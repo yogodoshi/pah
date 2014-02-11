@@ -29,6 +29,7 @@
 - Add spec file to test all factories
 - Add Rack::Timeout
 - Change foreman port to 3000
+- Add pah version to commit messages
 
 ### bug fixes
 
