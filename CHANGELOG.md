@@ -23,6 +23,7 @@
 - Add Rack::Timeout
 - Change foreman port to 3000
 - Replace tabs with spaces on application.js
+- Centralized rails version (must be specified with pah version at lib/version.rb)
 
 ### bug fixes
 

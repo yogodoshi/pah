@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+require File.expand_path(File.join('..', 'lib', 'pah', 'version.rb'), File.dirname(__FILE__))
 
 template_rb = File.expand_path(File.join('..', 'lib', 'pah', 'template.rb'), File.dirname(__FILE__))
-exec "rails _4.0.2_ new #{ARGV[0]} -m #{template_rb}"
+exec "rails _#{::Pah::RAILS_VERSION}_ new #{ARGV[0]} -m #{template_rb}"
