@@ -28,6 +28,7 @@
 - Centralized rails version (must be specified with pah version at lib/version.rb)
 - Add spec file to test all factories
 - Add Rack::Timeout
+- Change foreman port to 3000
 
 ### bug fixes
 
