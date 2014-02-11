@@ -11,10 +11,10 @@ gsub_file '.ruby-gemset', /GEMSET/, current_gemset
 
 git add: '.ruby-version'
 git add: '.ruby-gemset'
-git commit: "-qm 'Add .ruby-version and .ruby-gemset'"
+git_commit 'Add .ruby-version and .ruby-gemset'
 
 copy_static_file '.env'
 git add: '.env'
-git commit: "-qm 'Add .env file'"
+git_commit 'Add .env file'
 
 puts "\n"

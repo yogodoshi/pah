@@ -12,7 +12,6 @@ in_root do
   run "bundle install"
 end
 
-git add: 'Gemfile'
-git add: 'Gemfile.lock'
-git commit: "-qm 'Add Gemfile and Gemfile.lock.'"
+git add: 'Gemfile*'
+git_commit 'Add Gemfile and Gemfile.lock.'
 puts "\n"

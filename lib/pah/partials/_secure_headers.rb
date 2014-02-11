@@ -18,6 +18,7 @@ end
 EOF
 end
 git add: 'app/controllers/application_controller.rb'
-git commit: "-qm 'Adding secure headers.'"
+git add: 'config/initializers/secure_headers.rb'
+git_commit 'Adding secure headers.'
 
 puts "\n"

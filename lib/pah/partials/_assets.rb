@@ -8,6 +8,6 @@ copy_static_file 'app/assets/stylesheets/general.scss'
 copy_static_file 'app/assets/stylesheets/form.scss'
 copy_static_file 'app/assets/stylesheets/responsive.scss'
 
-git add: '--all'
-git commit: "-aqm 'Add asset files.'"
+git add: 'app/assets/'
+git_commit 'Add asset files.'
 puts "\n"
