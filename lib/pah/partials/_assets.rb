@@ -9,5 +9,5 @@ copy_static_file 'app/assets/stylesheets/form.scss'
 copy_static_file 'app/assets/stylesheets/responsive.scss'
 
 git add: '--all'
-git commit: "-aqm 'Add asset files.'"
+git_commit 'Add asset files.'
 puts "\n"

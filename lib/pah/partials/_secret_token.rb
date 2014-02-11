@@ -9,6 +9,6 @@ end
 
 git add: 'config/initializers/secret_token.rb'
 git add: '.env'
-git commit: "-qm 'Replace secret token with environment variable.'"
+git_commit 'Replace secret token with environment variable.'
 
 puts "\n"

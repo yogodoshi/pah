@@ -22,5 +22,5 @@ in_root do
 end
 
 git add: 'config/application.rb'
-git commit: "-qm 'Adding generators.'"
+git_commit 'Adding generators.'
 
