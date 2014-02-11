@@ -1,6 +1,14 @@
 copy_static_file 'spec/spec_helper.rb'
 
-%w{vcr.rb deferred_garbage_collection.rb http_basic_auth.rb matchers.rb uploaded_file.rb suppress_log.rb}.each do |component|
+%w{
+  deferred_garbage_collection.rb
+  factory_girl.rb
+  http_basic_auth.rb
+  matchers.rb
+  suppress_log.rb
+  uploaded_file.rb
+  vcr.rb
+  }.each do |component|
   copy_static_file "spec/support/#{component}"
 end
 

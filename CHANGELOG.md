@@ -27,6 +27,7 @@
 - Update pt-BR.yml file from rails-i18n project
 - Add app.pt-BR.yml file for app specific locale strings
 - Add Rack::Timeout
+- Use FactoryGirl.lint to test all factories before running specs
 
 ### bug fixes
 
