@@ -1,7 +1,5 @@
 puts "Setting up RSpec ... ".magenta
 
-remove_dir 'test'
-
 copy_static_file 'spec/spec_helper.rb'
 copy_static_file 'spec/factories_spec.rb'
 
@@ -23,6 +21,7 @@ RAKE_FACTORY_SPECS
 
 append_to_file 'Rakefile', rake_factory_specs
 
-git add: '--all'
+git add: 'spec/'
+git add: 'Rakefile'
 git_commit 'Configured RSpec.'
 puts "\n"
