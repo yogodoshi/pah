@@ -24,6 +24,7 @@
 - Add spec file to test all factories
 - Add Rack::Timeout
 - Change foreman port to 3000
+- Replace tabs with spaces on application.js
 
 ### bug fixes
 
