@@ -77,8 +77,6 @@ class HerokuApp < Rails::Generators::AppGenerator
     end
 end
 
-say "Configuring Heroku application...".magenta
-
 copy_static_file 'Procfile'
 git add: 'Procfile'
 git_commit 'Add Procfile'
@@ -86,5 +84,5 @@ git_commit 'Add Procfile'
 if @config[:heroku][:create?]
   production_app = HerokuApp.new @config
   production_app.open if @config[:heroku][:deploy?]
-  apply_n :rollbar
+  apply_n :rollbar, 'Setting up rollbar...'
 end

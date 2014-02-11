@@ -1,5 +1,3 @@
-puts "Adding generators... ".magenta
-
 generators = <<GENERATORS
 
     # Do not generate specs for views and requests. Also, do not generate assets.
@@ -23,4 +21,3 @@ end
 
 git add: 'config/application.rb'
 git_commit 'Adding generators.'
-

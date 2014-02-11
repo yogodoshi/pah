@@ -1,5 +1,3 @@
-puts "Adding locale... ".magenta
-
 copy_static_file 'config/locales/pt-BR.yml'
 copy_static_file 'config/locales/app.pt-BR.yml'
 
@@ -28,4 +26,3 @@ end
 
 git add: 'config/application.rb'
 git_commit 'Adding locale config.'
-

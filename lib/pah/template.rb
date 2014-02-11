@@ -23,8 +23,12 @@ def copy_static_file(path)
   file path, File.read(File.join(@static_files, path))
 end
 
-def apply_n(partial)
+def apply_n(partial, message='')
+  puts message.magenta
+
   apply "#{@partials}/_#{partial}.rb"
+  
+  puts "\n"
 end
 
 def will_you_like_to?(question)
@@ -54,27 +58,27 @@ puts "=========================================================\n"
 
 
 apply_n :config
-apply_n :git
-apply_n :ruby_env
-apply_n :cleanup
-apply_n :gems
-apply_n :database
-apply_n :rspec
-apply_n :layout
-apply_n :assets
-apply_n :public
-apply_n :secure_headers
-apply_n :secret_token
-apply_n :capybara
-apply_n :generators
-apply_n :letter_opener
-apply_n :locale
-apply_n :canonical_host
-apply_n :puma
-apply_n :rack_timeout
-apply_n :jumpup
-apply_n :readme
-apply_n :heroku
+apply_n :git,             'Initializing new Git repo...'
+apply_n :ruby_env,        'Setting up ruby env...'
+apply_n :cleanup,         'Removing unnecessary files...'
+apply_n :gems,            'Setting up bundler and installing bundled gems (may take a while)...'
+apply_n :database,        'Initializing databases...'
+apply_n :rspec,           'Setting up RSpec...'
+apply_n :layout,          'Adding layout files...'
+apply_n :assets,          'Adding asset files...'
+apply_n :public,          'Adding public files...'
+apply_n :secure_headers,  'Adding secure headers...'
+apply_n :secret_token,    'Replacing secret token with environment variable...'
+apply_n :capybara,        'Adding capybara helpers...'
+apply_n :generators,      'Adding generators...'
+apply_n :letter_opener,   'Adding letter_opener...'
+apply_n :locale,          'Adding locale...'
+apply_n :canonical_host,  'Configuring canonical hosts...'
+apply_n :puma,            'Configuring Puma...'
+apply_n :rack_timeout,    'Setting up Rack::Timeout...'
+apply_n :jumpup,          'Setting up Jumpup...'
+apply_n :readme,          'Adding default README...'
+apply_n :heroku,          'Configuring Heroku application...'
 
 
 puts "\n========================================================="

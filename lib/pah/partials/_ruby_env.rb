@@ -1,5 +1,3 @@
-puts "Setting up ruby env ... ".magenta
-
 current_ruby = 'ruby-2.1.0'
 current_gemset = @app_name
 
@@ -16,5 +14,3 @@ git_commit 'Add .ruby-version and .ruby-gemset'
 copy_static_file '.env'
 git add: '.env'
 git_commit 'Add .env file'
-
-puts "\n"

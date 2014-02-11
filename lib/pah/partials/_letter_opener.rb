@@ -1,5 +1,3 @@
-puts "Adding letter_opener... ".magenta
-
 letter_opener_config = <<LETTER_OPENER
 
   # Letter openner config
@@ -13,4 +11,3 @@ end
 
 git add: 'config/environments/development.rb'
 git_commit 'Adding letter_opener config.'
-

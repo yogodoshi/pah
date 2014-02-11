@@ -1,4 +1,3 @@
-puts "Adding secure headers... ".magenta
 content = <<EOF
 
   ensure_security_headers # See more: https://github.com/twitter/secureheaders
@@ -20,5 +19,3 @@ end
 git add: 'app/controllers/application_controller.rb'
 git add: 'config/initializers/secure_headers.rb'
 git_commit 'Adding secure headers.'
-
-puts "\n"
