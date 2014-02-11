@@ -1,8 +1,6 @@
 puts "Adding locale... ".magenta
 
 copy_static_file 'config/locales/pt-BR.yml'
-copy_static_file 'config/locales/devise.pt-BR.yml'
-copy_static_file 'config/locales/admin.pt-BR.yml'
 copy_static_file 'config/locales/app.pt-BR.yml'
 
 git add: 'config/locales/*.yml'
