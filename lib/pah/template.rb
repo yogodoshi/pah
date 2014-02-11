@@ -19,10 +19,8 @@ require "bundler"
 
 # Copy a static file from the template into the new application
 def copy_static_file(path)
-  # puts "Installing #{path}...".magenta
   remove_file path
   file path, File.read(File.join(@static_files, path))
-  # puts "\n"
 end
 
 def apply_n(partial, message='')
@@ -58,7 +56,6 @@ puts "\n========================================================="
 puts " Pah".yellow.bold
 puts "=========================================================\n"
 
-# TODO: timezone, Add rspec extensions
 
 apply_n :config
 apply_n :git,             'Initializing new Git repo...'
@@ -83,8 +80,6 @@ apply_n :jumpup,          'Setting up Jumpup...'
 apply_n :readme,          'Adding default README...'
 apply_n :heroku,          'Configuring Heroku application...'
 
-# apply_n :omniauth # TODO: add spec support files
-                    # TODO: take care of facebook when user is not logged in on facebook (when app)
 
 puts "\n========================================================="
 puts " CONGRATS! INSTALLATION COMPLETE!".yellow.bold

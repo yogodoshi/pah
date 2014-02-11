@@ -1,6 +1,8 @@
 copy_static_file 'config/locales/pt-BR.yml'
-git add: 'config/locales/pt-BR.yml'
-git_commit 'Add pt-BR locale.'
+copy_static_file 'config/locales/app.pt-BR.yml'
+
+git add: 'config/locales/*.yml'
+git_commit 'Add pt-BR locale files.'
 
 time_zone_config = <<TIME_ZONE
 
