@@ -45,6 +45,11 @@ def ask_unless_test(*params)
   ask(*params)
 end
 
+# git wrappers
+def git_commit(message)
+  git commit: "-qm '#{message}'"
+end
+
 puts "\n========================================================="
 puts " Pah".yellow.bold
 puts "=========================================================\n"

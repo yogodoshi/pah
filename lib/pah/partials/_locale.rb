@@ -4,7 +4,7 @@ copy_static_file 'config/locales/pt-BR.yml'
 copy_static_file 'config/locales/app.pt-BR.yml'
 
 git add: 'config/locales/*.yml'
-git commit: "-qm 'Add pt-BR locale files.'"
+git_commit 'Add pt-BR locale.'
 
 time_zone_config = <<TIME_ZONE
 
@@ -27,5 +27,5 @@ in_root do
 end
 
 git add: 'config/application.rb'
-git commit: "-qm 'Adding locale config.'"
+git_commit 'Adding locale config.'
 

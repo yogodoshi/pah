@@ -4,6 +4,6 @@ copy_static_file '.gitignore'
 
 git :init
 git add: "--all"
-git commit: "-aqm 'Initial commit.'"
+git_commit 'Initial commit.'
 
 puts "\n"
