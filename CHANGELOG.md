@@ -26,7 +26,6 @@
 - Don't use ```git add --all``, rather explicitly add files to git
 - Update pt-BR.yml file from rails-i18n project
 - Add app.pt-BR.yml file for app specific locale strings
-- Add spec file to test all factories
 - Add Rack::Timeout
 
 ### bug fixes
