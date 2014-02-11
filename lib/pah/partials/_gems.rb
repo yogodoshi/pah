@@ -1,5 +1,3 @@
-puts "Setting up bundler and installing bundled gems (may take a while) ... ".magenta
-
 copy_static_file 'Gemfile'
 
 in_root do
@@ -14,4 +12,3 @@ end
 
 git add: 'Gemfile*'
 git_commit 'Add Gemfile and Gemfile.lock.'
-puts "\n"

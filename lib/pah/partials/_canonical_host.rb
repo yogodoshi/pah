@@ -1,4 +1,3 @@
-puts "Configuring canonical hosts... ".magenta
 rack_canonical = <<CANONICAL
 
 #Run heroku config:add CANONICAL_HOST=yourdomain.com
@@ -10,5 +9,3 @@ in_root do
 end
 git add: 'config.ru'
 git_commit 'Adding rack-canonical-host.'
-
-puts "\n"

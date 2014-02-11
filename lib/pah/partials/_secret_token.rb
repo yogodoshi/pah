@@ -1,5 +1,3 @@
-puts "Replacing secret token with environment variable...".magenta
-
 in_root do
   append_to_file '.env', "SECRET_TOKEN: #{SecureRandom::hex(60)}\n"
 
@@ -10,5 +8,3 @@ end
 git add: 'config/initializers/secret_token.rb'
 git add: '.env'
 git_commit 'Replace secret token with environment variable.'
-
-puts "\n"
