@@ -28,6 +28,7 @@
 - Add app.pt-BR.yml file for app specific locale strings
 - Add Rack::Timeout
 - Use FactoryGirl.lint to test all factories before running specs
+- Install database_cleaner gem
 
 ### bug fixes
 
