@@ -10,4 +10,4 @@ in_root do
 end
 
 git add: 'config/environments/development.rb'
-git_commit 'Adding letter_opener config.'
+git_commit 'Add letter_opener config.'

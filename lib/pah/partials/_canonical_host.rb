@@ -8,4 +8,4 @@ in_root do
   inject_into_file 'config.ru', rack_canonical, {after: "require ::File.expand_path('../config/environment',  __FILE__)", verbose: false}
 end
 git add: 'config.ru'
-git_commit 'Adding rack-canonical-host.'
+git_commit 'Add rack-canonical-host.'
