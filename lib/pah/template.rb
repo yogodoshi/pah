@@ -27,7 +27,7 @@ def apply_n(partial, message='')
   puts message.magenta
 
   apply "#{@partials}/_#{partial}.rb"
-  
+
   puts "\n"
 end
 
