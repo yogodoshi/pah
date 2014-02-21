@@ -13,4 +13,4 @@ copy_static_file 'spec/spec_helper.rb'
 end
 
 git add: 'spec'
-git_commit 'add RSpec support files'
+git_commit 'Add RSpec support files'

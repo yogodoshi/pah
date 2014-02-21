@@ -20,4 +20,4 @@ in_root do
 end
 
 git add: 'config/application.rb'
-git_commit 'Adding generators.'
+git_commit 'Add generators.'

@@ -18,4 +18,4 @@ EOF
 end
 git add: 'app/controllers/application_controller.rb'
 git add: 'config/initializers/secure_headers.rb'
-git_commit 'Adding secure headers.'
+git_commit 'Add secure headers.'
