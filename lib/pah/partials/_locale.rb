@@ -25,4 +25,4 @@ in_root do
 end
 
 git add: 'config/application.rb'
-git_commit 'Adding locale config.'
+git_commit 'Add locale config.'

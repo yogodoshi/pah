@@ -27,8 +27,11 @@
 - Update pt-BR.yml file from rails-i18n project
 - Add app.pt-BR.yml file for app specific locale strings
 - Add Rack::Timeout
+- Update rspec to `2.99.0.beta1` on Gemfile
 - Use FactoryGirl.lint to test all factories before running specs
 - Install database_cleaner gem
+- Update rails version to ```4.0.3```
+- Run `rails generate simple_form:install`
 
 ### bug fixes
 

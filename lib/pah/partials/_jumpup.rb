@@ -5,4 +5,4 @@ gsub_file 'config/initializers/jumpup_heroku.rb', /PROJECT/, (@config[:heroku][:
 
 git add: 'lib/tasks/jumpup.rake'
 git add: 'config/initializers/jumpup_heroku.rb'
-git_commit 'Adding jumpup tasks and configuration.'
+git_commit 'Add jumpup tasks and configuration.'
