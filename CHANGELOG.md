@@ -29,6 +29,7 @@
 - Add Rack::Timeout
 - Update rspec to `2.99.0.beta1` on Gemfile
 - Use FactoryGirl.lint to test all factories before running specs
+- Install database_cleaner gem
 - Update rails version to ```4.0.3```
 - Run `rails generate simple_form:install`
 
