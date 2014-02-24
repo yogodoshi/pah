@@ -39,7 +39,7 @@ group :test do
   gem 'capybara',             '2.2.1'
   gem 'poltergeist',          '1.5.0'
   gem 'vcr',                  '2.8.0'
-  gem 'webmock',              '1.15.2'
+  gem 'webmock',              '< 1.16' # VCR 2.8.0 requires Webmock >= 1.8.0, < 1.16
   gem 'database_cleaner',     '1.2.0'
 end
 
