@@ -32,6 +32,7 @@
 - Install database_cleaner gem
 - Update rails version to ```4.0.3```
 - Run `rails generate simple_form:install`
+- Add gem bullet
 
 ### bug fixes
 
