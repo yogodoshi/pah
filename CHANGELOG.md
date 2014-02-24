@@ -37,6 +37,7 @@
 
 - Run pah against specific version of rails
 - Layout partial replaces page_title method call on application.html.haml.
+- Fixed Webmock version on `< 1.16` to make VCR `2.8.0` happy
 
 
 ## 0.0.12 (January 16, 2014)
