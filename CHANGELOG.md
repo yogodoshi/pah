@@ -33,6 +33,7 @@
 - Update rails version to ```4.0.3```
 - Run `rails generate simple_form:install`
 - Add gem bullet
+- Add quiet_assets gem
 
 ### bug fixes
 
