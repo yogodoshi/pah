@@ -1,4 +1,4 @@
-current_ruby = 'ruby-2.1.0'
+current_ruby = '2.1.1'
 current_gemset = @app_name
 
 copy_static_file '.ruby-version'
