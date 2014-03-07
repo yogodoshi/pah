@@ -34,6 +34,7 @@
 - Run `rails generate simple_form:install`
 - Add gem bullet
 - Add quiet_assets gem
+- Set ruby 2.1.1 as default
 
 ### bug fixes
 
