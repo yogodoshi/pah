@@ -5,6 +5,8 @@ copy_static_file 'app/assets/stylesheets/reset.scss'
 copy_static_file 'app/assets/stylesheets/general.scss'
 copy_static_file 'app/assets/stylesheets/form.scss'
 copy_static_file 'app/assets/stylesheets/responsive.scss'
+remove_file 'app/assets/stylesheets/application.css'
 
+git rm: 'app/assets/stylesheets/application.css'
 git add: 'app/assets/'
 git_commit 'Add asset files.'
