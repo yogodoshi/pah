@@ -52,4 +52,3 @@ group :development, :test do
   gem 'dotenv-rails',         '0.10.0'
   gem 'awesome_print',        '1.2.0'
 end
-
