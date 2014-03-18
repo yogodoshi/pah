@@ -53,6 +53,10 @@ If you have problems, please create a [Github Issue](https://github.com/Helabs/p
 
 Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUTING.md) for details.
 
+## Maintainers
+
+- [Mauro George](https://github.com/maurogeorge)
+
 ## Release
 
 Follow this steps to release a new version of the gem.
