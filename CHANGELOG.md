@@ -7,7 +7,7 @@
 
 - Add rollbar as default heroku addon
 - Add flutie page_title and body_class on application.html.haml, body_class will generate body classes based in controller and views
-- Update jumpup to version 0.0.3
+- Update jumpup to version 0.0.4
 - Add version to jumpup-heroku gem on Gemfile
 - Update hash syntax to Ruby 1.9 standard
 - Update gems
@@ -27,7 +27,7 @@
 - Update pt-BR.yml file from rails-i18n project
 - Add app.pt-BR.yml file for app specific locale strings
 - Add Rack::Timeout
-- Update rspec to `2.99.0.beta1` on Gemfile
+- Update rspec to `2.99.0.beta2` on Gemfile
 - Use FactoryGirl.lint to test all factories before running specs
 - Install database_cleaner gem
 - Update rails version to `4.0.4`
