@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 ruby '2.1.1'
 
+# See: https://github.com/rails/rails/issues/13164
+gem 'i18n',                   github: 'svenfuchs/i18n',
+                              ref: '8fc94e7e9ec20396e974b0549cf499662238bf56'
+
 gem 'rails',                  'RAILS_VERSION'
 gem 'puma',                   '2.8.1'
 gem 'secure_headers',         '1.1.1'
