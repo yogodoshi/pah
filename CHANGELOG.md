@@ -44,7 +44,7 @@
 - Layout partial replaces page_title method call on application.html.haml.
 - Fixed Webmock version on `< 1.16` to make VCR `2.8.0` happy
 - Fix the I18n bug on production (See: https://github.com/rails/rails/issues/13164)
-
+- Fix database creation by adding `heroku-postgresql:dev` to default addons list
 
 ## 0.0.12 (January 16, 2014)
 
