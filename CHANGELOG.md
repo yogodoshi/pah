@@ -1,7 +1,7 @@
 # Changelog
 
 
-## 0.0.13 (unreleased)
+## 0.0.13 (March 21, 2014)
 
 ### improvements
 
