@@ -8,6 +8,7 @@
 - Update RSpec to 3.0.0.beta2
 - Better default README
 - Replace Haml with Slim
+- Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
 
 ## 0.0.13 (March 21, 2014)
 
