@@ -71,7 +71,7 @@ First, check of your project has the correct configuration from [jumpup-heroku](
 
 * [HE:labs](https://github.com/Helabs)
 
-## Credits
+## Made with love by HE:labs
 
 ![HE:labs](http://helabs.com.br/images/logo.png)
 
