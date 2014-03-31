@@ -42,9 +42,7 @@ You can see an example here: http://showterm.io/6a0054fb8b6b53a56ef2c#slow
 
 ## Deploying the project to Heroku
 
-You are goin to use  to integrate/deploy this project to Heroku... This command will do a lot of checks before deploying the project.
-
-:warning: This is the **ONLY WAY** you can integrate this project, please do not push directly to Heroku.
+:warning: This is the **ONLY RECOMMENDED WAY** to integrate this project, please do not push directly to Heroku.
 
 #### Deploying the project to a single/staging app on Heroku
 
