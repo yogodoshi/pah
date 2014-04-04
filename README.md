@@ -17,7 +17,7 @@ Install Pah at the command prompt:
 
     gem install pah
 
-If using [RVM see this tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
+If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
 
 ## Usage
 
