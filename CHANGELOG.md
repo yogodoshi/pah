@@ -9,6 +9,7 @@
 - Better default README
 - Replace Haml with Slim
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
+- Add SendGrid setup
 
 ### bug fixes
 
