@@ -8,6 +8,10 @@
 - Update RSpec to 3.0.0.beta2
 - Better default README
 
+### bug fixes
+
+- Remove duplicated error messages section on locale file
+
 ## 0.0.13 (March 21, 2014)
 
 ### improvements
