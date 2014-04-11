@@ -10,6 +10,10 @@
 - Replace Haml with Slim
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
 
+### bug fixes
+
+- Remove duplicated error messages section on locale file
+
 ## 0.0.13 (March 21, 2014)
 
 ### improvements
