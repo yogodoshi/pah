@@ -45,6 +45,7 @@
 - Set ruby 2.1.1 as default
 - Add custom error pages
 - Update jumpup.rake to comply jumpup gem.
+- Replace HAML with SLIM
 
 ### bug fixes
 
