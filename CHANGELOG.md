@@ -7,6 +7,7 @@
 - Better config of RSpec mocks
 - Update RSpec to 3.0.0.beta2
 - Better default README
+- Replace Haml with Slim
 
 ## 0.0.13 (March 21, 2014)
 
@@ -45,7 +46,6 @@
 - Set ruby 2.1.1 as default
 - Add custom error pages
 - Update jumpup.rake to comply jumpup gem.
-- Replace HAML with SLIM
 
 ### bug fixes
 
