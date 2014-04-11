@@ -1,57 +1,77 @@
-PROJECT
-=======
+# PROJECT
 
-## How to run this project?
+This project is a [Rails](http://rubyonrails.org/) application used to SOMETHING.
 
-1. ```git clone REPO_URL```
-2. ```cd PROJECT```
-3. ```bundle```
-4. ```rake db:setup```
-5. ```foreman start```
-6. Go to http://localhost:3000
+## Dependencies
 
-## Sanity check!
+To run this project you need to have:
 
-Is your first time here? Ok, so you should check some stuff. If some of the checks fails, ask any of the contributors.
+* Ruby RUBY_VERSION - You can use [RVM](http://rvm.io)
+* [PostgreSQL](http://www.postgresql.org/)
+  * OSX - [Postgress.app](http://postgresapp.com/)
+  * Linux - `$ sudo apt-get install postgresql`
+  * Windows - [PostgreSQL for Windows](http://www.postgresql.org/download/windows/)
 
-Checks you have to do:
+If you plan to **integrate** this project to Heroku, you'll need:
 
-1. Do ```bundle``` works and install all gems accordingly?
-2. Do ```rake db:setup``` works?
-3. After run ```foreman start``` if you go to ```http://localhost:3000``` you see something that shows the project is working?
-4. Is code coverage 100%?
-5. Do ```rake integrate``` works and deploys to production?
-6. Do the project have Rollbar or Airbrake configured in production environment?
+* [Heroku Toolbelt](https://toolbelt.heroku.com/)
 
-## Create remote git repository
+## Setup the project
 
-1. Create git repo.
-2. Add remote ```$ git remote add origin REPO_URL```.
-3. Push to repo ```$ git push --set-upstream origin```.
+1. Install the depedencies above
+2. `$ git clone <REPOSITORY_URL> PROJECT` - Clone the project
+3. `$ cd PROJECT` - Go into the project folder
+4. `$ bundle install` - Install the gem dependencies
+5. `$ bundle exec rake db:setup` - Setup the database
+6. `$ bundle exec rake spec` - Run the specs to see if everything is working fine
 
+If everything goes OK, you can now run the project!
 
-## Run specs
+You can see an example here: http://showterm.io/6a0054fb8b6b53a56ef2c#slow
 
-```$ rspec .```
+## Running the project
 
-## Run rake integrate
+1. `$ bundle exec foreman start` - Opens the server
+2. Open [http://localhost:3000](http://localhost:3000)
 
-The project requires 100% of test coverage.
+#### Running specs and checking coverage
 
-When you finish an implementation, run:
+`$ bundle exec rake spec` to run the specs.
 
-```$ rake integrate```
+`$ coverage=on bundle exec rake spec` to generate the coverage report then open the file `coverage/index.html` on your browser.
 
-This task will run all tasks described on 'jumpup.rake' file, check the file and verify the steps.
+## Deploying the project to Heroku
 
-## Page title
+You are goin to use  to integrate/deploy this project to Heroku... This command will do a lot of checks before deploying the project.
 
-The project use flutie gem to manage page title.
+:warning: This is the **ONLY WAY** you can integrate this project, please do not push directly to Heroku.
 
-Add on view files the code above to change the page title:
+#### Deploying the project to a single/staging app on Heroku
 
-```content_for(:page_title, 'My title of my page')```
+1. You are working on `master` branch
+2. `$ bundle exec rake integrate` - Deploy everything to your app
+3. Check if the changes are working on Heroku
 
-## Configuring domain on Heroku
+You can see an example here: http://showterm.io/a4f25718904e532b321ad#slow
 
-Check out this [wiki](https://github.com/Helabs/pah/wiki/Configuring-domain-on-Heroku) with detailed instruction of how to use the canonical_host to redirect your naked domain to your real app.
+#### Deploying the project to production app on Heroku
+
+This is only applicable if you have two apps on Heroku (staging and production).
+
+First, check of your project has the correct configuration from [jumpup-heroku](https://github.com/Helabs/jumpup-heroku#usage).
+
+1. You are working on `master` branch
+2. `$ git checkout production` - Checkout to `production` branch (this branch must be called `production`)
+3. `$ git merge master` - Merge the changes from `master` branch (don't use rebase here)
+4. `$ bundle exec rake integrate:production` - Deploy everything to your production app
+5. `$ git push -u origin production` - Send your changes to `origin` remote and set the upstream
+
+## Maintainers
+
+* [HE:labs](https://github.com/Helabs)
+
+## Credits
+
+![HE:labs](http://helabs.com.br/images/logo.png)
+
+This app was created and is maintained by [HE:labs](https://github.com/Helabs).

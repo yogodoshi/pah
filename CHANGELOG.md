@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.0.14 (Unreleased)
+
+### improvements
+
+- Better config of RSpec mocks
+- Update RSpec to 3.0.0.beta2
+- Better default README
 
 ## 0.0.13 (March 21, 2014)
 

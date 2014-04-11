@@ -11,7 +11,7 @@ Install Pah at the command prompt:
 
     gem install pah
 
-If using [RVM see this tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
+If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
 
 ## Usage
 
@@ -56,6 +56,10 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 ## Maintainers
 
 - [Mauro George](https://github.com/maurogeorge)
+
+## Roadmap
+
+- Release 1.0.0 only when we have tests. I know this is a shame, but until then we can't release this version.
 
 ## Release
 
