@@ -14,6 +14,14 @@ We love pull requests. Here's a quick guide:
 
 1. Create new Pull Request
 
+## Removing gems
+
+Pah is an opinionated Rails template. All gems are our recommendations to recurring problems based on our experience. For example, when writing tests that need to access network we recommend using VCR and WebMock.
+If you want to make a PR to add/remove gem X, please follow the steps below:
+
+1. Make a PR to our blog and explain the gem's pros and cons, how to use, the tricks etc.
+1. Make a PR to remove gem X
+
 At this point you're waiting on us. We like to at least comment on, if not
 accept, pull requests within three business days (and, typically, one business
 day). We may suggest some changes or improvements or alternatives.
