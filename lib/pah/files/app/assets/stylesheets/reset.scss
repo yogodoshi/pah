@@ -1,15 +1,14 @@
 @charset "utf-8";
 
-
 /* Reset */
 
 body,
 h1, h2, h3, h4,
 form, input, textarea, label, a, img {
-	vertical-align: baseline;
-	font-style: normal;
+  vertical-align: baseline;
+  font-style: normal;
   list-style-type: none;
-	padding: 0;
+  padding: 0;
   margin: 0;
   border: 0;
 }
@@ -17,9 +16,13 @@ form, input, textarea, label, a, img {
 article, aside, details,
 figcaption, figure,
 footer, header, hgroup,
-menu, nav, section { display: block; }
+menu, nav, section {
+  display: block;
+}
 
-p { margin: 0 0 20px 0; }
+p {
+  margin: 0 0 20px 0;
+}
 
 hr {
   height: 1px;
@@ -28,14 +31,18 @@ hr {
 }
 
 em,
-dfn { font-style: italic; }
+dfn {
+  font-style: italic;
+}
 
 b,
-strong { font-weight: bold; }
+strong {
+  font-weight: bold;
+}
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 fieldset {
@@ -46,7 +53,9 @@ fieldset {
 
 button,
 html input[type="button"],
-input[type="submit"] { cursor: pointer; }
+input[type="submit"] {
+  cursor: pointer;
+}
 
 button,
 input {
@@ -55,10 +64,12 @@ input {
 }
 
 abbr[title],
-dfn[title]{
-	cursor: help;
-	border-bottom: 1px dotted;
+dfn[title] {
+  cursor: help;
+  border-bottom: 1px dotted;
 }
 
 pre,
-code { font-family: monospace; }
+code {
+  font-family: monospace;
+}

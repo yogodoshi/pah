@@ -8,6 +8,12 @@
 - Update RSpec to 3.0.0.beta2
 - Better default README
 - Add `use Rack::Timeout` on `config.ru`, to configure rack-timeout into application middleware
+- Replace Haml with Slim
+- Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
+
+### bug fixes
+
+- Remove duplicated error messages section on locale file
 
 ## 0.0.13 (March 21, 2014)
 

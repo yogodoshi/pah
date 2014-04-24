@@ -5,12 +5,6 @@
 
 A rails application template which was born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
 
-Pah is an opinionated Rails template. All gems are our recommendations to recurring problems based on our experience. For example, when writing tests that need to access network we recommend using VCR and WebMock.
-If you want to make a PR to add/remove gem X, please follow below steps:
-
-1. Make a PR to remove gem X
-2. Make a PR to our blog and explain the gem's pros and cons, how to use, the tricks etc.
-
 ## Instalation
 
 Install Pah at the command prompt:

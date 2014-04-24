@@ -123,6 +123,14 @@ pt-BR:
       too_long: ! 'é muito longo (máximo: %{count} caracteres)'
       too_short: ! 'é muito curto (mínimo: %{count} caracteres)'
       wrong_length: não possui o tamanho esperado (%{count} caracteres)
+      already_confirmed: já foi confirmado
+      confirmation_period_expired: É necessário ser confirmado detro do periodo %{period}, por favor requisite um novo usuário.
+      expired: expirou, por favor solicite uma nova
+      not_found: não encontrado
+      not_locked: não foi bloqueado
+      not_saved:
+        one: 'Não foi possível salvar %{resource}: 1 erro'
+        other: 'Não foi possível salvar %{resource}: %{count} erros.'
     template:
       body: ! 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:
@@ -210,13 +218,3 @@ pt-BR:
   activerecord:
     errors:
       <<: *errors
-  errors:
-    messages:
-      already_confirmed: já foi confirmado
-      confirmation_period_expired: É necessário ser confirmado detro do periodo %{period}, por favor requisite um novo usuário.
-      expired: expirou, por favor solicite uma nova
-      not_found: não encontrado
-      not_locked: não foi bloqueado
-      not_saved:
-        one: 'Não foi possível salvar %{resource}: 1 erro'
-        other: 'Não foi possível salvar %{resource}: %{count} erros.'
