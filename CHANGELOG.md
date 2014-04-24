@@ -10,6 +10,7 @@
 - Replace Haml with Slim
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
 - Add SendGrid setup
+- Import `_variables.scss` only once, on `application.scss`
 
 ### bug fixes
 
