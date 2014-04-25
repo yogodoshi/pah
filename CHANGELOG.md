@@ -54,6 +54,7 @@
 - Set ruby 2.1.1 as default
 - Add custom error pages
 - Update jumpup.rake to comply jumpup gem.
+- Remove `deferred_garbage_collection.rb`.
 
 ### bug fixes
 
