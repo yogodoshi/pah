@@ -14,6 +14,12 @@ We love pull requests. Here's a quick guide:
 
 1. Create new Pull Request
 
+At this point you're waiting on us. We like to at least comment on, if not
+accept, pull requests within three business days (and, typically, one business
+day). We may suggest some changes or improvements or alternatives.
+
+Some things that will increase the chance that your pull request is accepted is to follow the practices described on [Ruby style guide](https://github.com/bbatsov/ruby-style-guide), [Rails style guide](https://github.com/bbatsov/rails-style-guide) and [Better Specs](http://betterspecs.org/).
+
 ## Removing gems
 
 Pah is an opinionated Rails template. All gems are our recommendations to recurring problems based on our experience. For example, when writing tests that need to access network we recommend using VCR and WebMock.
@@ -22,9 +28,18 @@ If you want to make a PR to add/remove gem X, please follow the steps below:
 1. Make a PR to our blog and explain the gem's pros and cons, how to use, the tricks etc.
 1. Make a PR to remove gem X
 
-At this point you're waiting on us. We like to at least comment on, if not
-accept, pull requests within three business days (and, typically, one business
-day). We may suggest some changes or improvements or alternatives.
+## How to test?
 
-Some things that will increase the chance that your pull request is accepted is to follow the practices described on [Ruby style guide](https://github.com/bbatsov/ruby-style-guide), [Rails style guide](https://github.com/bbatsov/rails-style-guide) and [Better Specs](http://betterspecs.org/).
+Today we dont have any kind of automated test. We want to add [tests on this](https://github.com/Helabs/pah/issues/29) until there we can follow this:
 
+```bash
+$ cd ..
+$ rvm use 2.1.1@pah # Only if you use rvm
+$ pah/bin/pah testapp
+$ cd testapp/
+$ bundle exec rails g controller welcome index
+$ bundle exec rails s
+$ bundle exec rake
+```
+
+If your PR interacts with heroku or other service test this too.
