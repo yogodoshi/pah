@@ -15,6 +15,7 @@
 ### bug fixes
 
 - Remove duplicated error messages section on locale file
+- Abort application generation in case problems are detected when installing gems
 
 ## 0.0.13 (March 21, 2014)
 
