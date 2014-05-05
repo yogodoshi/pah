@@ -10,10 +10,13 @@
 - Add `use Rack::Timeout` on `config.ru`, to configure rack-timeout into application middleware
 - Replace Haml with Slim
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
+- Add SendGrid setup
+- Import `_variables.scss` only once, on `application.scss`
 
 ### bug fixes
 
 - Remove duplicated error messages section on locale file
+- Abort application generation in case problems are detected when installing gems
 
 ## 0.0.13 (March 21, 2014)
 
@@ -52,6 +55,7 @@
 - Set ruby 2.1.1 as default
 - Add custom error pages
 - Update jumpup.rake to comply jumpup gem.
+- Remove `deferred_garbage_collection.rb`.
 
 ### bug fixes
 
