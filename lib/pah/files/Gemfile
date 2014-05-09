@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.1.2'
 
 # See: https://github.com/rails/rails/issues/13164
 gem 'i18n',                   github: 'svenfuchs/i18n',
@@ -19,7 +19,7 @@ gem 'uglifier',               '2.4.0'
 gem 'rack-canonical-host',    '0.0.9'
 gem 'rack-timeout',           '0.0.4'
 gem 'bourbon',                '3.1.8'
-gem 'simple_form',            '3.0.1'
+gem 'simple_form',            '3.1.0.rc1'
 gem 'flutie',                 '2.0.0'
 gem 'newrelic_rpm',           '3.8.0.218'
 
