@@ -72,10 +72,11 @@ Follow this steps to release a new version of the gem.
 1. Run `$ rake release`, this will send the gem to the rubygems;
 1. Check if the gem is on the rubygems and the tags are correct on the github;
 
-## Credits
+## Made with love by HE:labs
 
-Pah is maintained and funded by [HE:labs](http://helabs.com.br/opensource/).
-Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contributors).
+![HE:labs](http://helabs.com.br/images/logo.png)
+
+This gem was created and is maintained by [HE:labs](https://github.com/Helabs).
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
@@ -85,4 +86,3 @@ Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contrib
 [code_climate_badge]: https://codeclimate.com/github/Helabs/pah.png
 [gemnasium]: https://gemnasium.com/Helabs/pah
 [gemnasium_badge]: https://gemnasium.com/Helabs/pah.png
-
