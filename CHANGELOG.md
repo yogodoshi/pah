@@ -4,6 +4,7 @@
 
 ### improvements
 
+- Update rails version to `4.1.1`
 - Better config of RSpec mocks
 - Update RSpec to 3.0.0.beta2
 - Better default README
