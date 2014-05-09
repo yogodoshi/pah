@@ -13,6 +13,7 @@
 - Import `_variables.scss` only once, on `application.scss`
 - Use `email_spec` from GitHub to avoid warnings raised by latest rspec
 - Add Rack::Deflater
+- Include **Newrelic** on the list of default addons
 
 ### bug fixes
 
