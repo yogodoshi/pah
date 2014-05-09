@@ -11,6 +11,7 @@
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
 - Add SendGrid setup
 - Import `_variables.scss` only once, on `application.scss`
+- Use `email_spec` from GitHub to avoid warnings raised by latest rspec
 
 ### bug fixes
 
