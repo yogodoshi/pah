@@ -7,6 +7,16 @@ class Heroku < Thor
     puts 'running auth:login'
   end
 
+  desc 'config:set', 'stub of heroku config:set'
+  define_method 'config:set' do |*config|
+    puts "running config:set #{config.join(' ')}"
+  end
+
+  desc 'addons:add', 'stub of heroku addons:add'
+  define_method 'addons:add' do |*addon|
+    puts "running addons:add #{addon.join(' ')}"
+  end
+
   desc 'create', 'stub of heroku create'
   def create(app)
     puts "running heroku create #{app}"
