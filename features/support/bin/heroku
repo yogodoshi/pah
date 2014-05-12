@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require "thor"
+
+class Heroku < Thor
+  desc 'auth:login', 'stub of heroku auth:login'
+  define_method 'auth:login' do
+    puts 'running auth:login'
+  end
+
+  desc 'create', 'stub of heroku create'
+  def create(app)
+    puts "running heroku create #{app}"
+  end
+end
+
+Heroku.start
