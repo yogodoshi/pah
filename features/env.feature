@@ -1,11 +1,6 @@
 Feature: Env files
   Background:
-    When I run `pah myapp` interactively
-    And I type "n"
-    Then the output should contain:
-      """
-      CONGRATS! INSTALLATION COMPLETE!
-      """
+    Given I have created a app with pah
 
   Scenario: Create env files
     Then I have .ruby-version
