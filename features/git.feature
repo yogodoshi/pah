@@ -1,5 +1,4 @@
 Feature: Git repository
-  @announce
   Scenario: Create a git repo
     When I run `pah myapp` interactively
     And I type "n"
