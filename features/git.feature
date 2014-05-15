@@ -1,11 +1,13 @@
 Feature: Git repository
-  Scenario: Create a git repo
+  Background:
     When I run `pah myapp` interactively
     And I type "n"
     Then the output should contain:
-    """
-    CONGRATS! INSTALLATION COMPLETE!
-    """
+      """
+      CONGRATS! INSTALLATION COMPLETE!
+      """
+
+  Scenario: Create a git repo
     Then I have a created repo
 
 
