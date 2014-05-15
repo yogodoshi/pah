@@ -13,5 +13,5 @@ Feature: Creation of files
     And I type ""
     Then the output should contain:
       """
-       Nothing to do here
+       CONGRATS! INSTALLATION COMPLETE!
       """
