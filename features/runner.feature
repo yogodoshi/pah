@@ -3,7 +3,6 @@ Feature: Run without errors
   In order to use pah, I need this to run
   without any error
 
-  @announce
   Scenario: Running pah with heroku
     When I run `pah myapp` interactively
     And I type "y"
