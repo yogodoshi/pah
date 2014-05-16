@@ -17,7 +17,3 @@ Feature: Env files
       """
       PORT: 3000
       """
-    Then I have the file .env and contents of this file should match:
-      """
-      SECRET_TOKEN: \w+
-      """
