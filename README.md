@@ -1,4 +1,5 @@
 # Pah
+[![Build Status][travis_badge]][travis]
 [![RubyGems][gem_version_badge]][ruby_gems]
 [![Code Climate][code_climate_badge]][code_climate]
 [![Gemnasium][gemnasium_badge]][gemnasium]
@@ -86,3 +87,5 @@ This gem was created and is maintained by [HE:labs](https://github.com/Helabs).
 [code_climate_badge]: https://codeclimate.com/github/Helabs/pah.png
 [gemnasium]: https://gemnasium.com/Helabs/pah
 [gemnasium_badge]: https://gemnasium.com/Helabs/pah.png
+[travis]: https://travis-ci.org/Helabs/pah
+[travis_badge]: https://travis-ci.org/Helabs/pah.svg?branch=master
