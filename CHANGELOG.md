@@ -5,6 +5,7 @@
 ### improvements
 
 - Update rails version to `4.1.1`
+- Set ruby 2.1.2 as default
 - Better config of RSpec mocks
 - Update RSpec to 3.0.0.beta2
 - Better default README
