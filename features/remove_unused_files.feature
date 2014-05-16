@@ -4,4 +4,4 @@ Feature: Remove unused files
 
   Scenario: Remove files
     Then I dont have a README.rdoc
-    Then I dont have application.html.erb
+    Then I dont have a app/views/layouts/application.html.erb

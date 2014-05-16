@@ -3,6 +3,6 @@ Feature: Git repository
     Given I have created a app with pah
 
   Scenario: Create a git repo
-    Then I have a created repo
+    Then I have a .git
 
 

@@ -3,8 +3,21 @@ Feature: Env files
     Given I have created a app with pah
 
   Scenario: Create env files
-    Then I have .ruby-version
-    Then I have .ruby-gemset
-    Then I have .env
+    Then I have the file .ruby-version and contents of this file should be:
+      """
+      2.1.1
 
+      """
+    Then I have the file .ruby-gemset and contents of this file should be:
+      """
+      myapp
 
+      """
+    Then I have the file .env and contents of this file should include:
+      """
+      PORT: 3000
+      """
+    Then I have the file .env and contents of this file should match:
+      """
+      SECRET_TOKEN: \w+
+      """
