@@ -6,6 +6,15 @@ We love pull requests. Here's a quick guide:
 
 1. Create your feature branch (`git checkout -b my-new-feature`)
 
+1. Run the tests. We only take pull requests with passing tests, and it's great
+to know that you have a clean slate: `bundle && rake`
+
+1. Add a test for your change. Only refactoring and documentation changes
+require no new tests. If you are adding functionality or fixing a bug, we need
+a test!
+
+1. Make the test pass.
+
 1. Update [CHANGELOG.md](https://github.com/Helabs/pah/blob/master/CHANGELOG.md) with a brief description of your changes under the `unreleased` heading.
 
 1. Commit your changes (`git commit -am 'Added some feature'`)
@@ -27,19 +36,3 @@ If you want to make a PR to add/remove gem X, please follow the steps below:
 
 1. Make a PR to our blog and explain the gem's pros and cons, how to use, the tricks etc.
 1. Make a PR to remove gem X
-
-## How to test?
-
-Today we dont have any kind of automated test. We want to add [tests on this](https://github.com/Helabs/pah/issues/29) until there we can follow this:
-
-```bash
-$ cd ..
-$ rvm use 2.1.1@pah # Only if you use rvm
-$ pah/bin/pah testapp
-$ cd testapp/
-$ bundle exec rails g controller welcome index
-$ bundle exec rails s
-$ bundle exec rake
-```
-
-If your PR interacts with heroku or other service test this too.
