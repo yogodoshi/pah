@@ -21,6 +21,7 @@ gem 'rack-timeout',           '0.0.4'
 gem 'bourbon',                '3.1.8'
 gem 'simple_form',            '3.0.1'
 gem 'flutie',                 '2.0.0'
+gem 'newrelic_rpm',           '3.8.0.218'
 
 group :production do
   gem 'rails_12factor',       '0.0.2'
