@@ -12,7 +12,7 @@ Feature: Run without errors
     And I type ""
     Then the output should contain:
       """
-      running addons:add newrelic:stark --app myapp.com
+      running heroku addons:add newrelic:stark --app myapp.com
       """
     Then the output should contain:
       """

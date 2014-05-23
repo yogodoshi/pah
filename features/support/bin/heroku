@@ -4,27 +4,27 @@ require "thor"
 class Heroku < Thor
   desc 'auth:login', 'stub of heroku auth:login'
   define_method 'auth:login' do
-    puts 'running auth:login'
+    puts 'running heroku auth:login'
   end
 
   desc 'config:set', 'stub of heroku config:set'
   define_method 'config:set' do |*config|
-    puts "running config:set #{config.join(' ')}"
+    puts "running heroku config:set #{config.join(' ')}"
   end
 
   desc 'addons:add', 'stub of heroku addons:add'
   define_method 'addons:add' do |*addon|
-    puts "running addons:add #{addon.join(' ')}"
+    puts "running heroku addons:add #{addon.join(' ')}"
   end
 
   desc 'domains:add', 'stub of heroku domains:add'
   define_method 'domains:add' do |*domain|
-    puts "running domains:add #{domain.join(' ')}"
+    puts "running heroku domains:add #{domain.join(' ')}"
   end
 
   desc 'sharing:add', 'stub of heroku sharing:add'
   define_method 'sharing:add' do |*domain|
-    puts "running sharing:add #{domain.join(' ')}"
+    puts "running heroku sharing:add #{domain.join(' ')}"
   end
 
   desc 'create', 'stub of heroku create'
