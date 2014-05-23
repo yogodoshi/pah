@@ -10,7 +10,7 @@ Feature: Run without errors
     And I type ""
     And I type "myapp.com"
     And I type ""
-    Then the output should contain:
+    Then the stdout should contain:
       """
       running heroku addons:add newrelic:stark --app myapp.com
       """
@@ -22,7 +22,7 @@ Feature: Run without errors
   Scenario: Running pah without heroku
     When I run `pah myapp` interactively
     And I type "n"
-    Then the output should contain:
+    Then the stdout should contain:
       """
       CONGRATS! INSTALLATION COMPLETE!
       """
