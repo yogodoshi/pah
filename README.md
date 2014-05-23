@@ -57,6 +57,7 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 ## Maintainers
 
 - [Mauro George](https://github.com/maurogeorge)
+- [Thiago Belem](https://github.com/TiuTalk)
 
 ## Roadmap
 
