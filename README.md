@@ -61,7 +61,13 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 
 ## Roadmap
 
-- Release 1.0.0 only when we have tests. I know this is a shame, but until then we can't release this version.
+- Improve the specs and test coverage
+- Refactor the templates/partials logic
+- Extract "utils" to somewhere else outside the template.rb
+- Make sure all the generated files are not beign overriden with older versions (like spec_helper, applications config & etc), don't copy files.. build them
+- Remove all the default CSS/views/controllers that are not necessary for a new project
+- Remove the old and unused spec/support files
+- Release version 1.0
 
 ## Release
 
