@@ -1,6 +1,4 @@
 @charset "utf-8";
-@import "variables";
-
 
 /* Viewport Config */
 
@@ -20,33 +18,28 @@ body {
   zoom: 1.0;
 }
 
+/**
+ * Max Width, 960px
+ * Media Queries for Tablets and Kindle.
+ */
 
-/*
-Max Width, 960px
-Media Queries for Tablets and Kindle.
-*/
-
-@media (max-width:960px) {
-
+@media (max-width: 960px) {
   .holder {
     width: 700px;
   }
-  
 }
 
-
-/*
-Max Width, 686px
-Media Queries for Smartphones.
-*/
+/**
+ * Max Width, 686px
+ * Media Queries for Smartphones.
+ */
 
 @media only screen and (max-width: 686px) {
-
   .holder {
     width: 90%;
     padding: 0 5% 0 5%;
   }
-  
+
   .simple_form {
     label {
       width: auto;
@@ -56,11 +49,9 @@ Media Queries for Smartphones.
     }
   }
 
-
   /* Fixed and Responsive Form */
 
   .form-fixed {
-
     .checkbox {
       margin-left: 0;
       margin-bottom: 0;
@@ -69,11 +60,12 @@ Media Queries for Smartphones.
     .radio_buttons {
       margin-bottom: 0;
       clear: both;
-      .control-label { margin-right: 0; }
+      .control-label {
+        margin-right: 0;
+      }
     }
 
     .form-inputs {
-
       input[type="text"],
       input[type="password"],
       input[type="email"],
@@ -89,9 +81,8 @@ Media Queries for Smartphones.
         min-width: 95%;
         max-width: 95%;
       }
-  
     }
-    
+
     .form-actions {
       margin-top: 20px;
       margin-left: 0;
@@ -102,7 +93,5 @@ Media Queries for Smartphones.
       padding: 10px 2% 10px 2%;
       left: 0;
     }
-
   }
-
 }

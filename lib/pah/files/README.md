@@ -42,9 +42,7 @@ You can see an example here: http://showterm.io/6a0054fb8b6b53a56ef2c#slow
 
 ## Deploying the project to Heroku
 
-You are goin to use  to integrate/deploy this project to Heroku... This command will do a lot of checks before deploying the project.
-
-:warning: This is the **ONLY WAY** you can integrate this project, please do not push directly to Heroku.
+:warning: This is the **ONLY RECOMMENDED WAY** to integrate this project, please do not push directly to Heroku.
 
 #### Deploying the project to a single/staging app on Heroku
 
@@ -65,12 +63,15 @@ First, check of your project has the correct configuration from [jumpup-heroku](
 3. `$ git merge master` - Merge the changes from `master` branch (don't use rebase here)
 4. `$ bundle exec rake integrate:production` - Deploy everything to your production app
 5. `$ git push -u origin production` - Send your changes to `origin` remote and set the upstream
+6. `$ git checkout master` - Checkout to `master` branch (so you don't commit directly on `production` branch)
+
+:warning: All your daily work must be done on the `master` branch (or in a feature branch), never on `production` branch! The only thing you do on `production` is merging the changes from `master` and deploying to Heroku.
 
 ## Maintainers
 
 * [HE:labs](https://github.com/Helabs)
 
-## Credits
+## Made with love by HE:labs
 
 ![HE:labs](http://helabs.com.br/images/logo.png)
 
