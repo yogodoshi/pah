@@ -17,6 +17,7 @@
 
 - Remove duplicated error messages section on locale file
 - Abort application generation in case problems are detected when installing gems
+- Remove the .disabled class on _form.scss. Issue #322
 
 ## 0.0.13 (March 21, 2014)
 
