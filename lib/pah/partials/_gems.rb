@@ -11,7 +11,7 @@ in_root do
   # Install all other gems needed from Gemfile
   require 'bundler'
   Bundler.with_clean_env do
-    if !(run "bundle install")
+    if !(run "bundle install --jobs=4")
       puts "Error installing gems, aborting"
       exit 1
     end
