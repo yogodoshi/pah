@@ -9,9 +9,12 @@ in_root do
   end
 
   # Install all other gems needed from Gemfile
-  if !(run "bundle install")
-    puts "Error installing gems, aborting"
-    exit 1
+  require 'bundler'
+  Bundler.with_clean_env do
+    if !(run "bundle install")
+      puts "Error installing gems, aborting"
+      exit 1
+    end
   end
 end
 
