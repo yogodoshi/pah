@@ -1,27 +1,23 @@
 @charset "utf-8";
-@import "variables";
-
 
 /* Fluid Form */
 
 .simple_form {
-  
   label {
     font-weight: bold;
   }
-  
+
   .radio {
     width: auto;
   }
-  
 }
 
 .form-fluid {
+  label {
+    display: block;
+  }
 
-  label { display: block; }
-  
   .form-inputs {
-    
     input[type="text"],
     input[type="password"],
     input[type="email"],
@@ -37,9 +33,8 @@
       min-width: 95%;
       max-width: 95%;
     }
-  
   }
-  
+
   .form-actions {
     width: 96%;
     text-align: left;
@@ -54,36 +49,34 @@
     padding: 10px 2% 10px 2%;
     left: 0;
   }
-
 }
-
 
 /* Fixed and Responsive Form */
 
 .form-fixed {
-
   label {
     width: 120px;
     margin: 8px 15px 0 0;
     text-align: right;
     float: left;
   }
-  
+
   .checkbox {
     width: auto;
     margin-left: 135px;
     margin-bottom: 15px;
     clear: both;
   }
-  
+
   .radio_buttons {
     margin-bottom: 25px;
     clear: both;
-    .control-label { margin-right: 0; }
+    .control-label {
+      margin-right: 0;
+    }
   }
-  
-  .form-inputs {
 
+  .form-inputs {
     input[type="text"],
     input[type="password"],
     input[type="email"],
@@ -99,39 +92,39 @@
       min-width: 320px;
       max-width: 320px;
     }
-  
   }
-  
+
   .form-actions {
     margin-left: 135px;
     clear: both;
   }
-  
+
   .hint {
     width: 320px;
     padding: 10px;
     left: 135px;
   }
-  
 }
-
 
 /* Labels */
 
 input[type="checkbox"],
-input[type="radio"] { margin-right: 7px; }
-
-.radio_buttons {
-  .radio { margin-left: 20px; }
+input[type="radio"] {
+  margin-right: 7px;
 }
 
+.radio_buttons {
+  .radio {
+    margin-left: 20px;
+  }
+}
 
 /* Fields */
 
 .form-inputs {
   font-size: $font-medium;
   margin-top: 20px;
-  
+
   .input {
     margin-bottom: 20px;
     position: relative;
@@ -155,7 +148,7 @@ input[type="radio"] { margin-right: 7px; }
     color: $grey4;
     outline: none;
   }
-  
+
   input[type="text"],
   input[type="password"],
   input[type="email"],
@@ -165,7 +158,7 @@ input[type="radio"] { margin-right: 7px; }
   textarea {
     margin-top: 8px;
   }
-  
+
   textarea {
     border-radius: 4px;
     border: 1px solid $grey2;
@@ -176,14 +169,11 @@ input[type="radio"] { margin-right: 7px; }
     font: $font-medium $sans_serif;
     outline: none;
   }
-
 }
 
-
 /* Forms Actions */
-  
-.form-actions {
 
+.form-actions {
   button,
   input[type="submit"],
   input[type="button"],
@@ -197,11 +187,11 @@ input[type="radio"] { margin-right: 7px; }
     font: $font-medium $sans_serif;
     outline: none;
     color: $grey4;
-    &:hover { opacity: .7; }
+    &:hover {
+      opacity: .7;
+    }
   }
-
 }
-
 
 /* Hint */
 
@@ -232,9 +222,13 @@ input[type="radio"] { margin-right: 7px; }
   border-bottom: 10px solid $grey5;
 }
 
-.string .hint { bottom: -41px; }
-.text .hint { bottom: -38px; }
+.string .hint {
+  bottom: -41px;
+}
 
+.text .hint {
+  bottom: -38px;
+}
 
 /* Validation */
 
@@ -252,8 +246,3 @@ input[type="radio"] { margin-right: 7px; }
     color: #9e0000;
   }
 }
-
-
-/* Othes Classes */
-
-.disabled { display: none; }

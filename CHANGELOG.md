@@ -7,6 +7,17 @@
 - Better config of RSpec mocks
 - Update RSpec to 3.0.0.beta2
 - Better default README
+- Replace Haml with Slim
+- Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
+- Add SendGrid setup
+- Import `_variables.scss` only once, on `application.scss`
+- Use `email_spec` from GitHub to avoid warnings raised by latest rspec
+
+### bug fixes
+
+- Remove duplicated error messages section on locale file
+- Abort application generation in case problems are detected when installing gems
+- Remove the .disabled class on _form.scss. Issue #322
 
 ## 0.0.13 (March 21, 2014)
 
@@ -45,6 +56,7 @@
 - Set ruby 2.1.1 as default
 - Add custom error pages
 - Update jumpup.rake to comply jumpup gem.
+- Remove `deferred_garbage_collection.rb`.
 
 ### bug fixes
 

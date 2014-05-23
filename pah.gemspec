@@ -25,4 +25,16 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency 'aruba'
+  spec.add_development_dependency 'thor'
+
+  # Added to aruba dont complain, probably this can be moved to
+  # aruba as a before tests. Probably some race conditions
+  # https://github.com/cucumber/aruba#increasing-io-wait-time
+  spec.add_development_dependency 'pg'
+  spec.add_development_dependency 'secure_headers'
+  spec.add_development_dependency 'jumpup-heroku'
+  spec.add_development_dependency 'rack-timeout'
+  spec.add_development_dependency 'rollbar'
+
 end
