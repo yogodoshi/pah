@@ -29,6 +29,12 @@ day). We may suggest some changes or improvements or alternatives.
 
 Some things that will increase the chance that your pull request is accepted is to follow the practices described on [Ruby style guide](https://github.com/bbatsov/ruby-style-guide), [Rails style guide](https://github.com/bbatsov/rails-style-guide) and [Better Specs](http://betterspecs.org/).
 
+## General rules
+
+- Small features and versions upgrades should be done only via PR (without opening an issue before)
+- Larger features should be discussed on issues before opening a PR
+- Every PR of new features/gems should come with the specs/feature of the change
+
 ## Removing gems
 
 Pah is an opinionated Rails template. All gems are our recommendations to recurring problems based on our experience. For example, when writing tests that need to access network we recommend using VCR and WebMock.
