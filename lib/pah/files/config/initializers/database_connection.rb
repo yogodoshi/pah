@@ -1,3 +1,5 @@
+# https://devcenter.heroku.com/articles/concurrency-and-database-connections
+
 Rails.application.config.after_initialize do
   ActiveRecord::Base.connection_pool.disconnect!
 
