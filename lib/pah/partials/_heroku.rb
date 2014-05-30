@@ -12,7 +12,6 @@ class HerokuApp < Rails::Generators::AppGenerator
     add_timezone_config
     add_addons
     add_heroku_git_remote
-    add_rollbar_initialize_file
     check_canonical_domain
     check_collaborators
   end
@@ -57,13 +56,6 @@ class HerokuApp < Rails::Generators::AppGenerator
     system "heroku open --app #{name}"
   end
 
-  def add_rollbar_initialize_file
-    say "Adding rollbar to initializers".magenta
-    Bundler.with_clean_env do
-      system "bundle exec rails generate rollbar"
-    end
-  end
-
   private
     def check_canonical_domain
       domain = @config[:heroku][:domain]
@@ -86,5 +78,4 @@ git_commit 'Add Procfile'
 if @config[:heroku][:create?]
   production_app = HerokuApp.new @config
   production_app.open if @config[:heroku][:deploy?]
-  apply_n :rollbar, 'Setting up rollbar...'
 end
