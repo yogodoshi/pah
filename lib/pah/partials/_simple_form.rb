@@ -1,6 +1,6 @@
 in_root do
   Bundler.with_clean_env do
-    run "bundle exec rails generate simple_form:install"
+    system "bundle exec rails generate simple_form:install"
   end
 end
 
