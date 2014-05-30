@@ -85,6 +85,7 @@ apply_n :newrelic,        'Setting up New Relic...'
 apply_n :readme,          'Adding default README...'
 apply_n :rollbar,         'Setting up Rollbar...'
 apply_n :heroku,          'Configuring Heroku application...'
+apply_n :bin,             'Configuring the binstub...'
 
 
 puts "\n========================================================="
