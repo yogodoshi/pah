@@ -1,6 +1,7 @@
+@no-clobber
 Feature: Env files
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: Create env files
     Then I have the file .ruby-version and contents of this file should be:

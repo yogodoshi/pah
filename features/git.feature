@@ -1,6 +1,7 @@
+@no-clobber
 Feature: Git repository
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: Create a git repo
     Then I have a .git

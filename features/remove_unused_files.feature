@@ -1,6 +1,7 @@
+@no-clobber
 Feature: Remove unused files
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: Remove files
     Then I dont have a README.rdoc

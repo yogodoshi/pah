@@ -1,6 +1,7 @@
+@no-clobber
 Feature: Run specs
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: All specs passes
     When I cd to "myapp"
