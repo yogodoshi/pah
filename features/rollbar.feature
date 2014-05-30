@@ -7,4 +7,7 @@ Feature: Rollbar
       """
       gem 'rollbar'
       """
-    Then I have a config/initializers/rollbar.rb
+    Then I have the file config/initializers/rollbar.rb and contents of this file should include:
+      """
+      config.enabled = Rails.env.production? # || Rails.env.staging?
+      """
