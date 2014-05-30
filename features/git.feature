@@ -8,5 +8,5 @@ Feature: Git repository
     And I run `git status`
     Then the stdout should contain:
       """
-      nothing to commit (working directory clean)
+      nothing to commit
       """
