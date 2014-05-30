@@ -1,8 +1,4 @@
-in_root do
-  Bundler.with_clean_env do
-    system "bundle exec rails generate simple_form:install"
-  end
-end
+system "bundle exec rails generate simple_form:install"
 
 git add: 'config'
 git add: 'lib/templates'

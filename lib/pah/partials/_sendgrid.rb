@@ -13,9 +13,7 @@ sendgrid_config = <<SENDGRID
   }
 SENDGRID
 
-in_root do
-  inject_into_file 'config/environments/production.rb', sendgrid_config, { before: /^end/, verbose: false }
-end
+inject_into_file 'config/environments/production.rb', sendgrid_config, { before: /^end/, verbose: false }
 
 git add: 'config/environments/production.rb'
 git_commit 'Add sendgrid config.'

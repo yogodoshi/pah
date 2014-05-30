@@ -4,8 +4,8 @@ rack_canonical = <<CANONICAL
 #For more information, see: https://github.com/tylerhunt/rack-canonical-host#usage
 use Rack::CanonicalHost, ENV['CANONICAL_HOST'] if ENV['CANONICAL_HOST']
 CANONICAL
-in_root do
-  inject_into_file 'config.ru', rack_canonical, {after: "require ::File.expand_path('../config/environment',  __FILE__)", verbose: false}
-end
+
+inject_into_file 'config.ru', rack_canonical, {after: "require ::File.expand_path('../config/environment',  __FILE__)", verbose: false}
+
 git add: 'config.ru'
 git_commit 'Add rack-canonical-host.'

@@ -15,9 +15,7 @@ generators = <<GENERATORS
     config.assets.initialize_on_precompile = false
 GENERATORS
 
-in_root do
-  inject_into_file 'config/application.rb', generators, {after: "Rails::Application", verbose: false}
-end
+inject_into_file 'config/application.rb', generators, {after: "Rails::Application", verbose: false}
 
 git add: 'config/application.rb'
 git_commit 'Add generators.'

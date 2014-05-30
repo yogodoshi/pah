@@ -2,9 +2,9 @@ content = <<EOF
 
   ensure_security_headers # See more: https://github.com/twitter/secureheaders
 EOF
-in_root do
-  inject_into_file 'app/controllers/application_controller.rb', content, {after: "with: :exception", verbose: false}
-end
+
+inject_into_file 'app/controllers/application_controller.rb', content, {after: "with: :exception", verbose: false}
+
 create_file "config/initializers/secure_headers.rb" do
 <<-EOF
 ::SecureHeaders::Configuration.configure do |config|
