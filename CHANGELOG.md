@@ -9,6 +9,7 @@
 - Better config of RSpec mocks
 - Update RSpec to 3.0.0.beta2
 - Better default README
+- Use `rack-timeout` from github (ref.: https://github.com/kch/rack-timeout/issues/41)
 - Add `config/puma.rb` with Puma app server configuration
 - Add `preload_app!` directive for Puma workers
 - Add `ENV['MIN_THREADS']`, `ENV['MAX_THREADS']`, `ENV['PUMA_WORKERS']`, for Puma configuration.
