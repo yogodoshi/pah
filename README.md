@@ -27,7 +27,7 @@ This will create a Rails 4.0 app in `projectname` with ruby 2.1.1. This script c
 If using the rvm is recomended before using pah, create and use a gemset, with the project name.
 
 ```bash
-$ rvm use 2.1.1@projectname --create
+$ rvm use 2.1.2@projectname --create
 ```
 
 Pah automatically create the .ruby-version and .ruby-gemset files.
