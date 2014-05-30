@@ -4,7 +4,9 @@ git add: 'config/database.yml'
 git_commit 'Add config/database.yml.'
 
 in_root do
-  run "bundle exec rake db:create db:migrate db:test:clone"
+  Bundler.with_clean_env do
+    run "bundle exec rake db:create db:migrate db:test:clone"
+  end
 end
 
 git add: 'db/schema.rb'

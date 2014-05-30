@@ -1,5 +1,5 @@
 class HerokuApp < Rails::Generators::AppGenerator
-  DEFAULT_ADDONS = %w(heroku-postgresql:dev pgbackups:auto-month loggly:mole sendgrid:starter rollbar)
+  DEFAULT_ADDONS = %w(heroku-postgresql:dev pgbackups:auto-month loggly:mole sendgrid:starter rollbar newrelic:stark)
 
   attr_reader :name, :description, :config
 
@@ -59,7 +59,9 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def add_rollbar_initialize_file
     say "Adding rollbar to initializers".magenta
-    system "bundle exec rails generate rollbar"
+    Bundler.with_clean_env do
+      system "bundle exec rails generate rollbar"
+    end
   end
 
   private
