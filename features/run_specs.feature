@@ -9,5 +9,7 @@ Feature: Run specs
       """
       1 example, 0 failures, 1 pending
       """
-
-
+    Then the stdout should not contain:
+      """
+      warning
+      """
