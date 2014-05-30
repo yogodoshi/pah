@@ -1,16 +1,23 @@
-# Pah
+# PAH
 [![Build Status][travis_badge]][travis]
 [![RubyGems][gem_version_badge]][ruby_gems]
 [![Code Climate][code_climate_badge]][code_climate]
 [![Gemnasium][gemnasium_badge]][gemnasium]
 
-A rails application template which was born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
+A Rails application template which was born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
+
+## Dependencies
+
+* Heroku Toolbelt - https://toolbelt.heroku.com/
+* phantomjs - http://phantomjs.org/download.html
 
 ## Instalation
 
-Install Pah at the command prompt:
+Install PAH with the command:
 
-    gem install pah
+```bash
+$ gem install pah
+```
 
 If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
 
@@ -18,33 +25,28 @@ If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pa
 
 Run:
 
-    pah projectname
+```bash
+$ pah projectname
+```
 
-This will create a Rails 4.0 app in `projectname` with ruby 2.1.1. This script creates a new git repository. It is not meant to be used against an existing repo.
+This will create a Rails 4.1.1 with Ruby 2.1.2. This script creates a new git repository in the folder `projectname`.
+
+:warning: PAH not meant to be used against an existing repo.
 
 ### RVM
 
-If using the rvm is recomended before using pah, create and use a gemset, with the project name.
+If you're using RVM, create and use a gemset (with the project name) before running PAH:
 
 ```bash
 $ rvm use 2.1.2@projectname --create
+$ pah projectname
 ```
 
-Pah automatically create the .ruby-version and .ruby-gemset files.
-
-## Dependencies
-
-### heroku toolbelt
-
-Install from: https://toolbelt.heroku.com/
-
-### phantomjs
-
-Install from: http://phantomjs.org/download.html
+PAH automatically create the .ruby-version and .ruby-gemset files.
 
 ## Versioning
 
-Pah follow the [Semantic Versioning](http://semver.org/).
+PAH follows the [Semantic Versioning](http://semver.org/) standard.
 
 ## Issues
 
@@ -74,11 +76,11 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 Follow this steps to release a new version of the gem.
 
 1. Test if everything is running ok;
-1. Change version of the gem on `VERSION` constant;
-1. Add the release date on the `CHANGELOG`;
-1. Do a commit "Bump version x.x.x", follow the semantic version;
-1. Run `$ rake release`, this will send the gem to the rubygems;
-1. Check if the gem is on the rubygems and the tags are correct on the github;
+2. Change version of the gem on `VERSION` constant;
+3. Add the release date on the `CHANGELOG`;
+4. Do a commit "Bump version x.x.x", follow the semantic version;
+5. Run `$ rake release`, this will send the gem to the rubygems;
+6. Check if the gem is on the rubygems and the tags are correct on the github;
 
 ## Made with love by HE:labs
 
