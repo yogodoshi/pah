@@ -1,6 +1,7 @@
+@no-clobber
 Feature: Secret Token
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: Have correct files
     Then I have the file .env and contents of this file should match:

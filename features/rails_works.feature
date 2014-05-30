@@ -1,9 +1,11 @@
+@no-clobber
 Feature: Rails works
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: The rails works
-    When I cd to "myapp"
+    When I run `cp -r myapp myapp_with_controller`
+    And I cd to "myapp_with_controller"
     And I run `ruby -e "Bundler.with_clean_env { system 'bundle exec rails g controller welcome index' }"`
     And I run `ruby -e "Bundler.with_clean_env { system 'bundle exec rails s' }"` interactively
     And I run `ruby -e "Bundler.with_clean_env { system 'sleep 15' }"`

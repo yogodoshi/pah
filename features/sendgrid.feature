@@ -1,6 +1,7 @@
+@no-clobber
 Feature: SendGrid
   Background:
-    Given I have created a app with pah
+    Given I have created the app "myapp" with pah
 
   Scenario: Have correct files
     Then I have the file config/environments/production.rb and contents of this file should include:

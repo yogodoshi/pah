@@ -7,3 +7,6 @@ ENV['PATH'] = "#{root}/features/support/bin#{File::PATH_SEPARATOR}#{ENV['PATH']}
 Before do
   @aruba_timeout_seconds = 60 * 5
 end
+
+# Remove old generated projects
+system "rm -rf tmp/aruba"
