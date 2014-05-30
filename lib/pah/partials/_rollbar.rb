@@ -1,8 +1,4 @@
-in_root do
-  Bundler.with_clean_env do
-    system "bundle exec rails generate rollbar"
-  end
-end
+system "bundle exec rails generate rollbar"
 
 search = <<HEREDOC
   # Here we'll disable in 'test':

@@ -5,9 +5,7 @@ letter_opener_config = <<LETTER_OPENER
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 LETTER_OPENER
 
-in_root do
-  inject_into_file 'config/environments/development.rb', letter_opener_config, { before: /^end/, verbose: false }
-end
+inject_into_file 'config/environments/development.rb', letter_opener_config, { before: /^end/, verbose: false }
 
 git add: 'config/environments/development.rb'
 git_commit 'Add letter_opener config.'

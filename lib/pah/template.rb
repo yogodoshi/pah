@@ -26,7 +26,11 @@ end
 def apply_n(partial, message='')
   puts message.magenta
 
-  apply "#{@partials}/_#{partial}.rb"
+  in_root do
+    Bundler.with_clean_env do
+      apply "#{@partials}/_#{partial}.rb"
+    end
+  end
 
   puts "\n"
 end
@@ -55,7 +59,6 @@ end
 puts "\n========================================================="
 puts " Pah".yellow.bold
 puts "=========================================================\n"
-
 
 apply_n :config
 apply_n :git,             'Initializing new Git repo...'
@@ -86,7 +89,6 @@ apply_n :readme,          'Adding default README...'
 apply_n :rollbar,         'Setting up Rollbar...'
 apply_n :heroku,          'Configuring Heroku application...'
 apply_n :bin,             'Configuring the binstub...'
-
 
 puts "\n========================================================="
 puts " CONGRATS! INSTALLATION COMPLETE!".yellow.bold
