@@ -40,6 +40,7 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+  config.infer_spec_type_from_file_location!
   config.order = "random"
   config.render_views
   config.include FactoryGirl::Syntax::Methods
