@@ -9,6 +9,11 @@
 - Better config of RSpec mocks
 - Update RSpec to 3.0.0.beta2
 - Better default README
+- Add `config/puma.rb` with Puma app server configuration
+- Add `preload_app!` directive for Puma workers
+- Add `ENV['MIN_THREADS']`, `ENV['MAX_THREADS']`, `ENV['PUMA_WORKERS']`, for Puma configuration.
+- Add `ActiveRecord::Base.establish_connection` on worker boot specific setup
+- Load Puma configuration file on Procfile web process
 - Replace Haml with Slim
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
 - Add SendGrid setup
