@@ -22,8 +22,8 @@ class HerokuApp < Rails::Generators::AppGenerator
   end
 
   def add_secret_token
-    say "Creating SECRET_TOKEN for Heroku '#{name}.herokuapp.com'".magenta
-    system "heroku config:set SECRET_TOKEN=#{SecureRandom::hex(60)} --app #{name}"
+    say "Creating SECRET_KEY_BASE for Heroku '#{name}.herokuapp.com'".magenta
+    system "heroku config:set SECRET_KEY_BASE=#{SecureRandom::hex(60)} --app #{name}"
   end
 
   def add_heroku_git_remote
