@@ -1,4 +1,5 @@
 # Pah
+[![Build Status][travis_badge]][travis]
 [![RubyGems][gem_version_badge]][ruby_gems]
 [![Code Climate][code_climate_badge]][code_climate]
 [![Gemnasium][gemnasium_badge]][gemnasium]
@@ -56,10 +57,17 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 ## Maintainers
 
 - [Mauro George](https://github.com/maurogeorge)
+- [Thiago Belem](https://github.com/TiuTalk)
 
 ## Roadmap
 
-- Release 1.0.0 only when we have tests. I know this is a shame, but until then we can't release this version.
+- Improve the specs and test coverage
+- Refactor the templates/partials logic
+- Extract "utils" to somewhere else outside the template.rb
+- Make sure all the generated files are not beign overriden with older versions (like spec_helper, applications config & etc), don't copy files.. build them
+- Remove all the default CSS/views/controllers that are not necessary for a new project
+- Remove the old and unused spec/support files
+- Release version 1.0
 
 ## Release
 
@@ -72,10 +80,11 @@ Follow this steps to release a new version of the gem.
 1. Run `$ rake release`, this will send the gem to the rubygems;
 1. Check if the gem is on the rubygems and the tags are correct on the github;
 
-## Credits
+## Made with love by HE:labs
 
-Pah is maintained and funded by [HE:labs](http://helabs.com.br/opensource/).
-Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contributors).
+![HE:labs](http://helabs.com.br/images/logo.png)
+
+This gem was created and is maintained by [HE:labs](https://github.com/Helabs).
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
@@ -85,4 +94,5 @@ Thank you to all the [contributors](https://github.com/Helabs/pah/graphs/contrib
 [code_climate_badge]: https://codeclimate.com/github/Helabs/pah.png
 [gemnasium]: https://gemnasium.com/Helabs/pah
 [gemnasium_badge]: https://gemnasium.com/Helabs/pah.png
-
+[travis]: https://travis-ci.org/Helabs/pah
+[travis_badge]: https://travis-ci.org/Helabs/pah.svg?branch=master

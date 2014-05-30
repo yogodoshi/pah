@@ -1,0 +1,8 @@
+language: ruby
+rvm:
+  - 2.1.1
+before_script:
+  - git config --global user.email "johndoe@example.com"
+  - git config --global user.name "John Doe"
+  - echo 'export rvm_ignore_gemset_flag=1' >> $HOME/.rvmrc
+  - export rvm_ignore_gemset_flag=1

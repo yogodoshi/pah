@@ -12,11 +12,16 @@
 - Transfer `$main-color`, `$text`, `$darker-color`, `$lighter-color` SASS variables to `_variables.scss` partial.
 - Add SendGrid setup
 - Import `_variables.scss` only once, on `application.scss`
+- Use `email_spec` from GitHub to avoid warnings raised by latest rspec
+- Add Rack::Deflater
+- Include **Newrelic** on the list of default addons
+- Add filter_run and run_all_when_everything_filtered on RSpec config
 
 ### bug fixes
 
 - Remove duplicated error messages section on locale file
 - Abort application generation in case problems are detected when installing gems
+- Remove the .disabled class on _form.scss. Issue #322
 
 ## 0.0.13 (March 21, 2014)
 

@@ -22,6 +22,7 @@ gem 'rack-timeout',           github: 'kch/rack-timeout',
 gem 'bourbon',                '3.1.8'
 gem 'simple_form',            '3.0.1'
 gem 'flutie',                 '2.0.0'
+gem 'newrelic_rpm',           '3.8.0.218'
 
 group :production do
   gem 'rails_12factor',       '0.0.2'
@@ -42,7 +43,7 @@ end
 group :test do
   gem 'shoulda-matchers',     '2.5.0'
   gem 'simplecov',            '0.8.2', require: false
-  gem 'email_spec',           '1.5.0'
+  gem 'email_spec',           github: 'bmabey/email-spec', ref: '8f862c22413fe4cb220a8dac6b9206b8b46d1148'
   gem 'capybara',             '2.2.1'
   gem 'poltergeist',          '1.5.0'
   gem 'vcr',                  '2.8.0'
