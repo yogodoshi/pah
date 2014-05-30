@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.14 (Unreleased)
+## 0.0.14 (May 30, 2014)
 
 ### improvements
 
