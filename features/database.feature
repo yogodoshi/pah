@@ -11,11 +11,6 @@ Feature: Database
       """
       database: myapp_test
       """
-    Then I have the file config/database.yml and contents of this file should include:
-      """
-      production:
-        url: <%= ENV["DATABASE_URL"] %>
-      """
     Then I have a db/schema.rb
 
 
