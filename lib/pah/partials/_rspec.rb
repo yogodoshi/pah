@@ -1,4 +1,5 @@
 copy_static_file 'spec/spec_helper.rb'
+copy_static_file 'spec/rails_helper.rb'
 
 %w{
   database_cleaner.rb
