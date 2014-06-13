@@ -5,6 +5,7 @@ Feature: RSpec
 
   Scenario: Have correct files
     Then I have a spec/spec_helper.rb
+    Then I have a spec/rails_helper.rb
     Then I have a spec/support/database_cleaner.rb
     Then I have a spec/support/factory_girl.rb
     Then I have a spec/support/http_basic_auth.rb
