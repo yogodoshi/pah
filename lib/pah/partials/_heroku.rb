@@ -1,5 +1,6 @@
 class HerokuApp < Rails::Generators::AppGenerator
-  DEFAULT_ADDONS = %w(heroku-postgresql:dev pgbackups:auto-month loggly:mole sendgrid:starter rollbar newrelic:stark)
+  DEFAULT_ADDONS = %w(heroku-postgresql:dev pgbackups:auto-month loggly:mole
+                      sendgrid:starter rollbar newrelic:stark)
 
   attr_reader :name, :description, :config
 

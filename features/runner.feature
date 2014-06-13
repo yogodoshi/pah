@@ -8,12 +8,49 @@ Feature: Run without errors
     When I run `pah myapp_on_heroku` interactively
     And I type "y"
     And I type "n"
-    And I type ""
     And I type "myapp.com"
     And I type ""
+    And I type "jondoe@example.com, janedoe@example.com"
     Then the stdout should contain:
       """
-      running heroku addons:add newrelic:stark --app myapp.com
+      running heroku config:set SECRET_KEY_BASE=
+      """
+    Then the stdout should contain:
+      """
+      running heroku domains:add myapp.com --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku sharing:add jondoe@example.com --app myapponheroku
+      running heroku sharing:add janedoe@example.com --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku config:set TZ=America/Sao_Paulo --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku addons:add heroku-postgresql:dev --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku addons:add pgbackups:auto-month --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku addons:add loggly:mole --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku addons:add sendgrid:starter --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku addons:add rollbar --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku addons:add newrelic:stark --app myapponheroku
       """
     Then the output should contain:
       """
