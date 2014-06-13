@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.15 (unreleased)
+
+### improvements
+
+- Update email_spec to `1.6.0`
+
 ## 0.0.14 (May 30, 2014)
 
 ### improvements
