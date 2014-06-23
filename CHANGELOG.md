@@ -19,7 +19,9 @@
 
 
 ### bug fixed
+
 - Fix the I18n problem (ref.: https://github.com/rails/rails/issues/13164#issuecomment-39744133)
+- Error out when `heroku` commands fail to run during app's creation
 
 ## 0.0.14 (May 30, 2014)
 
