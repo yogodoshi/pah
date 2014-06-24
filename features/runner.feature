@@ -11,9 +11,9 @@ Feature: Run without errors
     And I type "myapp.com"
     And I type ""
     And I type "jondoe@example.com, janedoe@example.com"
-    Then the stdout should contain:
+    Then the output should match:
       """
-      running heroku config:set SECRET_KEY_BASE=
+      running heroku config:set SECRET_KEY_BASE=\w{120} --app myapponheroku
       """
     Then the stdout should contain:
       """
