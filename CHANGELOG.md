@@ -6,6 +6,7 @@
 
 - Update email_spec to `1.6.0`
 - Update rspec-rails to 3.0.1
+- Update VCR to 2.9.2
 
 ## 0.0.14 (May 30, 2014)
 
