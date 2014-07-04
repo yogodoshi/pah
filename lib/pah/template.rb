@@ -12,6 +12,7 @@ apply_n :gems,            'Setting up bundler and installing bundled gems (may t
 apply_n :database,        'Initializing databases...'
 apply_n :rspec,           'Setting up RSpec...'
 apply_n :layout,          'Adding layout files...'
+apply_n :bourbon,         'Setting up Bourbon files...'
 apply_n :public,          'Adding public files...'
 apply_n :secure_headers,  'Adding secure headers...'
 apply_n :secret_token,    'Replacing secret token with environment variable...'
