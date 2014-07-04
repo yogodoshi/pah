@@ -10,6 +10,7 @@
 - Update VCR to 2.9.2
 - Remove extra CSS and HTML markup
 - Future proof rollbar config for staging environments
+- Update gem versions
 
 ## 0.0.14 (May 30, 2014)
 
