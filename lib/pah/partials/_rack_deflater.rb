@@ -1,6 +1,6 @@
 file = 'config/application.rb'
 inject = "\n\n    config.middleware.use Rack::Deflater"
-options = { after: /config\.i18n\.locale = :".*"/, verbose: false }
+options = { after: /config\.i18n\.locale = :'.*'/, verbose: false }
 
 inject_into_file file, inject, options
 
