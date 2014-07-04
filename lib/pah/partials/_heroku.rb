@@ -23,41 +23,47 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def add_secret_token
     say "Creating SECRET_KEY_BASE for Heroku '#{name}.herokuapp.com'".magenta
-    system "heroku config:set SECRET_KEY_BASE=#{SecureRandom::hex(60)} --app #{name}"
+    run "heroku config:set SECRET_KEY_BASE=#{SecureRandom::hex(60)} --app #{name}"
   end
 
   def add_heroku_git_remote
     say "Adding Heroku git remote for deploy to '#{name}'.".magenta
-    system "git remote add heroku git@heroku.com:#{name}.git"
+    run "git remote add heroku git@heroku.com:#{name}.git"
   end
 
   def add_heroku_addon(addon)
     say "Adding heroku addon [#{addon}] to '#{name}'.".magenta
-    system "heroku addons:add #{addon} --app #{name}"
+    run "heroku addons:add #{addon} --app #{name}"
   end
 
   def add_canonical_domain(domain)
-    system "heroku domains:add #{domain} --app #{name}"
+    run "heroku domains:add #{domain} --app #{name}"
   end
 
   def add_collaborator(email)
-    system "heroku sharing:add #{email} --app #{name}"
+    run "heroku sharing:add #{email} --app #{name}"
   end
 
   def add_timezone_config
     say "Adding timezone config on Heroku".magenta
-    system "heroku config:set TZ=America/Sao_Paulo --app #{name}"
+    run "heroku config:set TZ=America/Sao_Paulo --app #{name}"
   end
 
   def open
     say "Pushing application to heroku...".magenta
 
-    system "git push heroku master"
+    run "git push heroku master"
 
-    system "heroku open --app #{name}"
+    run "heroku open --app #{name}"
   end
 
   private
+    def run(command)
+      unless system(command)
+        raise "Error while running #{command}"
+      end
+    end
+
     def check_canonical_domain
       domain = @config[:heroku][:domain]
       add_canonical_domain(domain) unless domain.blank?
