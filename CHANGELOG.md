@@ -8,6 +8,7 @@
 - Update rspec-rails to 3.0.1
 - Update VCR to 2.9.2
 - Remove extra CSS and HTML markup
+- Future proof rollbar config for staging environments
 
 ## 0.0.14 (May 30, 2014)
 
