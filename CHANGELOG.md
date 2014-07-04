@@ -15,6 +15,7 @@
 - Remove extra CSS and HTML markup
 - Future proof rollbar config for staging environments
 - Update gem versions
+- Move production/staging only gems to the correct group on Gemfile
 
 
 ### bug fixed
