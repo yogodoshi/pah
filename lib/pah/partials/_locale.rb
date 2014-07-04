@@ -14,8 +14,8 @@ inject_into_file 'config/application.rb', time_zone_config, { after: "# config.t
 locale_config = <<LOCALE
 
     config.i18n.enforce_available_locales = true
-    config.i18n.default_locale = :"pt-BR"
-    config.i18n.locale = :"pt-BR"
+    config.i18n.default_locale = :'pt-BR'
+    config.i18n.locale = :'pt-BR'
 LOCALE
 
 inject_into_file 'config/application.rb', locale_config, { after: "# config.i18n.default_locale = :de", verbose: false }
