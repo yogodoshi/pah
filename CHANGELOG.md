@@ -2,6 +2,10 @@
 
 ## 0.0.15 (unreleased)
 
+### features
+
+- Config bourbon, neat and bitters
+
 ### improvements
 
 - Update email_spec to `1.6.0`
