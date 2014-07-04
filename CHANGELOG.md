@@ -12,6 +12,10 @@
 - Future proof rollbar config for staging environments
 - Update gem versions
 
+
+### bug fixed
+- Fix the I18n problem (ref.: https://github.com/rails/rails/issues/13164#issuecomment-39744133)
+
 ## 0.0.14 (May 30, 2014)
 
 ### improvements

@@ -16,11 +16,11 @@ Feature: Locale
       """
     Then I have the file config/application.rb and contents of this file should include:
       """
-      config.i18n.default_locale = :"pt-BR"
+      config.i18n.default_locale = :'pt-BR'
       """
     Then I have the file config/application.rb and contents of this file should include:
       """
-      config.i18n.locale = :"pt-BR"
+      config.i18n.locale = :'pt-BR'
       """
 
 
