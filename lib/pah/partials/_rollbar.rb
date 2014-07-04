@@ -7,7 +7,7 @@ search = <<HEREDOC
   end
 HEREDOC
 
-replace = "  config.enabled = Rails.env.production? # || Rails.env.staging?"
+replace = "  config.enabled = Rails.env.production? || Rails.env.staging?"
 
 gsub_file 'config/initializers/rollbar.rb', search, replace
 
