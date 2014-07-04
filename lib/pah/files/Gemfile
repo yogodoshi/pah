@@ -25,7 +25,7 @@ gem 'newrelic_rpm',           '3.8.0.218'
 
 group :production do
   gem 'rails_12factor',       '0.0.2'
-  gem 'rollbar',              '0.12.17'
+  gem 'rollbar',              '0.13.1'
 end
 
 group :development do
