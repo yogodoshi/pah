@@ -1,8 +1,17 @@
-file = 'config/application.rb'
-inject = "\n\n    config.middleware.use Rack::Deflater"
-options = { after: /config\.i18n\.locale = :'.*'/, verbose: false }
+module Pah
+  module Templates
+    class RackDeflater < Pah::Base
 
-inject_into_file file, inject, options
+      def call
+        file = 'config/application.rb'
+        inject = "\n\n    config.middleware.use Rack::Deflater"
+        options = { after: /config\.i18n\.locale = :'.*'/, verbose: false }
 
-git add: 'config/application.rb'
-git_commit 'Add Rack::Deflater middleware.'
+        inject_into_file file, inject, options
+
+        git add: 'config/application.rb'
+        git_commit 'Add Rack::Deflater middleware.'
+      end
+    end
+  end
+end

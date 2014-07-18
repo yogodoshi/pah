@@ -1,8 +1,17 @@
-copy_static_file 'lib/tasks/jumpup.rake'
-copy_static_file 'config/initializers/jumpup_heroku.rb'
+module Pah
+  module Templates
+    class Jumpup < Pah::Base
 
-gsub_file 'config/initializers/jumpup_heroku.rb', /PROJECT/, (@config[:heroku][:name] || @app_name)
+      def call
+        copy_static_file 'lib/tasks/jumpup.rake'
+        copy_static_file 'config/initializers/jumpup_heroku.rb'
 
-git add: 'lib/tasks/jumpup.rake'
-git add: 'config/initializers/jumpup_heroku.rb'
-git_commit 'Add jumpup tasks and configuration.'
+        gsub_file 'config/initializers/jumpup_heroku.rb', /PROJECT/, (Pah::Templates::Config.instance.config[:heroku][:name] || Pah::Base.instance.app_name)
+
+        git add: 'lib/tasks/jumpup.rake'
+        git add: 'config/initializers/jumpup_heroku.rb'
+        git_commit 'Add jumpup tasks and configuration.'
+      end
+    end
+  end
+end

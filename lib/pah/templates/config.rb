@@ -2,6 +2,8 @@ module Pah
   module Templates
     class Config < Pah::Base
 
+      attr_reader :config
+
       def call
         @config = {}
         @config[:heroku] = Hash.new

@@ -1,4 +1,13 @@
-copy_static_file 'config/initializers/rack_timeout.rb'
+module Pah
+  module Templates
+    class RackTimeout < Pah::Base
 
-git add: 'config/initializers/rack_timeout.rb'
-git_commit 'Add Rack::Timeout configuration.'
+      def call
+        copy_static_file 'config/initializers/rack_timeout.rb'
+
+        git add: 'config/initializers/rack_timeout.rb'
+        git_commit 'Add Rack::Timeout configuration.'
+      end
+    end
+  end
+end

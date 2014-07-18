@@ -1,6 +1,15 @@
-copy_static_file 'config/newrelic.yml'
+module Pah
+  module Templates
+    class Newrelic < Pah::Base
 
-gsub_file 'config/newrelic.yml', /PROJECT/, @app_name
+      def call
+        copy_static_file 'config/newrelic.yml'
 
-git add: 'config/newrelic.yml'
-git_commit 'Add New Relic configuration.'
+        gsub_file 'config/newrelic.yml', /PROJECT/, Pah::Base.instance.app_name
+
+        git add: 'config/newrelic.yml'
+        git_commit 'Add New Relic configuration.'
+      end
+    end
+  end
+end

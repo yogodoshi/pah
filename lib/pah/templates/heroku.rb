@@ -78,11 +78,20 @@ class HerokuApp < Rails::Generators::AppGenerator
     end
 end
 
-copy_static_file 'Procfile'
-git add: 'Procfile'
-git_commit 'Add Procfile'
+module Pah
+  module Templates
+    class Heroku < Pah::Base
 
-if @config[:heroku][:create?]
-  production_app = HerokuApp.new @config
-  production_app.open if @config[:heroku][:deploy?]
+      def call
+        copy_static_file 'Procfile'
+        git add: 'Procfile'
+        git_commit 'Add Procfile'
+
+        if Pah::Templates::Config.instance.config[:heroku][:create?]
+          production_app = HerokuApp.new(Pah::Templates::Config.instance.config)
+          production_app.open if Pah::Templates::Config.instance.config[:heroku][:deploy?]
+        end
+      end
+    end
+  end
 end

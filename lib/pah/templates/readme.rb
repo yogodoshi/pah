@@ -1,6 +1,15 @@
-copy_static_file 'README.md'
-gsub_file 'README.md', /PROJECT/, @app_name
-gsub_file 'README.md', /RUBY_VERSION/, RUBY_VERSION
+module Pah
+  module Templates
+    class Readme < Pah::Base
 
-git add: 'README.md'
-git_commit 'Add README file.'
+      def call
+        copy_static_file 'README.md'
+        gsub_file 'README.md', /PROJECT/, Pah::Base.instance.app_name
+        gsub_file 'README.md', /RUBY_VERSION/, RUBY_VERSION
+
+        git add: 'README.md'
+        git_commit 'Add README file.'
+      end
+    end
+  end
+end

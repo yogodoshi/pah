@@ -1,6 +1,15 @@
-puts "Adding bullet... ".magenta
+module Pah
+  module Templates
+    class Bullet < Pah::Base
 
-copy_static_file 'config/initializers/bullet.rb'
+      def call
+        puts "Adding bullet... ".magenta
 
-git add: 'config/initializers/bullet.rb'
-git_commit 'Adding bullet config.'
+        copy_static_file 'config/initializers/bullet.rb'
+
+        git add: 'config/initializers/bullet.rb'
+        git_commit 'Adding bullet config.'
+      end
+    end
+  end
+end

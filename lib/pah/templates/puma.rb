@@ -1,6 +1,15 @@
-copy_static_file 'config/puma.rb'
-copy_static_file 'config/initializers/database_connection.rb'
+module Pah
+  module Templates
+    class Puma < Pah::Base
 
-git add: 'config/puma.rb'
-git add: 'config/initializers/database_connection.rb'
-git_commit 'Configure Puma.'
+      def call
+        copy_static_file 'config/puma.rb'
+        copy_static_file 'config/initializers/database_connection.rb'
+
+        git add: 'config/puma.rb'
+        git add: 'config/initializers/database_connection.rb'
+        git_commit 'Configure Puma.'
+      end
+    end
+  end
+end
