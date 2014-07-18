@@ -7,14 +7,14 @@ def create_heroku_app
     puts "Could not login to Heroku, halting"
     exit
   end
-  
+
   created = false
   while not created
-    @config[:heroku][:name] = ask "What do you want to call your Heroku app? (#{@app_name.gsub('_','')})".red
-    @config[:heroku][:name] = @app_name.gsub('_','') if @config[:heroku][:name].blank?
+    @config[:heroku][:name] = ask "What do you want to call your Heroku app? (#{Pah::Base.instance.app_name.gsub('_','')})".red
+    @config[:heroku][:name] = Pah::Base.instance.app_name.gsub('_','') if @config[:heroku][:name].blank?
 
     say "Creating Heroku app '#{@config[:heroku][:name]}.herokuapp.com'".magenta
-    
+
     created = system "heroku create #{@config[:heroku][:name]}"
 
     unless created
@@ -31,6 +31,6 @@ if (@config[:heroku][:create?] = will_you_like_to? "create Heroku apps?".red)
   @config[:heroku][:domain] = ask "Add custom domain (customdomain.com) or leave blank:".red
 
   create_heroku_app
-  
+
   @config[:heroku][:collaborators] = ask "Add collaborators? Type the email's separated by comma (,):".red
 end
