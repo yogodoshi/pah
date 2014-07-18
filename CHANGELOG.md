@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.16 (unreleased)
+
+### features
+
+### improvements
+
+- Add humans.txt
+
 ## 0.0.15 (July 4, 2014)
 
 ### features
