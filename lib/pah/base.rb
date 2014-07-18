@@ -15,7 +15,7 @@ module Pah
     end
 
     def partials
-      File.join(template_root, 'partials')
+      File.join(template_root, 'templates')
     end
 
     def static_files
@@ -33,7 +33,8 @@ module Pah
 
       in_root do
         Bundler.with_clean_env do
-          apply "#{partials}/_#{partial_name}.rb"
+          require "#{partials}/#{partial_name}.rb"
+          "::Pah::Templates::#{partial_name.to_s.classify}".constantize.instance.call
         end
       end
 
