@@ -64,8 +64,6 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 ## Roadmap
 
 - Improve the specs and test coverage
-- Refactor the templates/partials logic
-- Extract "utils" to somewhere else outside the template.rb
 - Make sure all the generated files are not beign overriden with older versions (like spec_helper, applications config & etc), don't copy files.. build them
 - Remove the old and unused spec/support files
 - Release version 1.0
