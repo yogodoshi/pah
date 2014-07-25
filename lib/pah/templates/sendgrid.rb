@@ -1,4 +1,9 @@
-sendgrid_config = <<SENDGRID
+module Pah
+  module Templates
+    class Sendgrid < Pah::Template
+
+      def call
+        sendgrid_config = <<SENDGRID
 
   # SendGrid config
   config.action_mailer.default_url_options = { host: ENV['CANONICAL_HOST'] }
@@ -13,7 +18,11 @@ sendgrid_config = <<SENDGRID
   }
 SENDGRID
 
-inject_into_file 'config/environments/production.rb', sendgrid_config, { before: /^end/, verbose: false }
+        inject_into_file 'config/environments/production.rb', sendgrid_config, { before: /^end/, verbose: false }
 
-git add: 'config/environments/production.rb'
-git_commit 'Add sendgrid config.'
+        git add: 'config/environments/production.rb'
+        git_commit 'Add sendgrid config.'
+      end
+    end
+  end
+end

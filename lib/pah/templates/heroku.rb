@@ -6,7 +6,7 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def initialize(config)
     @config = config
-    @name = @config[:heroku][:name]
+    @name = Pah.configuration.heroku[:name]
     @description = description
 
     add_secret_token
@@ -65,12 +65,12 @@ class HerokuApp < Rails::Generators::AppGenerator
     end
 
     def check_canonical_domain
-      domain = @config[:heroku][:domain]
+      domain = Pah.configuration.heroku[:domain]
       add_canonical_domain(domain) unless domain.blank?
     end
 
     def check_collaborators
-      collaborators = @config[:heroku][:collaborators]
+      collaborators = Pah.configuration.heroku[:collaborators]
 
       if collaborators.present?
         collaborators.split(",").map(&:strip).each { |email| add_collaborator(email) }
@@ -78,11 +78,20 @@ class HerokuApp < Rails::Generators::AppGenerator
     end
 end
 
-copy_static_file 'Procfile'
-git add: 'Procfile'
-git_commit 'Add Procfile'
+module Pah
+  module Templates
+    class Heroku < Pah::Template
 
-if @config[:heroku][:create?]
-  production_app = HerokuApp.new @config
-  production_app.open if @config[:heroku][:deploy?]
+      def call
+        copy_static_file 'Procfile'
+        git add: 'Procfile'
+        git_commit 'Add Procfile'
+
+        if Pah.configuration.heroku[:create?]
+          production_app = HerokuApp.new(Pah.configuration)
+          production_app.open if Pah.configuration.heroku[:deploy?]
+        end
+      end
+    end
+  end
 end
