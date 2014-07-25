@@ -5,7 +5,7 @@ require 'bundler'
 module Pah
   require 'pah/version'
   require 'pah/configuration'
-  require 'pah/base'
+  require 'pah/runner'
   require 'pah/template'
 
 

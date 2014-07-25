@@ -1,6 +1,5 @@
 module Pah
-  class Base < Rails::Generators::Base
-    include Singleton
+  class Runner < Rails::Generators::Base
 
     def partials
       File.join(TEMPLATE_ROOT, 'templates')
