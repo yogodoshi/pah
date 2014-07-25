@@ -8,8 +8,6 @@ module Pah
 
     source_root File.expand_path("../partials", __FILE__)
 
-    attr_accessor :app_name
-
     def template_root
       File.expand_path(File.join('..', 'pah'), File.dirname(__FILE__))
     end

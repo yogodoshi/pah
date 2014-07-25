@@ -5,16 +5,14 @@ module Pah
       attr_reader :config
 
       def call
-        @config = {}
-        @config[:heroku] = Hash.new
-        if (@config[:heroku][:create?] = will_you_like_to? "create Heroku apps?".red)
-          @config[:heroku][:deploy?] = will_you_like_to? "deploy immediately?".red
+        if (Pah.configuration.heroku[:create?] = will_you_like_to? "create Heroku apps?".red)
+          Pah.configuration.heroku[:deploy?] = will_you_like_to? "deploy immediately?".red
 
-          @config[:heroku][:domain] = ask "Add custom domain (customdomain.com) or leave blank:".red
+          Pah.configuration.heroku[:domain] = ask "Add custom domain (customdomain.com) or leave blank:".red
 
           create_heroku_app
 
-          @config[:heroku][:collaborators] = ask "Add collaborators? Type the email's separated by comma (,):".red
+          Pah.configuration.heroku[:collaborators] = ask "Add collaborators? Type the email's separated by comma (,):".red
         end
       end
 
@@ -28,15 +26,15 @@ module Pah
 
         created = false
         while not created
-          @config[:heroku][:name] = ask "What do you want to call your Heroku app? (#{Pah::Base.instance.app_name.gsub('_','')})".red
-          @config[:heroku][:name] = Pah::Base.instance.app_name.gsub('_','') if @config[:heroku][:name].blank?
+          Pah.configuration.heroku[:name] = ask "What do you want to call your Heroku app? (#{Pah.configuration.app_name.gsub('_','')})".red
+          Pah.configuration.heroku[:name] = Pah.configuration.app_name.gsub('_','') if Pah.configuration.heroku[:name].blank?
 
-          say "Creating Heroku app '#{@config[:heroku][:name]}.herokuapp.com'".magenta
+          say "Creating Heroku app '#{Pah.configuration.heroku[:name]}.herokuapp.com'".magenta
 
-          created = system "heroku create #{@config[:heroku][:name]}"
+          created = system "heroku create #{Pah.configuration.heroku[:name]}"
 
           unless created
-            puts "Heroku '#{@config[:heroku][:name]}' app already exists or could not be created, please provide a new name"
+            puts "Heroku '#{Pah.configuration.heroku[:name]}' app already exists or could not be created, please provide a new name"
           end
         end
       end

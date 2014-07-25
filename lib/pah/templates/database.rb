@@ -4,7 +4,7 @@ module Pah
 
       def call
         copy_static_file 'config/database.yml'
-        gsub_file 'config/database.yml', /PROJECT/, Pah::Base.instance.app_name
+        gsub_file 'config/database.yml', /PROJECT/, Pah.configuration.app_name
         git add: 'config/database.yml'
         git_commit 'Add config/database.yml.'
 

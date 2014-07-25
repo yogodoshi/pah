@@ -4,7 +4,7 @@ module Pah
 
       def call
         current_ruby = '2.1.2'
-        current_gemset = Pah::Base.instance.app_name
+        current_gemset = Pah.configuration.app_name
 
         copy_static_file '.ruby-version'
         gsub_file '.ruby-version', /RUBY_VERSION/, current_ruby

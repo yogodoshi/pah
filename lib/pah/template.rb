@@ -1,10 +1,13 @@
 require File.join(File.dirname(__FILE__), 'base.rb')
+require File.join(File.dirname(__FILE__), 'configuration.rb')
 
 puts "\n========================================================="
 puts " Pah".yellow.bold
 puts "=========================================================\n"
 
-Pah::Base.instance.app_name = @app_name
+Pah.configure do |config|
+  config.app_name = @app_name
+end
 
 Pah::Base.instance.apply_n :config
 Pah::Base.instance.apply_n :git,             'Initializing new Git repo...'
