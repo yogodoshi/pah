@@ -88,7 +88,7 @@ module Pah
         git_commit 'Add Procfile'
 
         if Pah.configuration.heroku[:create?]
-          production_app = HerokuApp.new(Pah::Templates::Config.instance.config)
+          production_app = HerokuApp.new(Pah.configuration)
           production_app.open if Pah.configuration.heroku[:deploy?]
         end
       end
