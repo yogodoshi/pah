@@ -7,4 +7,7 @@ module Pah
   require 'pah/configuration'
   require 'pah/base'
   require 'pah/template'
+
+
+  TEMPLATE_ROOT = File.expand_path(File.join('pah'), File.dirname(__FILE__))
 end

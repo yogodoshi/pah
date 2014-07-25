@@ -1,12 +1,8 @@
 module Pah
   class Template < Rails::Generators::Base
 
-    def template_root
-      File.expand_path(File.join('..', 'pah'), File.dirname(__FILE__))
-    end
-
     def static_files
-      File.join(template_root, 'files')
+      File.join(TEMPLATE_ROOT, 'files')
     end
 
     def copy_static_file(path)

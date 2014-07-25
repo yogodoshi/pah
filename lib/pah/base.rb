@@ -2,17 +2,12 @@ module Pah
   class Base < Rails::Generators::Base
     include Singleton
 
-    def template_root
-      File.expand_path(File.join('..', 'pah'), File.dirname(__FILE__))
-    end
-
     def partials
-      File.join(template_root, 'templates')
+      File.join(TEMPLATE_ROOT, 'templates')
     end
 
     def apply_n(partial_name, message='')
       puts message.magenta
-      puts template_root.red
 
       in_root do
         Bundler.with_clean_env do
