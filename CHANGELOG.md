@@ -7,6 +7,7 @@
 ### improvements
 
 - Add humans.txt
+- Remove HE:labs logo from the default README
 
 ## 0.0.15 (July 4, 2014)
 

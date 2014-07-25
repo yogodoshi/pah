@@ -67,12 +67,6 @@ First, check of your project has the correct configuration from [jumpup-heroku](
 
 :warning: All your daily work must be done on the `master` branch (or in a feature branch), never on `production` branch! The only thing you do on `production` is merging the changes from `master` and deploying to Heroku.
 
-## Maintainers
+## Generated with PAH
 
-* [HE:labs](https://github.com/Helabs)
-
-## Made with love by HE:labs
-
-![HE:labs](http://helabs.com.br/images/logo.png)
-
-This app was created and is maintained by [HE:labs](https://github.com/Helabs).
+Generated with [PAH](https://github.com/Helabs/pah), an open source project created and maintained by [HE:labs](http://helabs.com.br).
