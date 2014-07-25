@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Bullet < Pah::Base
+    class Bullet < Pah::Template
 
       def call
         puts "Adding bullet... ".magenta

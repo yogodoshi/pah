@@ -80,7 +80,7 @@ end
 
 module Pah
   module Templates
-    class Heroku < Pah::Base
+    class Heroku < Pah::Template
 
       def call
         copy_static_file 'Procfile'

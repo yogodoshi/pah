@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Sendgrid < Pah::Base
+    class Sendgrid < Pah::Template
 
       def call
         sendgrid_config = <<SENDGRID

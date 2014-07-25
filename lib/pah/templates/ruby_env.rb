@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class RubyEnv < Pah::Base
+    class RubyEnv < Pah::Template
 
       def call
         current_ruby = '2.1.2'

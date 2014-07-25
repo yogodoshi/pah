@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Locale < Pah::Base
+    class Locale < Pah::Template
 
       def call
         copy_static_file 'config/locales/pt-BR.yml'

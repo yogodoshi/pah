@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Public < Pah::Base
+    class Public < Pah::Template
 
       def call
         inside "public" do

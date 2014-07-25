@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Config < Pah::Base
+    class Config < Pah::Template
 
       attr_reader :config
 

@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Gem < Pah::Base
+    class Gem < Pah::Template
 
       def call
         copy_static_file 'Gemfile'

@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class RackDeflater < Pah::Base
+    class RackDeflater < Pah::Template
 
       def call
         file = 'config/application.rb'

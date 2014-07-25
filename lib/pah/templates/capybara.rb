@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Capybara < Pah::Base
+    class Capybara < Pah::Template
 
       def call
         copy_static_file 'spec/support/acceptance_helpers.rb'

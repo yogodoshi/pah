@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class SecretToken < Pah::Base
+    class SecretToken < Pah::Template
 
       def call
         append_to_file '.env', "SECRET_KEY_BASE: #{SecureRandom::hex(60)}\n"

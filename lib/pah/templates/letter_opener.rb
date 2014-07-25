@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class LetterOpener < Pah::Base
+    class LetterOpener < Pah::Template
 
       def call
         letter_opener_config = <<LETTER_OPENER

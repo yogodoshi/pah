@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Rollbar < Pah::Base
+    class Rollbar < Pah::Template
 
       def call
         system "bundle exec rails generate rollbar"

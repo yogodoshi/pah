@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Generator < Pah::Base
+    class Generator < Pah::Template
 
       def call
         generators = <<GENERATORS

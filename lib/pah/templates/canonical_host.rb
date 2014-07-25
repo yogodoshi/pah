@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class CanonicalHost < Pah::Base
+    class CanonicalHost < Pah::Template
 
       def call
         rack_canonical = <<CANONICAL

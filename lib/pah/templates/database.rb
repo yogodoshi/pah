@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Database < Pah::Base
+    class Database < Pah::Template
 
       def call
         copy_static_file 'config/database.yml'

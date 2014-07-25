@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class SecureHeader < Pah::Base
+    class SecureHeader < Pah::Template
 
       def call
         content = <<EOF

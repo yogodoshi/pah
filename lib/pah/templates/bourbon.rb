@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Bourbon < Pah::Base
+    class Bourbon < Pah::Template
 
       def call
         css_path = 'app/assets/stylesheets/'

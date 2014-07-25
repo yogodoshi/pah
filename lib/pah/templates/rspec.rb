@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Rspec < Pah::Base
+    class Rspec < Pah::Template
 
       def call
         copy_static_file 'spec/spec_helper.rb'

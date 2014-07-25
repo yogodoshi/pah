@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Jumpup < Pah::Base
+    class Jumpup < Pah::Template
 
       def call
         copy_static_file 'lib/tasks/jumpup.rake'

@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Layout < Pah::Base
+    class Layout < Pah::Template
 
       def call
         copy_static_file 'app/views/layouts/application.html.slim'

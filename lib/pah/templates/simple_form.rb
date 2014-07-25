@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class SimpleForm < Pah::Base
+    class SimpleForm < Pah::Template
 
       def call
         system "bundle exec rails generate simple_form:install"

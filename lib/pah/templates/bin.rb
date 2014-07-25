@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Bin < Pah::Base
+    class Bin < Pah::Template
 
       def call
         system 'bundle exec spring binstub --all'

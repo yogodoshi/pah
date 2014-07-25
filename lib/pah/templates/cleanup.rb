@@ -1,6 +1,6 @@
 module Pah
   module Templates
-    class Cleanup < Pah::Base
+    class Cleanup < Pah::Template
 
       def call
         git rm: "README.rdoc"
