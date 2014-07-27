@@ -11,7 +11,7 @@ module Pah
 
         time_zone_config = <<TIME_ZONE
 
-    config.time_zone = 'Brasilia'
+    config.time_zone = ENV.fetch('TZ', 'Brasilia')
 TIME_ZONE
 
         inject_into_file 'config/application.rb', time_zone_config, { after: "# config.time_zone = 'Central Time (US & Canada)'", verbose: false }

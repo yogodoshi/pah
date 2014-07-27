@@ -8,7 +8,7 @@ Feature: Locale
     Then I have a config/locales/app.pt-BR.yml
     Then I have the file config/application.rb and contents of this file should include:
       """
-      config.time_zone = 'Brasilia'
+      config.time_zone = ENV.fetch('TZ', 'Brasilia')
       """
     Then I have the file config/application.rb and contents of this file should include:
       """
