@@ -18,7 +18,7 @@ If you plan to **integrate** this project to Heroku, you'll need:
 
 ## Setup the project
 
-1. Install the depedencies above
+1. Install the dependencies above
 2. `$ git clone <REPOSITORY_URL> PROJECT` - Clone the project
 3. `$ cd PROJECT` - Go into the project folder
 4. `$ bundle install` - Install the gem dependencies
