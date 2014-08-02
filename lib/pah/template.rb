@@ -1,6 +1,5 @@
 module Pah
   class Template < Rails::Generators::Base
-
     def static_files
       File.join(TEMPLATE_ROOT, 'files')
     end
@@ -13,9 +12,9 @@ module Pah
     def will_you_like_to?(question)
       answer = ask("Will you like to #{question} [y,n]".red)
       case answer.downcase
-      when "yes", "y"
+      when 'yes', 'y'
         true
-      when "no", "n"
+      when 'no', 'n'
         false
       else
         will_you_like_to?(question)
@@ -32,4 +31,3 @@ module Pah
     end
   end
 end
-

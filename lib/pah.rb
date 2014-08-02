@@ -8,6 +8,5 @@ module Pah
   require 'pah/runner'
   require 'pah/template'
 
-
   TEMPLATE_ROOT = File.expand_path(File.join('pah'), File.dirname(__FILE__))
 end

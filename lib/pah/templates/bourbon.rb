@@ -1,13 +1,12 @@
 module Pah
   module Templates
     class Bourbon < Pah::Template
-
       def call
         css_path = 'app/assets/stylesheets/'
         application_css_path = "#{css_path}application.css"
 
         prepend_to_file application_css_path do
-          <<IMPORTS
+        <<IMPORTS
 @import 'bourbon';
 @import 'base/base';
 @import 'neat';

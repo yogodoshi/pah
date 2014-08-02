@@ -1,7 +1,7 @@
 require 'pah'
 
 puts "\n========================================================="
-puts " Pah".yellow.bold
+puts ' Pah'.yellow.bold
 puts "=========================================================\n"
 
 Pah.configure do |config|
@@ -40,5 +40,5 @@ runner.apply_n :heroku,          'Configuring Heroku application...'
 runner.apply_n :bin,             'Configuring the binstub...'
 
 puts "\n========================================================="
-puts " CONGRATS! INSTALLATION COMPLETE!".yellow.bold
+puts ' CONGRATS! INSTALLATION COMPLETE!'.yellow.bold
 puts "=========================================================\n\n\n"

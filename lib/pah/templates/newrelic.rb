@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class Newrelic < Pah::Template
-
       def call
         copy_static_file 'config/newrelic.yml'
 

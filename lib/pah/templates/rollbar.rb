@@ -1,9 +1,8 @@
 module Pah
   module Templates
     class Rollbar < Pah::Template
-
       def call
-        system "bundle exec rails generate rollbar"
+        system 'bundle exec rails generate rollbar'
 
         search = <<HEREDOC
   # Here we'll disable in 'test':
@@ -12,7 +11,7 @@ module Pah
   end
 HEREDOC
 
-        replace = "  config.enabled = Rails.env.production? || Rails.env.staging?"
+        replace = '  config.enabled = Rails.env.production? || Rails.env.staging?'
 
         gsub_file 'config/initializers/rollbar.rb', search, replace
 

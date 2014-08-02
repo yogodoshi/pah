@@ -1,5 +1,4 @@
 module Pah
-
   class << self
     attr_accessor :configuration
   end
@@ -13,8 +12,7 @@ module Pah
     attr_accessor :app_name, :heroku
 
     def initialize
-      @heroku = Hash.new
+      @heroku = {}
     end
   end
 end
-

@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class Readme < Pah::Template
-
       def call
         copy_static_file 'README.md'
         gsub_file 'README.md', /PROJECT/, Pah.configuration.app_name
