@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 module AcceptanceHelpers
   def saop
     save_and_open_page

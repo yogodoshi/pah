@@ -1,4 +1,3 @@
-# -*- encoding : utf-8 -*-
 module UploadFileTestHelper
   def uploaded_file(filename, content_type = "text/csv")
     t = Tempfile.new([filename.split("/").last, filename.split(".").last])
