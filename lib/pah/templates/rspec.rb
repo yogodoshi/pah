@@ -1,12 +1,11 @@
 module Pah
   module Templates
     class Rspec < Pah::Template
-
       def call
         copy_static_file 'spec/spec_helper.rb'
         copy_static_file 'spec/rails_helper.rb'
 
-        %w{
+        %w(
           database_cleaner.rb
           factory_girl.rb
           http_basic_auth.rb
@@ -14,7 +13,7 @@ module Pah
           suppress_log.rb
           uploaded_file.rb
           vcr.rb
-        }.each do |component|
+        ).each do |component|
           copy_static_file "spec/support/#{component}"
         end
 

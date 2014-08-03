@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class Jumpup < Pah::Template
-
       def call
         copy_static_file 'lib/tasks/jumpup.rake'
         copy_static_file 'config/initializers/jumpup_heroku.rb'

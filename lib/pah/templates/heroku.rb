@@ -23,7 +23,7 @@ class HerokuApp < Rails::Generators::AppGenerator
 
   def add_secret_token
     say "Creating SECRET_KEY_BASE for Heroku '#{name}.herokuapp.com'".magenta
-    run "heroku config:set SECRET_KEY_BASE=#{SecureRandom::hex(60)} --app #{name}"
+    run "heroku config:set SECRET_KEY_BASE=#{SecureRandom.hex(60)} --app #{name}"
   end
 
   def add_heroku_git_remote
@@ -45,43 +45,42 @@ class HerokuApp < Rails::Generators::AppGenerator
   end
 
   def add_timezone_config
-    say "Adding timezone config on Heroku".magenta
+    say 'Adding timezone config on Heroku'.magenta
     run "heroku config:set TZ=America/Sao_Paulo --app #{name}"
   end
 
   def open
-    say "Pushing application to heroku...".magenta
+    say 'Pushing application to heroku...'.magenta
 
-    run "git push heroku master"
+    run 'git push heroku master'
 
     run "heroku open --app #{name}"
   end
 
   private
-    def run(command)
-      unless system(command)
-        raise "Error while running #{command}"
-      end
+  def run(command)
+    unless system(command)
+      fail "Error while running #{command}"
     end
+  end
 
-    def check_canonical_domain
-      domain = Pah.configuration.heroku[:domain]
-      add_canonical_domain(domain) unless domain.blank?
+  def check_canonical_domain
+    domain = Pah.configuration.heroku[:domain]
+    add_canonical_domain(domain) unless domain.blank?
+  end
+
+  def check_collaborators
+    collaborators = Pah.configuration.heroku[:collaborators]
+
+    if collaborators.present?
+      collaborators.split(',').map(&:strip).each { |email| add_collaborator(email) }
     end
-
-    def check_collaborators
-      collaborators = Pah.configuration.heroku[:collaborators]
-
-      if collaborators.present?
-        collaborators.split(",").map(&:strip).each { |email| add_collaborator(email) }
-      end
-    end
+  end
 end
 
 module Pah
   module Templates
     class Heroku < Pah::Template
-
       def call
         copy_static_file 'Procfile'
         git add: 'Procfile'

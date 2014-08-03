@@ -9,4 +9,4 @@ Before do
 end
 
 # Remove old generated projects
-system "rm -rf tmp/aruba"
+system 'rm -rf tmp/aruba'

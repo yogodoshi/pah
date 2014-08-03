@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class RackDeflater < Pah::Template
-
       def call
         file = 'config/application.rb'
         inject = "\n\n    config.middleware.use Rack::Deflater"

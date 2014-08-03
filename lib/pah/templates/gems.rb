@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class Gem < Pah::Template
-
       def call
         copy_static_file 'Gemfile'
 
@@ -11,15 +10,15 @@ module Pah
           require 'bundler'
         rescue LoadError
           # Install bundler if needed
-          if !(run "gem install bundler --no-ri --no-rdoc")
-            puts "Error installing bundler, will attempt to continue"
+          unless run 'gem install bundler --no-ri --no-rdoc'
+            puts 'Error installing bundler, will attempt to continue'
           end
           require 'bundler'
         end
 
         # Install all other gems needed from Gemfile
-        if !(run "bundle install --jobs=4")
-          puts "Error installing gems, aborting"
+        unless run 'bundle install --jobs=4'
+          puts 'Error installing gems, aborting'
           exit 1
         end
 

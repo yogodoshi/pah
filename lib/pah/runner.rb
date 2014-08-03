@@ -1,11 +1,10 @@
 module Pah
   class Runner < Rails::Generators::Base
-
     def partials
       File.join(TEMPLATE_ROOT, 'templates')
     end
 
-    def apply_n(partial_name, message='')
+    def apply_n(partial_name, message = '')
       puts message.magenta
 
       in_root do

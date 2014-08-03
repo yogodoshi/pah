@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class RackTimeout < Pah::Template
-
       def call
         copy_static_file 'config/initializers/rack_timeout.rb'
 

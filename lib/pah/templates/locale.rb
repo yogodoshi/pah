@@ -1,7 +1,6 @@
 module Pah
   module Templates
     class Locale < Pah::Template
-
       def call
         copy_static_file 'config/locales/pt-BR.yml'
         copy_static_file 'config/locales/app.pt-BR.yml'
@@ -14,7 +13,7 @@ module Pah
     config.time_zone = ENV.fetch('TZ', 'Brasilia')
 TIME_ZONE
 
-        inject_into_file 'config/application.rb', time_zone_config, { after: "# config.time_zone = 'Central Time (US & Canada)'", verbose: false }
+        inject_into_file 'config/application.rb', time_zone_config,  after: "# config.time_zone = 'Central Time (US & Canada)'", verbose: false
 
         locale_config = <<LOCALE
 
@@ -23,7 +22,7 @@ TIME_ZONE
     config.i18n.locale = :'pt-BR'
 LOCALE
 
-        inject_into_file 'config/application.rb', locale_config, { after: "# config.i18n.default_locale = :de", verbose: false }
+        inject_into_file 'config/application.rb', locale_config,  after: '# config.i18n.default_locale = :de', verbose: false
 
         git add: 'config/application.rb'
         git_commit 'Add locale config.'
