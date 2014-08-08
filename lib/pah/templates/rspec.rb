@@ -13,6 +13,7 @@ module Pah
           suppress_log.rb
           uploaded_file.rb
           vcr.rb
+          random_timezone.rb
         ).each do |component|
           copy_static_file "spec/support/#{component}"
         end

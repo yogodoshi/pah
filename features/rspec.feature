@@ -13,3 +13,7 @@ Feature: RSpec
     Then I have a spec/support/suppress_log.rb
     Then I have a spec/support/uploaded_file.rb
     Then I have a spec/support/vcr.rb
+    Then I have the file spec/support/random_timezone.rb and contents of this file should include:
+      """
+      Time.zone = ActiveSupport::TimeZone.all.sample
+      """
