@@ -3,6 +3,7 @@
 [![RubyGems][gem_version_badge]][ruby_gems]
 [![Code Climate][code_climate_badge]][code_climate]
 [![Gemnasium][gemnasium_badge]][gemnasium]
+[![RubyGems][gem_downloads_badge]][ruby_gems]
 
 A Rails application template which was born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
 
@@ -87,11 +88,12 @@ This gem was created and is maintained by [HE:labs](https://github.com/Helabs).
 
 [startupdev]: http://startupdev.com.br
 [helabs]: http://helabs.com.br
-[gem_version_badge]: https://badge.fury.io/rb/pah.png
+[gem_version_badge]: http://img.shields.io/gem/v/pah.svg?style=flat
+[gem_downloads_badge]: http://img.shields.io/gem/dt/pah.svg?style=flat
 [ruby_gems]: http://rubygems.org/gems/pah
 [code_climate]: https://codeclimate.com/github/Helabs/pah
-[code_climate_badge]: https://codeclimate.com/github/Helabs/pah.png
+[code_climate_badge]: http://img.shields.io/codeclimate/github/Helabs/pah.svg?style=flat
 [gemnasium]: https://gemnasium.com/Helabs/pah
-[gemnasium_badge]: https://gemnasium.com/Helabs/pah.png
+[gemnasium_badge]: http://img.shields.io/gemnasium/Helabs/pah.svg?style=flat
 [travis]: https://travis-ci.org/Helabs/pah
-[travis_badge]: https://travis-ci.org/Helabs/pah.svg?branch=master
+[travis_badge]: http://img.shields.io/travis/Helabs/pah.svg?style=flat
