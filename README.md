@@ -30,7 +30,7 @@ Run:
 $ pah projectname
 ```
 
-This will create a Rails 4.1.1 with Ruby 2.1.2. This script creates a new git repository in the folder `projectname`.
+This will create a Rails 4.1.4 with Ruby 2.1.2. This script creates a new git repository in the folder `projectname`.
 
 :warning: PAH not meant to be used against an existing repo.
 
