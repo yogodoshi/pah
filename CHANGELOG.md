@@ -11,6 +11,7 @@
 - Load the timezone from the TZ env & fallback to Brasilia (America/Sao_Paulo)
 - Use a random timezone on every spec run
 - Make VCR filter all Rails secrets by default
+- Update gem versions
 
 ## 0.0.15 (July 4, 2014)
 
