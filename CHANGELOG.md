@@ -13,6 +13,7 @@
 - Make VCR filter all Rails secrets by default
 - Update gem versions
 - Replace Loggly with Logentries
+- Set Ruby 2.1.3 as default
 
 ## 0.0.15 (July 4, 2014)
 

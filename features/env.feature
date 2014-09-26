@@ -6,7 +6,7 @@ Feature: Env files
   Scenario: Create env files
     Then I have the file .ruby-version and contents of this file should be:
       """
-      2.1.2
+      2.1.3
 
       """
     Then I have the file .ruby-gemset and contents of this file should be:
