@@ -2,7 +2,7 @@ module Pah
   module Templates
     class RubyEnv < Pah::Template
       def call
-        current_ruby = '2.1.2'
+        current_ruby = ::Pah::RUBY_VERSION
         current_gemset = Pah.configuration.app_name
 
         copy_static_file '.ruby-version'

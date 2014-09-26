@@ -4,6 +4,7 @@ module Pah
       def call
         copy_static_file 'Gemfile'
 
+        gsub_file 'Gemfile', /RUBY_VERSION/, ::Pah::RUBY_VERSION
         gsub_file 'Gemfile', /RAILS_VERSION/, ::Pah::RAILS_VERSION
 
         begin
