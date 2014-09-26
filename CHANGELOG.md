@@ -12,6 +12,7 @@
 - Use a random timezone on every spec run
 - Make VCR filter all Rails secrets by default
 - Update gem versions
+- Replace Loggly with Logentries
 
 ## 0.0.15 (July 4, 2014)
 
