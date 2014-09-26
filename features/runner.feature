@@ -38,7 +38,7 @@ Feature: Run without errors
       """
     Then the stdout should contain:
       """
-      running heroku addons:add loggly:mole --app myapponheroku
+      running heroku addons:add logentries --app myapponheroku
       """
     Then the stdout should contain:
       """
