@@ -14,6 +14,7 @@
 - Update gem versions
 - Replace Loggly with Logentries
 - Set Ruby 2.1.3 as default
+- Add API acronym to inflections.rb
 
 ## 0.0.15 (July 4, 2014)
 
