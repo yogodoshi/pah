@@ -10,5 +10,15 @@ Feature: Jumpup
       """
       config.app = 'myapp'
       """
-
-
+    Then I have the file lib/tasks/jumpup.rake and contents of this file should include:
+      """
+      INTEGRATION_TASKS = %w(
+        jumpup:heroku:start
+        jumpup:start
+        jumpup:bundle_install
+        db:migrate
+        spec
+        jumpup:heroku:finish
+        jumpup:finish
+      )
+      """
