@@ -4,6 +4,6 @@ INTEGRATION_TASKS = %w(
   jumpup:bundle_install
   db:migrate
   spec
-  jumpup:finish
   jumpup:heroku:finish
+  jumpup:finish
 )
