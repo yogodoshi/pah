@@ -16,4 +16,5 @@ RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   config.include EmailSpec::Helpers
   config.include EmailSpec::Matchers
+  config.include ActiveSupport::Testing::TimeHelpers
 end
