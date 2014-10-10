@@ -20,3 +20,7 @@ Feature: RSpec
       """
       Time.zone = ActiveSupport::TimeZone.all.sample
       """
+    Then I have the file spec/rails_helper.rb and contents of this file should include:
+      """
+      config.include ActiveSupport::Testing::TimeHelpers
+      """
