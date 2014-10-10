@@ -15,6 +15,7 @@
 - Replace Loggly with Logentries
 - Set Ruby 2.1.3 as default
 - Add API acronym to inflections.rb
+- Add `ActiveSupport::Testing::TimeHelpers` module to RSpec's `rails_helper.rb` configuration
 
 ## 0.0.15 (July 4, 2014)
 
