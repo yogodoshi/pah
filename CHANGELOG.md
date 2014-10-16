@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.17 (October 16, 2014)
+
+### bug fixed
+
+- Fix pah binary to run
+
 ## 0.0.16 (October 11, 2014)
 
 ### features
