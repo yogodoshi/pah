@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.18 (unreleased)
+
+### features
+
+### improvements
+
+- Remove shared_connection.rb
+
 ## 0.0.17 (October 16, 2014)
 
 ### bug fixed
@@ -42,7 +50,7 @@
 - Move production/staging only gems to the correct group on Gemfile
 
 
-### bug fixed
+### bug fixes
 
 - Fix the I18n problem (ref.: https://github.com/rails/rails/issues/13164#issuecomment-39744133)
 - Error out when `heroku` commands fail to run during app's creation
