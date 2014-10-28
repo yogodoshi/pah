@@ -6,9 +6,14 @@ Feature: Inflections
   Scenario: Add API as acronym
     Then I have the file config/initializers/inflections.rb and contents of this file should include:
       """
+      # end
+
+      # These inflection rules are supported but not enabled by default:
+      """
+    Then I have the file config/initializers/inflections.rb and contents of this file should end with:
+      """
       ActiveSupport::Inflector.inflections do |inflect|
-      """
-    Then I have the file config/initializers/inflections.rb and contents of this file should include:
-      """
-      inflect.acronym 'API'
+        inflect.acronym 'API'
+      end
+
       """
