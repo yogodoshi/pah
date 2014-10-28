@@ -8,6 +8,10 @@
 
 - Remove shared_connection.rb
 
+### bug fixes
+
+- Fix pah generating duplicated inflections configuration
+
 ## 0.0.17 (October 16, 2014)
 
 ### bug fixed

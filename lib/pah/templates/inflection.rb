@@ -9,7 +9,7 @@ ActiveSupport::Inflector.inflections do |inflect|
 end
 API_ACRONYM
 
-        inject_into_file 'config/initializers/inflections.rb', api_acronym_config,  after: /^# end/, verbose: false
+        inject_into_file 'config/initializers/inflections.rb', api_acronym_config,  after: /'RESTful'\n#\ end\n/, verbose: false
 
         git add: 'config/initializers/inflections.rb'
         git_commit 'Add API acronym to inflections.rb.'
