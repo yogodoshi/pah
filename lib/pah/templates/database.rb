@@ -8,6 +8,9 @@ module Pah
         git_commit 'Add config/database.yml.'
 
         run 'bundle exec rake db:create db:migrate db:test:clone'
+        rescue PGError
+          raise 'Migrating fail...'
+          exit
 
         git add: 'db/schema.rb'
         git_commit 'Create database, adding db/schema.rb.'
