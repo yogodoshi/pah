@@ -7,6 +7,7 @@ module Pah
 
         prepend_to_file application_css_path do
         <<IMPORTS
+@import 'normalize-rails';
 @import 'bourbon';
 @import 'base/base';
 @import 'neat';
