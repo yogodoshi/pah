@@ -52,6 +52,10 @@ Feature: Run without errors
       """
       running heroku addons:add newrelic:stark --app myapponheroku
       """
+    Then the stdout should contain:
+      """
+      running heroku addons:add librato --app myapponheroku
+      """
     Then the output should contain:
       """
        CONGRATS! INSTALLATION COMPLETE!

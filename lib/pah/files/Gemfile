@@ -25,6 +25,7 @@ group :production, :staging do
   gem 'rack-canonical-host',  '0.1.0'
   gem 'rack-timeout',         github: 'kch/rack-timeout', ref: '83ca9f5141c1fdcb626820b1601c406e3a3a560a'
   gem 'newrelic_rpm',         '3.9.4.245'
+  gem 'librato-rails',        '0.11.1'
   gem 'rollbar',              '1.0.1'
 end
 

@@ -8,6 +8,7 @@
 
 - Remove shared_connection.rb
 - Add [normalize-rails](https://github.com/markmcconachie/normalize-rails) gem
+- Add [Librato](https://addons.heroku.com/librato) addon
 
 ### bug fixes
 
