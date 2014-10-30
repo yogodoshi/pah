@@ -6,6 +6,7 @@ Feature: Bourbon
   Scenario: Correct bourbon install
     Then I have the file app/assets/stylesheets/application.css.scss and contents of this file should include:
       """
+      @import 'normalize-rails';
       @import 'bourbon';
       @import 'base/base';
       @import 'neat';
