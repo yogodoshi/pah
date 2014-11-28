@@ -8,6 +8,8 @@
 
 - Remove shared_connection.rb
 - Add [normalize-rails](https://github.com/markmcconachie/normalize-rails) gem
+- Update gems including jumpup to `0.0.8` which includes task to abort integration if a new commit is inserted between test and push
+- Set Ruby 2.1.3 as default
 
 ### bug fixes
 
