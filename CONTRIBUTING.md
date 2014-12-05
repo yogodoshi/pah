@@ -23,15 +23,15 @@ a test!
 
 1. Create new Pull Request
 
-At this point you're waiting on us. We like to at least give you feedback, if not just 
+At this point you're waiting on us. We like to at least give you feedback, if not just
 accept it, within a few days, depending on our internal priorities.
 
 Some things that will increase the chance that your pull request is accepted is to follow the practices described on [Ruby style guide](https://github.com/bbatsov/ruby-style-guide), [Rails style guide](https://github.com/bbatsov/rails-style-guide) and [Better Specs](http://betterspecs.org/).
 
 ## General rules
 
-- Small features and versions upgrades should be done only via PR (without opening an issue before)
-- Larger features should be discussed on issues before opening a PR
+- Version upgrade of gems should be done only via PR (without opening an issue before)
+- Features should be discussed on issues before opening a PR. If passed 15 days without interaction on the issue(a comment, a pull request) the issue will be closed.
 - Every PR of new features/gems should come with the specs/feature of the change
 
 ## Removing gems
