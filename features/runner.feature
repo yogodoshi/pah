@@ -56,6 +56,10 @@ Feature: Run without errors
       """
       running heroku addons:add librato --app myapponheroku
       """
+    Then the stdout should contain:
+      """
+      running heroku config:set LIBRATO_SOURCE=myapponheroku --app myapponheroku
+      """
     Then the output should contain:
       """
        CONGRATS! INSTALLATION COMPLETE!
