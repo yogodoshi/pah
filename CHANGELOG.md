@@ -10,7 +10,7 @@
 - Add [normalize-rails](https://github.com/markmcconachie/normalize-rails) gem
 - Add [Librato](https://addons.heroku.com/librato) addon
 - Update gems including jumpup to `0.0.8` which includes task to abort integration if a new commit is inserted between test and push
-- Set Ruby 2.1.3 as default
+- Set Ruby 2.1.5 as default
 - Handle version and help commands, instead of delegate directly to rails new
 - Change from sendgrid to mandrill
 
