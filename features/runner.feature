@@ -42,7 +42,7 @@ Feature: Run without errors
       """
     Then the stdout should contain:
       """
-      running heroku addons:add sendgrid:starter --app myapponheroku
+      running heroku addons:add mandrill:starter --app myapponheroku
       """
     Then the stdout should contain:
       """
