@@ -17,6 +17,7 @@
 ### bug fixes
 
 - Fix pah generating duplicated inflections configuration
+- Fix the import of grid-settings on bitters
 
 ## 0.0.17 (October 16, 2014)
 
