@@ -14,10 +14,19 @@ A Rails application template which was born from [Startup DEV][startupdev] and n
 
 ## Instalation
 
-Install PAH with the command:
+Install PAH from rubygems with the command:
 
 ```bash
 $ gem install pah
+```
+
+or install from source with:
+
+```bash
+$ git clone https://github.com/Helabs/pah
+cd ./pah
+bundle install
+bundle exec ./bin/pah ~/path/to/project
 ```
 
 If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
