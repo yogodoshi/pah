@@ -20,7 +20,7 @@ IMPORTS
           system 'bundle exec bitters install'
         end
 
-        gsub_file "#{css_path}base/_base.scss", %r{// @import 'grid-settings';}, "@import 'grid-settings';"
+        gsub_file "#{css_path}base/_base.scss", %r{// @import "grid-settings";}, '@import "grid-settings";'
 
         system "mv #{application_css_path} #{css_path}application.css.scss"
 

@@ -17,7 +17,7 @@ Feature: Bourbon
       """
     Then I have the file app/assets/stylesheets/base/_base.scss and contents of this file should match:
       """
-      @import "grid-settings";
+      ^@import "grid-settings";
       """
     Then I dont have a app/assets/stylesheets/application.css
 
