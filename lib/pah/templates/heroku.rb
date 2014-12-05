@@ -1,6 +1,6 @@
 class HerokuApp < Rails::Generators::AppGenerator
   DEFAULT_ADDONS = %w(heroku-postgresql:dev pgbackups:auto-month logentries
-                      sendgrid:starter rollbar newrelic:stark)
+                      sendgrid:starter rollbar newrelic:stark librato)
 
   attr_reader :name, :description, :config
 
@@ -12,6 +12,7 @@ class HerokuApp < Rails::Generators::AppGenerator
     add_secret_token
     add_timezone_config
     add_addons
+    add_librato_source
     add_heroku_git_remote
     check_canonical_domain
     check_collaborators
@@ -49,6 +50,11 @@ class HerokuApp < Rails::Generators::AppGenerator
     run "heroku config:set TZ=America/Sao_Paulo --app #{name}"
   end
 
+  def add_librato_source
+    say 'Configuring LIBRATO_SOURCE environment variable on Heroku'.magenta
+    run "heroku config:set LIBRATO_SOURCE=#{name} --app #{name}"
+  end
+
   def open
     say 'Pushing application to heroku...'.magenta
 
@@ -58,6 +64,7 @@ class HerokuApp < Rails::Generators::AppGenerator
   end
 
   private
+
   def run(command)
     unless system(command)
       fail "Error while running #{command}"
