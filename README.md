@@ -14,10 +14,19 @@ A Rails application template which was born from [Startup DEV][startupdev] and n
 
 ## Instalation
 
-Install PAH with the command:
+Install PAH from rubygems with the command:
 
 ```bash
 $ gem install pah
+```
+
+or install from source with:
+
+```bash
+$ git clone https://github.com/Helabs/pah
+cd ./pah
+bundle install
+bundle exec ./bin/pah ~/path/to/project
 ```
 
 If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
@@ -30,7 +39,7 @@ Run:
 $ pah projectname
 ```
 
-This will create a Rails 4.1.4 app with Ruby 2.1.3. This script creates a new git repository in the folder `projectname`.
+This will create a Rails 4.1.8 app with Ruby 2.1.5. This script creates a new git repository in the folder `projectname`.
 
 :warning: PAH is not meant to be used against an existing repo.
 
@@ -39,7 +48,7 @@ This will create a Rails 4.1.4 app with Ruby 2.1.3. This script creates a new gi
 If you're using RVM, create and use a gemset (with the project name) before running PAH:
 
 ```bash
-$ rvm use 2.1.3@projectname --create
+$ rvm use 2.1.5@projectname --create
 $ pah projectname
 ```
 
