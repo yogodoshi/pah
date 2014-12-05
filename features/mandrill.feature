@@ -1,5 +1,5 @@
 @no-clobber
-Feature: SendGrid
+Feature: Mandrill
   Background:
     Given I have created the app "myapp" with pah
 
