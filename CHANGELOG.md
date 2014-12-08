@@ -13,6 +13,7 @@
 - Set Ruby 2.1.5 as default
 - Handle version and help commands, instead of delegate directly to rails new
 - Change from sendgrid to mandrill
+- Removed humans.txt
 
 ### bug fixes
 

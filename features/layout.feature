@@ -10,7 +10,3 @@ Feature: Layout
       """
       = page_title(app_name: 'example')
       """
-    Then I have the file app/views/layouts/application.html.slim and contents of this file should include:
-      """
-      link rel="author" href="/humans.txt"
-      """
