@@ -2,7 +2,7 @@ require File.expand_path(File.join('..', '..', '..', 'lib', 'pah', 'version.rb')
 
 module Pah
   class Commands
-    class Version
+    class Version < Base
       BANNER = <<-HEREDOC
 Pah version: #{Pah::VERSION}
 Rails version: #{Pah::RAILS_VERSION}
