@@ -2,7 +2,7 @@ module Pah
   module Templates
     class Rollbar < Pah::Template
       def call
-        system 'bundle exec rails generate rollbar'
+        system 'bundle exec rails generate rollbar -q'
 
         search = <<HEREDOC
   # Here we'll disable in 'test':

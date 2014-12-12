@@ -24,7 +24,7 @@ IMPORTS
 
         system "mv #{application_css_path} #{css_path}application.css.scss"
 
-        git rm: application_css_path
+        git rm: "#{application_css_path} -q"
         git add: css_path
         git_commit 'Install bourbon.'
       end

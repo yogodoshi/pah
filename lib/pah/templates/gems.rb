@@ -12,14 +12,14 @@ module Pah
         rescue LoadError
           # Install bundler if needed
           unless run 'gem install bundler --no-ri --no-rdoc'
-            puts 'Error installing bundler, will attempt to continue'
+            puts 'Error installing bundler, will attempt to continue'.red
           end
           require 'bundler'
         end
 
         # Install all other gems needed from Gemfile
-        unless run 'bundle install --jobs=4'
-          puts 'Error installing gems, aborting'
+        unless run 'bundle install --jobs=4 --quiet'
+          puts 'Error installing gems, aborting'.red
           exit 1
         end
 

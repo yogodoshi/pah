@@ -6,7 +6,7 @@ module Pah
     end
 
     def apply_n(partial_name, message = '')
-      puts message.magenta
+      puts message.green
 
       in_root do
         Bundler.with_clean_env do
@@ -14,8 +14,6 @@ module Pah
           "::Pah::Templates::#{partial_name.to_s.classify}".constantize.new([], self.options).call
         end
       end
-
-      puts "\n"
     end
   end
 end
