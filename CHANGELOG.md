@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.19 (unreleased)
+## 0.0.20 (unreleased)
 
 ### features
 
@@ -8,7 +8,7 @@
 
 ### bug fixes
 
-## 0.0.18 (December 12, 2014)
+## 0.0.19 (December 12, 2014)
 
 ### features
 
@@ -27,6 +27,8 @@
 
 - Fix pah generating duplicated inflections configuration
 - Fix the import of grid-settings on bitters
+
+## 0.0.18 (yanked)
 
 ## 0.0.17 (October 16, 2014)
 

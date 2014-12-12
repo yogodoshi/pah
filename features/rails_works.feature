@@ -1,3 +1,4 @@
+@announce
 @no-clobber
 Feature: Rails works
   Background:

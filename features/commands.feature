@@ -4,7 +4,7 @@ Feature: Commands
     When I run `pah --version`
     Then the output should contain:
       """
-      Pah version: 0.0.18
+      Pah version: 0.0.19
       Rails version: 4.1.8
       Ruby version: 2.1.5
       """
@@ -12,7 +12,7 @@ Feature: Commands
     When I run `pah -v`
     Then the output should contain:
       """
-      Pah version: 0.0.18
+      Pah version: 0.0.19
       Rails version: 4.1.8
       Ruby version: 2.1.5
       """
