@@ -10,7 +10,7 @@ module Pah
     end
 
     def will_you_like_to?(question)
-      answer = ask("Will you like to #{question} [y,n]".red)
+      answer = ask("Will you like to #{question} [y,n]".green)
       case answer.downcase
       when 'yes', 'y'
         true

@@ -1,14 +1,10 @@
 require 'pah'
 
-puts "\n========================================================="
-puts ' Pah'.yellow.bold
-puts "=========================================================\n"
-
 Pah.configure do |config|
   config.app_name = @app_name
 end
 
-runner = Pah::Runner.new
+runner = Pah::Runner.new([], self.options)
 runner.apply_n :config
 runner.apply_n :git,             'Initializing new Git repo...'
 runner.apply_n :ruby_env,        'Setting up ruby env...'
@@ -40,6 +36,3 @@ runner.apply_n :rollbar,         'Setting up Rollbar...'
 runner.apply_n :heroku,          'Configuring Heroku application...'
 runner.apply_n :bin,             'Configuring the binstub...'
 
-puts "\n========================================================="
-puts ' CONGRATS! INSTALLATION COMPLETE!'.yellow.bold
-puts "=========================================================\n\n\n"
