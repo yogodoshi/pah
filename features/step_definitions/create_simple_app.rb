@@ -10,10 +10,6 @@ Given(/^I have created the app "(.*?)" with pah$/) do |app_name|
       When I run `rm -rf #{app_name}`
       Then I run `pah #{app_name}` interactively
       And I type "n"
-      Then the output should contain:
-        """
-        CONGRATS! INSTALLATION COMPLETE!
-        """
       Then a directory named "#{app_name}" should exist
     )
   end
