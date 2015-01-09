@@ -105,4 +105,4 @@ This gem was created and is maintained by [HE:labs](https://github.com/Helabs).
 [gemnasium]: https://gemnasium.com/Helabs/pah
 [gemnasium_badge]: http://img.shields.io/gemnasium/Helabs/pah.svg?style=flat
 [travis]: https://travis-ci.org/Helabs/pah
-[travis_badge]: http://img.shields.io/travis/Helabs/pah.svg?style=flat
+[travis_badge]: http://img.shields.io/travis/Helabs/pah/master.svg?style=flat
