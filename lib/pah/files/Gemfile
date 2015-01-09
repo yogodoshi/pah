@@ -9,7 +9,7 @@ gem 'turbolinks',             '2.5.2'
 gem 'jbuilder',               '2.2.5'
 gem 'slim-rails',             '3.0.1'
 gem 'pg',                     '0.17.1'
-gem 'sass-rails',             github: 'rails/sass-rails', ref: '57ec3397ff99655890895df29a7bf3f683410256'
+gem 'sass-rails',             '5.0.1'
 gem 'coffee-rails',           '4.1.0'
 gem 'uglifier',               '2.5.3'
 gem 'simple_form',            '3.1.0'
@@ -30,7 +30,6 @@ group :production, :staging do
 end
 
 group :development do
-  gem 'spring',               '1.2.0'
   gem 'foreman',              '0.76.0'
   gem 'jumpup',               '0.0.8'
   gem 'jumpup-heroku',        '0.0.5'
@@ -58,4 +57,7 @@ group :development, :test do
   gem 'pry-rails',            '0.3.2'
   gem 'dotenv-rails',         '1.0.2'
   gem 'awesome_print',        '1.2.0'
+  gem 'byebug',               '3.5.1'
+  gem 'web-console',          '2.0.0'
+  gem 'spring',               '1.2.0'
 end
