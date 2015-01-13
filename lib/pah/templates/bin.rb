@@ -4,7 +4,7 @@ module Pah
       def call
         system 'bundle exec spring binstub --all'
 
-        git add: 'bin/rake bin/rails bin/spring'
+        git add: 'bin/rake bin/rails bin/spring bin/bundle bin/rspec'
         git_commit 'Add spring bin files'
       end
     end

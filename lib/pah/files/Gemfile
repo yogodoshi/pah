@@ -52,12 +52,13 @@ group :test do
 end
 
 group :development, :test do
-  gem 'rspec-rails',          '3.1.0'
-  gem 'factory_girl_rails',   '4.5.0'
-  gem 'pry-rails',            '0.3.2'
-  gem 'dotenv-rails',         '1.0.2'
-  gem 'awesome_print',        '1.6.1'
-  gem 'byebug',               '3.5.1'
-  gem 'web-console',          '2.0.0'
-  gem 'spring',               '1.2.0'
+  gem 'rspec-rails',           '3.1.0'
+  gem 'factory_girl_rails',    '4.5.0'
+  gem 'pry-rails',             '0.3.2'
+  gem 'dotenv-rails',          '1.0.2'
+  gem 'awesome_print',         '1.6.1'
+  gem 'spring-commands-rspec', '1.0.4'
+  gem 'byebug',                '3.5.1'
+  gem 'web-console',           '2.0.0'
+  gem 'spring',                '1.2.0'
 end
