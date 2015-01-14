@@ -29,8 +29,6 @@ bundle install
 bundle exec ./bin/pah ~/path/to/project
 ```
 
-If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
-
 ## Usage
 
 Run:
@@ -45,12 +43,7 @@ This will create a Rails 4.2.0 app with Ruby 2.2.0. This script creates a new gi
 
 ### RVM
 
-If you're using RVM, create and use a gemset (with the project name) before running PAH:
-
-```bash
-$ rvm use 2.2.0@projectname --create
-$ pah projectname
-```
+If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
 
 PAH automatically create the .ruby-version and .ruby-gemset files.
 
