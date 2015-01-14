@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'pathname'
 require 'fileutils'
 include FileUtils
@@ -13,18 +15,10 @@ chdir APP_ROOT do
   system 'gem install bundler --conservative'
   system('bundle check') or system('bundle install')
 
-  # puts "\n== Copying sample files =="
-  # unless File.exist?('config/database.yml')
-  #   cp 'config/database.yml.sample', 'config/database.yml'
-  # end
-
   puts "\n== Preparing database =="
-  system 'ruby bin/rake db:setup'
+  system 'bundle exec rake db:setup'
 
   puts "\n== Removing old logs and tempfiles =="
   rm_f Dir.glob('log/*')
   rm_rf 'tmp/cache'
-
-  puts "\n== Restarting application server =="
-  touch 'tmp/restart.txt'
 end
