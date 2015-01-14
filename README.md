@@ -45,14 +45,7 @@ This will create a Rails 4.1.8 app with Ruby 2.1.5. This script creates a new gi
 
 ### RVM
 
-If you're using RVM, create and use a gemset (with the project name) before running PAH:
-
-```bash
-$ rvm use 2.1.5@projectname --create
-$ pah projectname
-```
-
-PAH automatically create the .ruby-version and .ruby-gemset files.
+If you're using RVM, pah will create a gemset with the same name of your project
 
 ## Versioning
 
