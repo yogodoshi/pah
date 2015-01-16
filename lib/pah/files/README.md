@@ -22,7 +22,7 @@ If you plan to **integrate** this project to Heroku, you'll need:
 2. `$ git clone <REPOSITORY_URL> PROJECT` - Clone the project
 3. `$ cd PROJECT` - Go into the project folder
 4. `$ bin/setup` - Run the setup script
-5. `$ bundle exec rake spec` - Run the specs to see if everything is working fine
+5. `$ bin/rspec` - Run the specs to see if everything is working fine
 
 If everything goes OK, you can now run the project!
 
