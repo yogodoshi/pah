@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.0.20 (unreleased)
+## 0.0.20 (January 16,2015)
 
 ### features
 
