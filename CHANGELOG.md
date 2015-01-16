@@ -4,6 +4,10 @@
 
 ### features
 
+- Changed Ruby version to 2.2.0
+- Changed Rails version to 4.2.0
+- Changed rails-slim version to 3.0.1 due conflict with rails 4.2.0
+
 ### improvements
 
 ### bug fixes
