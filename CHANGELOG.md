@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.0.21 (Unreleased)
+
+### features
+
+- Add the spring-commands-rspec gem
+
 ## 0.0.20 (January 16,2015)
 
 ### features
