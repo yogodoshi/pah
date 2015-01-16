@@ -64,13 +64,6 @@ Please see [CONTRIBUTING.md](https://github.com/Helabs/pah/blob/master/CONTRIBUT
 - [Mauro George](https://github.com/maurogeorge)
 - [Thiago Belem](https://github.com/TiuTalk)
 
-## Roadmap
-
-- Improve the specs and test coverage
-- Make sure all the generated files are not beign overriden with older versions (like spec_helper, applications config & etc), don't copy files.. build them
-- Remove the old and unused spec/support files
-- Release version 1.0
-
 ## Release
 
 Follow this steps to release a new version of the gem.
