@@ -5,4 +5,3 @@ Feature: Capybara
 
   Scenario: Have correct files
     Then I have a spec/support/capybara.rb
-    Then I have a spec/acceptance/dummy_spec.rb

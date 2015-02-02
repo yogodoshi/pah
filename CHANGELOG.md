@@ -10,6 +10,7 @@
 
 - Update the bitters and refills gems
 - Remove old spec/support files
+- Remove acceptance test example
 
 ## 0.0.20 (January 16,2015)
 
