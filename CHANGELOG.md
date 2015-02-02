@@ -6,6 +6,10 @@
 
 - Add the spring-commands-rspec gem
 
+### improvements
+
+- Update the bitters and refills gems
+
 ## 0.0.20 (January 16,2015)
 
 ### features
