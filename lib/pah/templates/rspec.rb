@@ -8,10 +8,7 @@ module Pah
         %w(
           database_cleaner.rb
           factory_girl.rb
-          http_basic_auth.rb
-          matchers.rb
           suppress_log.rb
-          uploaded_file.rb
           vcr.rb
           random_timezone.rb
         ).each do |component|

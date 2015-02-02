@@ -9,6 +9,7 @@
 ### improvements
 
 - Update the bitters and refills gems
+- Remove old spec/support files
 
 ## 0.0.20 (January 16,2015)
 
