@@ -60,7 +60,15 @@ Feature: Run without errors
       """
       running heroku config:set LIBRATO_SOURCE=myapponheroku --app myapponheroku
       """
+    Then the output should contain:
+      """
+      Installation finished!
+      """
 
   Scenario: Running pah without heroku
     When I run `pah myapp_without_heroku` interactively
     And I type "n"
+    Then the output should contain:
+      """
+      Installation finished!
+      """

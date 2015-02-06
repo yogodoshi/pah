@@ -36,3 +36,4 @@ runner.apply_n :rollbar,         'Setting up Rollbar...'
 runner.apply_n :heroku,          'Configuring Heroku application...'
 runner.apply_n :bin,             'Configuring the binstub...'
 
+puts "Installation finished!".green.bold
