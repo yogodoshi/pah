@@ -6,7 +6,7 @@ module Pah
     end
 
     def apply_n(partial_name, message = '')
-      puts message.green
+      print message.green
 
       in_root do
         Bundler.with_clean_env do
