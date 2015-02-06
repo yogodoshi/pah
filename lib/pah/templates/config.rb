@@ -60,7 +60,7 @@ module Pah
 
       def how_do_you_want_to_name_the_app?
         answer = ask "How do you want to name your Heroku app? (#{app_name})".red
-        Pah.configuration.heroku[:name] = app_name if answer.blank?
+        Pah.configuration.heroku[:name] = answer.presence || app_name
       end
 
       def app_name
