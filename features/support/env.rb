@@ -1,4 +1,5 @@
 require 'aruba/cucumber'
+require 'pry'
 
 root = Pathname.new(__FILE__).parent.parent.parent
 
