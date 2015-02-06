@@ -11,6 +11,7 @@
 - Update the bitters and refills gems
 - Remove old spec/support files
 - Remove acceptance test example
+- Break heroku config class in small methods
 
 ## 0.0.20 (January 16,2015)
 
