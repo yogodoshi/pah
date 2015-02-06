@@ -1,4 +1,4 @@
-require "pah"
+require 'pah'
 
 Pah.configure do |config|
   config.app_name = @app_name
