@@ -5,6 +5,7 @@
 ### features
 
 - Add the spring-commands-rspec gem
+- Make pah less verbose. To get all the outputs use the --verbose option
 
 ### improvements
 
