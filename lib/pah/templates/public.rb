@@ -17,7 +17,6 @@ module Pah
         git add: 'public/500.html'
 
         git_commit 'Add public files.'
-        puts "\n"
       end
     end
   end

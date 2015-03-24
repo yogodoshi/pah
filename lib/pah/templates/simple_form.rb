@@ -2,7 +2,7 @@ module Pah
   module Templates
     class SimpleForm < Pah::Template
       def call
-        system 'bundle exec rails generate simple_form:install'
+        system 'bundle exec rails generate simple_form:install -q'
 
         git add: 'config'
         git add: 'lib/templates'

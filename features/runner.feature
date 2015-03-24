@@ -62,13 +62,13 @@ Feature: Run without errors
       """
     Then the output should contain:
       """
-       CONGRATS! INSTALLATION COMPLETE!
+      Installation finished!
       """
 
   Scenario: Running pah without heroku
     When I run `pah myapp_without_heroku` interactively
     And I type "n"
-    Then the stdout should contain:
+    Then the output should contain:
       """
-      CONGRATS! INSTALLATION COMPLETE!
+      Installation finished!
       """

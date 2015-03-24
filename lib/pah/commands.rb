@@ -10,6 +10,8 @@ module Pah
   end
 end
 
+require 'colored'
+require 'pah/commands/base'
 require 'pah/commands/version'
 require 'pah/commands/help'
 require 'pah/commands/app'

@@ -12,7 +12,7 @@ Given(/^I have created the app "(.*?)" with pah$/) do |app_name|
       And I type "n"
       Then the output should contain:
         """
-        CONGRATS! INSTALLATION COMPLETE!
+        Installation finished!
         """
       Then a directory named "#{app_name}" should exist
     )
