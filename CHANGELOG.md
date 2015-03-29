@@ -7,6 +7,10 @@
 - Add the spring-commands-rspec gem
 - Make pah less verbose. To get all the outputs use the --verbose option
 
+### bug fixes
+
+- Pg backups as a addon has been deprecated, update commands to reflect it
+
 ### improvements
 
 - Update the bitters and refills gems
