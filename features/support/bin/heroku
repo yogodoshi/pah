@@ -27,6 +27,11 @@ class Heroku < Thor
     puts "running heroku sharing:add #{domain.join(' ')}"
   end
 
+  desc 'pg:backups', 'stub of heroku pg:backups'
+  define_method 'pg:backups' do |*args|
+    puts "running heroku pg:backups #{args.join(' ')}"
+  end
+
   desc 'create', 'stub of heroku create'
   def create(app)
     puts "running heroku create #{app}"
