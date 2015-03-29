@@ -1,5 +1,5 @@
 class HerokuApp < Rails::Generators::AppGenerator
-  DEFAULT_ADDONS = %w(heroku-postgresql:dev pgbackups:auto-month logentries
+  DEFAULT_ADDONS = %w(heroku-postgresql:dev logentries
                       mandrill:starter rollbar newrelic:stark librato)
 
   attr_reader :name, :description, :config
@@ -16,6 +16,7 @@ class HerokuApp < Rails::Generators::AppGenerator
     add_heroku_git_remote
     check_canonical_domain
     check_collaborators
+    schedule_backup
   end
 
   def add_addons
@@ -55,11 +56,13 @@ class HerokuApp < Rails::Generators::AppGenerator
     run "heroku config:set LIBRATO_SOURCE=#{name} --app #{name}"
   end
 
+  def schedule_backup
+    run "heroku pg:backups schedule DATABASE_URL --app #{name}"
+  end
+
   def open
     say 'Pushing application to heroku...'.green
-
     run 'git push heroku master'
-
     run "heroku open --app #{name}"
   end
 

@@ -34,10 +34,6 @@ Feature: Run without errors
       """
     Then the stdout should contain:
       """
-      running heroku addons:add pgbackups:auto-month --app myapponheroku
-      """
-    Then the stdout should contain:
-      """
       running heroku addons:add logentries --app myapponheroku
       """
     Then the stdout should contain:
@@ -59,6 +55,10 @@ Feature: Run without errors
     Then the stdout should contain:
       """
       running heroku config:set LIBRATO_SOURCE=myapponheroku --app myapponheroku
+      """
+    Then the stdout should contain:
+      """
+      running heroku pg:backups schedule DATABASE_URL --app myapponheroku
       """
     Then the output should contain:
       """
