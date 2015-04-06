@@ -4,6 +4,8 @@
 
 ### features
 
+- Changed Ruby version to 2.2.1
+
 ### improvements
 
 ### bug fixes
