@@ -5,6 +5,7 @@
 ### features
 
 ### improvements
+- Update Puma configuration file and puma version
 
 ### bug fixes
 
