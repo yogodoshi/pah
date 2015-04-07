@@ -7,6 +7,7 @@
 ### improvements
 
 ### bug fixes
+- [Workaround] Update jumpup-heroku version to use fixed master branch
 
 ## 0.0.21 (March 19,2015)
 
