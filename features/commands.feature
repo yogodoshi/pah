@@ -6,7 +6,7 @@ Feature: Commands
       """
       Pah version: 0.0.21
       Rails version: 4.2.0
-      Ruby version: 2.2.0
+      Ruby version: 2.2.1
       """
   Scenario: -v prompts the versions
     When I run `pah -v`
@@ -14,7 +14,7 @@ Feature: Commands
       """
       Pah version: 0.0.21
       Rails version: 4.2.0
-      Ruby version: 2.2.0
+      Ruby version: 2.2.1
       """
   Scenario: without args prompt help
     When I run `pah`
