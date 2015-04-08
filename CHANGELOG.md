@@ -7,6 +7,7 @@
 - Changed Ruby version to 2.2.1
 
 ### improvements
+- Update Puma configuration file and puma version
 
 ### bug fixes
 - Changed jumpup-heroku version to 0.0.6 [[GH-475](https://github.com/Helabs/pah/issues/475)]

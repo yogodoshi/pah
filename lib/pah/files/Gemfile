@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby 'RUBY_VERSION'
 
 gem 'rails',                  'RAILS_VERSION'
-gem 'puma',                   '2.10.2'
+gem 'puma',                   '2.11.1'
 gem 'secure_headers',         '1.4.1'
 gem 'jquery-rails',           '4.0.3'
 gem 'turbolinks',             '2.5.3'
