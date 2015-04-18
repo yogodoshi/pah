@@ -5,7 +5,7 @@
 [![Gemnasium][gemnasium_badge]][gemnasium]
 [![RubyGems][gem_downloads_badge]][ruby_gems]
 
-A Rails application template which was born from [Startup DEV][startupdev] and now is used to start most projects at [HE:labs][helabs].
+A Rails application template, born from [Startup DEV][startupdev], used to start most projects at [HE:labs][helabs].
 
 ## Dependencies
 
@@ -37,15 +37,15 @@ Run:
 $ pah projectname
 ```
 
-This will create a Rails 4.2.0 app with Ruby 2.2.1. This script creates a new git repository in the folder `projectname`.
+This will create a Rails 4.2.0 app with Ruby 2.2.1 on a new folder `projectname` already as a git repository.
 
-:warning: PAH is not meant to be used against an existing repo.
+:warning: PAH is not meant to be used against an existing repository.
 
 ### RVM
 
-If you're using [RVM see those tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
+If you're using RVM, [see these tips](https://github.com/Helabs/pah/wiki/Using-Pah-with-RVM).
 
-PAH automatically create the .ruby-version and .ruby-gemset files.
+PAH automatically creates the .ruby-version and .ruby-gemset files.
 
 ## Versioning
 
